@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ak-sc-001",
+    "question": "What is the powerhouse of the cell?",
+    "answers": ["Mitochondrion", "Nucleus", "Ribosome", "Golgi apparatus"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Mitochondria generate most of the cell's supply of ATP, used as a source of chemical energy."
+  },
+  {
+    "id": "ak-sc-002",
+    "question": "What does DNA stand for?",
+    "answers": ["Deoxyribonucleic acid", "Diribonucleic acid", "Dextrose nucleic acid", "Dinitrogen acid"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Deoxyribonucleic acid is the molecule that carries genetic instructions."
+  },
+  {
+    "id": "ak-sc-003",
+    "question": "Which scientist developed the theory of general relativity?",
+    "answers": ["Albert Einstein", "Isaac Newton", "Niels Bohr", "Max Planck"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Einstein published his theory of general relativity in 1915."
+  },
+  {
+    "id": "ak-sc-004",
+    "question": "What is the most abundant element in the universe?",
+    "answers": ["Hydrogen", "Helium", "Oxygen", "Carbon"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Hydrogen makes up about 75% of all baryonic mass."
+  },
+  {
+    "id": "ak-sc-005",
+    "question": "How many bones are in the adult human body?",
+    "answers": ["206", "186", "226", "246"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Babies are born with about 270 bones; many fuse during development."
+  },
+  {
+    "id": "ak-sc-006",
+    "question": "What is the pH of pure water?",
+    "answers": ["7", "0", "1", "14"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Pure water is neutral, neither acidic nor basic, at pH 7."
+  },
+  {
+    "id": "ak-sc-007",
+    "question": "Which subatomic particle has no electric charge?",
+    "answers": ["Neutron", "Proton", "Electron", "Positron"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Neutrons, found in the nucleus, are electrically neutral."
+  },
+  {
+    "id": "ak-sc-008",
+    "question": "What is the largest planet in our solar system?",
+    "answers": ["Jupiter", "Saturn", "Neptune", "Earth"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Jupiter's mass is about 2.5 times that of all other planets combined."
+  },
+  {
+    "id": "ak-sc-009",
+    "question": "What kind of waves does an MRI scanner primarily use?",
+    "answers": ["Radio waves", "X-rays", "Gamma rays", "Microwaves"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "MRI uses powerful magnetic fields and radio waves to image the body."
+  },
+  {
+    "id": "ak-sc-010",
+    "question": "What is the unit of electrical resistance?",
+    "answers": ["Ohm", "Volt", "Ampere", "Watt"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Named after German physicist Georg Simon Ohm."
+  },
+  {
+    "id": "ak-sc-011",
+    "question": "Which blood type is known as the 'universal donor'?",
+    "answers": ["O negative", "O positive", "AB negative", "A positive"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "O negative red cells lack the A, B and Rh antigens, so they're accepted by all types."
+  },
+  {
+    "id": "ak-sc-012",
+    "question": "Which gas is needed for photosynthesis?",
+    "answers": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Plants take in carbon dioxide and release oxygen as a by-product."
+  },
+  {
+    "id": "ak-sc-013",
+    "question": "Who discovered penicillin?",
+    "answers": ["Alexander Fleming", "Louis Pasteur", "Marie Curie", "Joseph Lister"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Fleming noticed a mould inhibiting bacterial growth in 1928."
+  },
+  {
+    "id": "ak-sc-014",
+    "question": "What is the chemical formula for table salt?",
+    "answers": ["NaCl", "KCl", "CaCO3", "H2SO4"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Sodium chloride: one sodium and one chlorine atom."
+  },
+  {
+    "id": "ak-sc-015",
+    "question": "Which planet has the strongest gravity in our solar system?",
+    "answers": ["Jupiter", "Saturn", "Earth", "Neptune"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Jupiter's surface gravity is about 2.5 times that of Earth."
+  },
+  {
+    "id": "ak-sc-016",
+    "question": "What is the rarest blood type?",
+    "answers": ["AB negative", "O negative", "B negative", "A negative"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "AB negative occurs in fewer than 1% of people worldwide."
+  },
+  {
+    "id": "ak-sc-017",
+    "question": "Which scientific law states that energy cannot be created or destroyed?",
+    "answers": ["First law of thermodynamics", "Newton's first law", "Law of universal gravitation", "Boyle's law"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The first law of thermodynamics is the conservation of energy applied to thermal systems."
+  },
+  {
+    "id": "ak-sc-018",
+    "question": "What is the smallest unit of life?",
+    "answers": ["Cell", "Atom", "Molecule", "Organ"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Cells are the basic structural and functional units of all known living organisms."
+  },
+  {
+    "id": "ak-sc-019",
+    "question": "How long does it take light from the Sun to reach Earth?",
+    "answers": ["About 8 minutes", "About 1 second", "About 1 hour", "About 1 day"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Approximately 8 minutes 20 seconds on average."
+  },
+  {
+    "id": "ak-sc-020",
+    "question": "What is the name of the galaxy that contains our solar system?",
+    "answers": ["The Milky Way", "Andromeda", "Whirlpool", "Sombrero"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Milky Way is a barred spiral galaxy."
+  },
+  {
+    "id": "ak-sc-021",
+    "question": "Which mathematician is famous for the equation E=mc^2?",
+    "answers": ["Albert Einstein", "Isaac Newton", "Stephen Hawking", "Niels Bohr"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Einstein's mass-energy equivalence formula was published in 1905."
+  },
+  {
+    "id": "ak-sc-022",
+    "question": "What does the acronym 'LASER' stand for?",
+    "answers": ["Light Amplification by Stimulated Emission of Radiation", "Light Activated Subatomic Energy Reflector", "Linear Amplification of Sound Energy Resonance", "Long Active Stream of Energy Radiation"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The acronym was coined in 1957 by Gordon Gould."
+  },
+  {
+    "id": "ak-sc-023",
+    "question": "Which vitamin is produced by the skin in response to sunlight?",
+    "answers": ["Vitamin D", "Vitamin A", "Vitamin C", "Vitamin B12"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "UVB radiation triggers vitamin D synthesis in skin."
+  },
+  {
+    "id": "ak-sc-024",
+    "question": "What is the most common type of star in the Milky Way?",
+    "answers": ["Red dwarf", "Yellow dwarf", "Blue giant", "Neutron star"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Red dwarfs (M-type stars) make up about 70% of stars in our galaxy."
+  },
+  {
+    "id": "ak-sc-025",
+    "question": "Which scale measures earthquake magnitude?",
+    "answers": ["Richter scale", "Beaufort scale", "Mohs scale", "Fahrenheit scale"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Modern seismologists more often use the moment magnitude scale, but Richter is still commonly cited."
+  }
+]

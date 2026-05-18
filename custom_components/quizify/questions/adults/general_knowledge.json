@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ak-gk-001",
+    "question": "Which planet in our solar system is known as the Red Planet?",
+    "answers": ["Mars", "Venus", "Jupiter", "Mercury"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Mars gets its reddish appearance from iron oxide (rust) on its surface."
+  },
+  {
+    "id": "ak-gk-002",
+    "question": "What is the largest organ of the human body?",
+    "answers": ["Skin", "Liver", "Brain", "Heart"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The skin covers around 1.5 to 2 square metres in adults."
+  },
+  {
+    "id": "ak-gk-003",
+    "question": "What does 'CPU' stand for?",
+    "answers": ["Central Processing Unit", "Computer Personal Unit", "Central Process Utility", "Core Power Unit"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The CPU is the primary component that performs instructions in a computer."
+  },
+  {
+    "id": "ak-gk-004",
+    "question": "In which year did the Titanic sink?",
+    "answers": ["1912", "1905", "1920", "1898"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "RMS Titanic sank on the night of 14-15 April 1912 after hitting an iceberg."
+  },
+  {
+    "id": "ak-gk-005",
+    "question": "Which language has the most native speakers worldwide?",
+    "answers": ["Mandarin Chinese", "English", "Spanish", "Hindi"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Mandarin Chinese has roughly 900 million native speakers."
+  },
+  {
+    "id": "ak-gk-006",
+    "question": "What is the chemical symbol for gold?",
+    "answers": ["Au", "Ag", "Gd", "Go"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Au comes from the Latin word 'aurum', meaning gold."
+  },
+  {
+    "id": "ak-gk-007",
+    "question": "Who painted the Mona Lisa?",
+    "answers": ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Painted between roughly 1503 and 1519, it hangs in the Louvre in Paris."
+  },
+  {
+    "id": "ak-gk-008",
+    "question": "What is the smallest country in the world by area?",
+    "answers": ["Vatican City", "Monaco", "San Marino", "Liechtenstein"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Vatican City covers just 0.49 square kilometres."
+  },
+  {
+    "id": "ak-gk-009",
+    "question": "Which gas makes up most of Earth's atmosphere?",
+    "answers": ["Nitrogen", "Oxygen", "Carbon dioxide", "Argon"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Nitrogen accounts for about 78% of the atmosphere by volume."
+  },
+  {
+    "id": "ak-gk-010",
+    "question": "How many continents are there?",
+    "answers": ["7", "5", "6", "8"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Most geographic models recognise seven: Africa, Antarctica, Asia, Australia, Europe, North America, South America."
+  },
+  {
+    "id": "ak-gk-011",
+    "question": "Which Shakespeare play features the characters Rosencrantz and Guildenstern?",
+    "answers": ["Hamlet", "Macbeth", "Othello", "King Lear"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "They are childhood friends of Hamlet, summoned by King Claudius."
+  },
+  {
+    "id": "ak-gk-012",
+    "question": "The currency 'yen' belongs to which country?",
+    "answers": ["Japan", "China", "South Korea", "Thailand"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The yen has been Japan's official currency since 1871."
+  },
+  {
+    "id": "ak-gk-013",
+    "question": "What is the hardest naturally occurring substance on Earth?",
+    "answers": ["Diamond", "Quartz", "Steel", "Granite"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Diamond scores 10 - the maximum - on the Mohs hardness scale."
+  },
+  {
+    "id": "ak-gk-014",
+    "question": "Which Greek god is the ruler of the underworld?",
+    "answers": ["Hades", "Zeus", "Poseidon", "Apollo"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Hades drew the lot for the underworld after the Titans were overthrown."
+  },
+  {
+    "id": "ak-gk-015",
+    "question": "What is the speed of light in a vacuum, approximately?",
+    "answers": ["300,000 km/s", "30,000 km/s", "3,000,000 km/s", "30,000,000 km/s"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Light travels at 299,792 km/s in a vacuum - usually rounded to 300,000 km/s."
+  },
+  {
+    "id": "ak-gk-016",
+    "question": "Which novel begins with the line 'Call me Ishmael'?",
+    "answers": ["Moby-Dick", "The Great Gatsby", "Treasure Island", "Heart of Darkness"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Herman Melville's 1851 novel opens with this famous narrator introduction."
+  },
+  {
+    "id": "ak-gk-017",
+    "question": "Which scientific instrument is used to measure earthquakes?",
+    "answers": ["Seismograph", "Barometer", "Hygrometer", "Anemometer"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A seismograph records the ground motion produced by seismic waves."
+  },
+  {
+    "id": "ak-gk-018",
+    "question": "What is the world's longest river?",
+    "answers": ["The Nile", "The Amazon", "The Yangtze", "The Mississippi"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The Nile flows about 6,650 km, though the Amazon is a close rival depending on how length is measured."
+  },
+  {
+    "id": "ak-gk-019",
+    "question": "Which element has the atomic number 1?",
+    "answers": ["Hydrogen", "Helium", "Carbon", "Oxygen"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Hydrogen is the lightest and most abundant element in the universe."
+  },
+  {
+    "id": "ak-gk-020",
+    "question": "Who composed 'The Four Seasons'?",
+    "answers": ["Antonio Vivaldi", "Johann Sebastian Bach", "Ludwig van Beethoven", "Wolfgang Amadeus Mozart"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Vivaldi composed this set of four violin concertos around 1718-1720."
+  },
+  {
+    "id": "ak-gk-021",
+    "question": "What is the term for a word that reads the same forwards and backwards?",
+    "answers": ["Palindrome", "Anagram", "Homonym", "Synonym"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "'Racecar' and 'level' are classic palindromes."
+  },
+  {
+    "id": "ak-gk-022",
+    "question": "Which planet has the most moons?",
+    "answers": ["Saturn", "Jupiter", "Uranus", "Neptune"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Recent surveys put Saturn's confirmed moon count above 140, overtaking Jupiter."
+  },
+  {
+    "id": "ak-gk-023",
+    "question": "Which language was the original 'Star Wars' film primarily made in?",
+    "answers": ["English", "French", "Spanish", "Italian"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The 1977 film 'Star Wars' was made in English."
+  },
+  {
+    "id": "ak-gk-024",
+    "question": "What is the boiling point of water at sea level in Celsius?",
+    "answers": ["100", "90", "110", "120"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Water boils at 100 degrees C at standard atmospheric pressure (1 atm)."
+  },
+  {
+    "id": "ak-gk-025",
+    "question": "Which country gifted the Statue of Liberty to the United States?",
+    "answers": ["France", "United Kingdom", "Italy", "Spain"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "France gifted it in 1886 as a symbol of friendship and shared ideals."
+  }
+]

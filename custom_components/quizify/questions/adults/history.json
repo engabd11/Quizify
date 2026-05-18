@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ak-hi-001",
+    "question": "In which year did World War II end?",
+    "answers": ["1945", "1944", "1946", "1939"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Japan formally surrendered on 2 September 1945, ending the war."
+  },
+  {
+    "id": "ak-hi-002",
+    "question": "Who was the first President of the United States?",
+    "answers": ["George Washington", "Thomas Jefferson", "John Adams", "Benjamin Franklin"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Washington took office on 30 April 1789."
+  },
+  {
+    "id": "ak-hi-003",
+    "question": "The Great Wall of China was primarily built to defend against which group?",
+    "answers": ["Nomadic tribes from the north", "Japanese invaders", "Mongol fleet", "Russian armies"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Various Chinese dynasties built and rebuilt the wall against northern nomadic groups, including the Xiongnu."
+  },
+  {
+    "id": "ak-hi-004",
+    "question": "Which ancient civilisation built Machu Picchu?",
+    "answers": ["The Inca", "The Aztec", "The Maya", "The Olmec"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Machu Picchu was built around 1450 CE in the Andes of Peru."
+  },
+  {
+    "id": "ak-hi-005",
+    "question": "The Berlin Wall fell in which year?",
+    "answers": ["1989", "1991", "1987", "1985"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "East Germans began crossing freely on the night of 9 November 1989."
+  },
+  {
+    "id": "ak-hi-006",
+    "question": "Who was the first woman to win a Nobel Prize?",
+    "answers": ["Marie Curie", "Rosalind Franklin", "Florence Nightingale", "Ada Lovelace"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Marie Curie won the Nobel Prize in Physics in 1903 (and Chemistry in 1911)."
+  },
+  {
+    "id": "ak-hi-007",
+    "question": "In which year did the Titanic sink?",
+    "answers": ["1912", "1905", "1920", "1898"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "RMS Titanic struck an iceberg and sank on 15 April 1912."
+  },
+  {
+    "id": "ak-hi-008",
+    "question": "Who painted the ceiling of the Sistine Chapel?",
+    "answers": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Botticelli"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Michelangelo painted the ceiling between 1508 and 1512."
+  },
+  {
+    "id": "ak-hi-009",
+    "question": "Which empire was ruled by Suleiman the Magnificent?",
+    "answers": ["Ottoman Empire", "Persian Empire", "Mongol Empire", "Roman Empire"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Suleiman ruled the Ottoman Empire from 1520 to 1566."
+  },
+  {
+    "id": "ak-hi-010",
+    "question": "The French Revolution began in which year?",
+    "answers": ["1789", "1799", "1776", "1815"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "It is conventionally dated from the storming of the Bastille on 14 July 1789."
+  },
+  {
+    "id": "ak-hi-011",
+    "question": "Which civilisation invented the wheel?",
+    "answers": ["Sumerians", "Egyptians", "Greeks", "Romans"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The earliest wheels appear in Mesopotamia around 3500 BCE."
+  },
+  {
+    "id": "ak-hi-012",
+    "question": "Who was the British Prime Minister at the start of World War II?",
+    "answers": ["Neville Chamberlain", "Winston Churchill", "Clement Attlee", "Anthony Eden"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Chamberlain declared war on Germany on 3 September 1939; Churchill succeeded him in May 1940."
+  },
+  {
+    "id": "ak-hi-013",
+    "question": "What was the name of the ship that brought the Pilgrims to America in 1620?",
+    "answers": ["Mayflower", "Santa María", "Endeavour", "Beagle"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The Mayflower carried 102 passengers from Plymouth, England to Cape Cod."
+  },
+  {
+    "id": "ak-hi-014",
+    "question": "Who was the ancient Egyptian queen famous for her relationships with Julius Caesar and Mark Antony?",
+    "answers": ["Cleopatra VII", "Nefertiti", "Hatshepsut", "Tiye"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Cleopatra VII was the last active pharaoh of Ptolemaic Egypt."
+  },
+  {
+    "id": "ak-hi-015",
+    "question": "Which empire was founded by Genghis Khan?",
+    "answers": ["Mongol Empire", "Han Dynasty", "Ottoman Empire", "Persian Empire"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "He unified Mongol tribes and founded the empire in 1206."
+  },
+  {
+    "id": "ak-hi-016",
+    "question": "The Magna Carta was signed in which year?",
+    "answers": ["1215", "1066", "1492", "1789"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "King John of England agreed to it at Runnymede in 1215."
+  },
+  {
+    "id": "ak-hi-017",
+    "question": "Who was the first person to walk on the Moon?",
+    "answers": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Armstrong stepped onto the surface on 20 July 1969."
+  },
+  {
+    "id": "ak-hi-018",
+    "question": "Which war was fought between the North and South regions of the United States?",
+    "answers": ["American Civil War", "American Revolutionary War", "War of 1812", "Spanish-American War"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The American Civil War took place from 1861 to 1865."
+  },
+  {
+    "id": "ak-hi-019",
+    "question": "Who wrote 'The Communist Manifesto'?",
+    "answers": ["Karl Marx and Friedrich Engels", "Vladimir Lenin", "Leon Trotsky", "Joseph Stalin"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1848 as a political pamphlet."
+  },
+  {
+    "id": "ak-hi-020",
+    "question": "Which ship did Charles Darwin sail on during his famous voyage?",
+    "answers": ["HMS Beagle", "HMS Endeavour", "HMS Victory", "HMS Bounty"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The five-year voyage informed his theory of evolution by natural selection."
+  },
+  {
+    "id": "ak-hi-021",
+    "question": "Which year marked the start of the Cold War, broadly speaking?",
+    "answers": ["1947", "1939", "1955", "1961"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Truman Doctrine, announced in 1947, is often cited as the start."
+  },
+  {
+    "id": "ak-hi-022",
+    "question": "Apartheid was a system of racial segregation in which country?",
+    "answers": ["South Africa", "Rhodesia", "Algeria", "Mozambique"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Apartheid was law from 1948 until 1994 when Nelson Mandela was elected president."
+  },
+  {
+    "id": "ak-hi-023",
+    "question": "Who discovered the Americas for Europe in 1492?",
+    "answers": ["Christopher Columbus", "Amerigo Vespucci", "Vasco da Gama", "Ferdinand Magellan"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Columbus made landfall in the Bahamas on 12 October 1492."
+  },
+  {
+    "id": "ak-hi-024",
+    "question": "The Hundred Years' War was fought between which two countries?",
+    "answers": ["England and France", "Spain and Portugal", "Holy Roman Empire and Ottoman Empire", "Sweden and Russia"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "It lasted from 1337 to 1453 — actually 116 years."
+  },
+  {
+    "id": "ak-hi-025",
+    "question": "Which famous document begins 'We hold these truths to be self-evident'?",
+    "answers": ["United States Declaration of Independence", "United States Constitution", "Magna Carta", "French Declaration of the Rights of Man"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Adopted on 4 July 1776, it was primarily drafted by Thomas Jefferson."
+  }
+]

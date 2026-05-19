@@ -1,0 +1,1094 @@
+[
+  {
+    "id": "ak-la-001",
+    "question": "What is the most spoken native language in the world?",
+    "answers": [
+      "Mandarin Chinese",
+      "English",
+      "Spanish",
+      "Hindi"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Roughly 900 million native speakers."
+  },
+  {
+    "id": "ak-la-002",
+    "question": "Which language is the official language of Brazil?",
+    "answers": [
+      "Portuguese",
+      "Spanish",
+      "English",
+      "French"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Brazil was colonised by Portugal in the 16th century."
+  },
+  {
+    "id": "ak-la-003",
+    "question": "What is the term for a word that means the same as another?",
+    "answers": [
+      "Synonym",
+      "Antonym",
+      "Homonym",
+      "Acronym"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Greek 'syn' (together) + 'onyma' (name)."
+  },
+  {
+    "id": "ak-la-004",
+    "question": "What does 'etymology' study?",
+    "answers": [
+      "The origin of words",
+      "Insects",
+      "Body parts",
+      "Soil types"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Etymology traces word origins and how their meanings have changed over time."
+  },
+  {
+    "id": "ak-la-005",
+    "question": "Which language has the largest number of native speakers in Africa?",
+    "answers": [
+      "Swahili",
+      "Arabic",
+      "Hausa",
+      "Yoruba"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Swahili (Kiswahili) is spoken by around 200 million people, though many as a second language."
+  },
+  {
+    "id": "ak-la-006",
+    "question": "What is a 'palindrome'?",
+    "answers": [
+      "A word that reads the same forwards and backwards",
+      "A word with multiple meanings",
+      "A word borrowed from another language",
+      "A word that sounds like its meaning"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "'Racecar' and 'A man a plan a canal Panama' are classic examples."
+  },
+  {
+    "id": "ak-la-007",
+    "question": "Which language has the most characters/letters in its alphabet?",
+    "answers": [
+      "Khmer",
+      "Russian",
+      "Greek",
+      "Arabic"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Khmer (Cambodian) has 74 letters in its alphabet."
+  },
+  {
+    "id": "ak-la-008",
+    "question": "What is the longest word in the English language commonly cited?",
+    "answers": [
+      "Pneumonoultramicroscopicsilicovolcanoconiosis",
+      "Antidisestablishmentarianism",
+      "Floccinaucinihilipilification",
+      "Supercalifragilisticexpialidocious"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "An invented term for a lung disease caused by silica dust, 45 letters long."
+  },
+  {
+    "id": "ak-la-009",
+    "question": "What language does the word 'algebra' come from?",
+    "answers": [
+      "Arabic",
+      "Greek",
+      "Latin",
+      "Persian"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "From the Arabic 'al-jabr', meaning 'the reunion of broken parts'."
+  },
+  {
+    "id": "ak-la-010",
+    "question": "What is an 'anagram'?",
+    "answers": [
+      "A word formed by rearranging the letters of another",
+      "A word that sounds like its meaning",
+      "A word with a double letter",
+      "A word borrowed from another language"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "'Listen' and 'silent' are anagrams of each other."
+  },
+  {
+    "id": "ak-la-011",
+    "question": "What does the Latin phrase 'carpe diem' mean?",
+    "answers": [
+      "Seize the day",
+      "Seize the moment",
+      "Carpe is to seize",
+      "I think therefore I am"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "From a poem by Horace."
+  },
+  {
+    "id": "ak-la-012",
+    "question": "What is the official language of Egypt?",
+    "answers": [
+      "Arabic",
+      "Egyptian",
+      "Coptic",
+      "Hieroglyphic"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Modern Standard Arabic is the official language; Egyptian Arabic is the spoken dialect."
+  },
+  {
+    "id": "ak-la-013",
+    "question": "Which language is the most widely studied second language in the world?",
+    "answers": [
+      "English",
+      "Mandarin Chinese",
+      "Spanish",
+      "French"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Estimated 1.5 billion learners worldwide."
+  },
+  {
+    "id": "ak-la-014",
+    "question": "What is the term for words that sound the same but have different meanings (e.g. 'bear' and 'bare')?",
+    "answers": [
+      "Homophones",
+      "Synonyms",
+      "Antonyms",
+      "Acronyms"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Greek 'homo' (same) + 'phone' (sound)."
+  },
+  {
+    "id": "ak-la-015",
+    "question": "What does 'i.e.' stand for?",
+    "answers": [
+      "Id est",
+      "In example",
+      "Italics emphasised",
+      "Implicitly explained"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Latin 'id est' — used to clarify or restate something."
+  },
+  {
+    "id": "ak-la-016",
+    "question": "Which Indo-European language family does Hindi belong to?",
+    "answers": [
+      "Indo-Aryan",
+      "Dravidian",
+      "Sino-Tibetan",
+      "Semitic"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Hindi is an Indo-Aryan language descended from Sanskrit."
+  },
+  {
+    "id": "ak-la-017",
+    "question": "What is the term for words pronounced differently with different meanings (e.g. 'lead' the metal vs 'lead' the verb)?",
+    "answers": [
+      "Heteronyms",
+      "Synonyms",
+      "Homonyms",
+      "Antonyms"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Same spelling, different pronunciation and meaning."
+  },
+  {
+    "id": "ak-la-018",
+    "question": "What does 'lingua franca' mean?",
+    "answers": [
+      "A common language used between people with different mother tongues",
+      "A romantic European language",
+      "The Latin family of languages",
+      "An ancient pictographic script"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Literally 'Frankish language' in Italian, referring to a Mediterranean trade pidgin."
+  },
+  {
+    "id": "ak-la-019",
+    "question": "Which is the official language of the Vatican City?",
+    "answers": [
+      "Italian",
+      "Latin",
+      "Vatican",
+      "French"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Italian is the official working language. Latin is the official language of the Holy See."
+  },
+  {
+    "id": "ak-la-020",
+    "question": "What is the term for a word formed from the initial letters of other words?",
+    "answers": [
+      "Acronym",
+      "Synonym",
+      "Homonym",
+      "Mnemonic"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "NASA, SCUBA, LASER are common examples."
+  },
+  {
+    "id": "ak-la-021",
+    "question": "Which language is most closely related to English?",
+    "answers": [
+      "Frisian",
+      "German",
+      "Dutch",
+      "Danish"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Frisian (spoken in parts of the Netherlands and Germany) is considered English's closest living relative."
+  },
+  {
+    "id": "ak-la-022",
+    "question": "What does 'et cetera' (etc.) mean in Latin?",
+    "answers": [
+      "And the rest",
+      "And others",
+      "For example",
+      "That is"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Literally 'and the other things'."
+  },
+  {
+    "id": "ak-la-023",
+    "question": "Which letter is used most frequently in English?",
+    "answers": [
+      "E",
+      "A",
+      "T",
+      "S"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "E appears in about 11% of English text."
+  },
+  {
+    "id": "ak-la-024",
+    "question": "What is the term for the smallest unit of sound in a language?",
+    "answers": [
+      "Phoneme",
+      "Morpheme",
+      "Syllable",
+      "Lexeme"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "English has roughly 44 phonemes."
+  },
+  {
+    "id": "ak-la-025",
+    "question": "What does the prefix 'auto-' mean?",
+    "answers": [
+      "Self",
+      "Big",
+      "Small",
+      "Around"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "From Greek 'autos', meaning self."
+  },
+  {
+    "id": "ak-la-026",
+    "question": "What is the term for a phrase whose meaning isn't deducible from its individual words (e.g. 'kick the bucket')?",
+    "answers": [
+      "Idiom",
+      "Cliché",
+      "Metaphor",
+      "Simile"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Idioms are figurative expressions specific to a language or culture."
+  },
+  {
+    "id": "ak-la-027",
+    "question": "Which alphabet is used by the Russian language?",
+    "answers": [
+      "Cyrillic",
+      "Greek",
+      "Latin",
+      "Hebrew"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Named after Saint Cyril, a 9th-century Byzantine missionary."
+  },
+  {
+    "id": "ak-la-028",
+    "question": "What does the word 'robot' originally mean (in Czech)?",
+    "answers": [
+      "Forced labour",
+      "Machine",
+      "Worker",
+      "Iron"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Coined by Czech writer Karel Čapek's brother Josef for the 1920 play 'R.U.R.'."
+  },
+  {
+    "id": "ak-la-029",
+    "question": "What language are most opera librettos historically written in?",
+    "answers": [
+      "Italian",
+      "German",
+      "French",
+      "Latin"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Italian dominated opera from the 17th century onwards."
+  },
+  {
+    "id": "ak-la-030",
+    "question": "What is the term for the dictionary of a language or a person's vocabulary?",
+    "answers": [
+      "Lexicon",
+      "Glossary",
+      "Thesaurus",
+      "Encyclopaedia"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "From Greek 'lexis', meaning 'word'."
+  },
+  {
+    "id": "ak-la-031",
+    "question": "Which language is the only official language of Andorra?",
+    "answers": [
+      "Catalan",
+      "Spanish",
+      "French",
+      "Andorran"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Catalan is the sole official language; Spanish and French are widely spoken."
+  },
+  {
+    "id": "ak-la-032",
+    "question": "What does 'bonjour' mean in French?",
+    "answers": [
+      "Hello / good day",
+      "Goodbye",
+      "Thank you",
+      "Please"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Literally 'good day'."
+  },
+  {
+    "id": "ak-la-033",
+    "question": "What is a homograph?",
+    "answers": [
+      "A word with the same spelling but different meaning",
+      "A word that sounds like another",
+      "A word that means the opposite",
+      "A word borrowed from another language"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "From Greek 'homo' (same) + 'graph' (writing)."
+  },
+  {
+    "id": "ak-la-034",
+    "question": "What does the abbreviation 'RSVP' stand for in French?",
+    "answers": [
+      "Répondez s'il vous plaît",
+      "Réponse soyez vivement priée",
+      "Réservez s'il vous plaît",
+      "Refuser sans véritable problème"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Used worldwide on invitations."
+  },
+  {
+    "id": "ak-la-035",
+    "question": "Which two languages share the most cognates with English?",
+    "answers": [
+      "French and Latin",
+      "German and Dutch",
+      "Russian and Polish",
+      "Spanish and Italian"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "English vocabulary is heavily Romance (French/Latin) and Germanic in origin."
+  },
+  {
+    "id": "ak-la-036",
+    "question": "What is the Greek letter Φ called?",
+    "answers": [
+      "Phi",
+      "Psi",
+      "Pi",
+      "Theta"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Used in mathematics for the golden ratio (~1.618)."
+  },
+  {
+    "id": "ak-la-037",
+    "question": "What does the suffix '-phobia' mean?",
+    "answers": [
+      "Fear of",
+      "Love of",
+      "Study of",
+      "Hatred of"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "From Greek 'phobos', meaning fear."
+  },
+  {
+    "id": "ak-la-038",
+    "question": "Which Romance language has the most speakers worldwide?",
+    "answers": [
+      "Spanish",
+      "Portuguese",
+      "French",
+      "Italian"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "About 485 million native Spanish speakers across more than 20 countries."
+  },
+  {
+    "id": "ak-la-039",
+    "question": "What is the term for a brief saying expressing a general truth (e.g. 'a stitch in time saves nine')?",
+    "answers": [
+      "Proverb",
+      "Adage",
+      "Aphorism",
+      "Idiom"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Proverbs are short, traditional sayings that express common truths."
+  },
+  {
+    "id": "ak-la-040",
+    "question": "What is the official language of Iran?",
+    "answers": [
+      "Persian",
+      "Arabic",
+      "Kurdish",
+      "Turkish"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Persian (Farsi) is an Indo-European language, not Semitic like Arabic."
+  },
+  {
+    "id": "ak-la-041",
+    "question": "What does the Latin phrase 'cogito ergo sum' mean?",
+    "answers": [
+      "I think, therefore I am",
+      "I came, I saw, I conquered",
+      "To err is human",
+      "Seize the day"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Famous quote by René Descartes."
+  },
+  {
+    "id": "ak-la-042",
+    "question": "Which language is written in the Devanagari script?",
+    "answers": [
+      "Hindi",
+      "Tamil",
+      "Bengali",
+      "Gujarati"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Also used for Sanskrit, Marathi, and Nepali."
+  },
+  {
+    "id": "ak-la-043",
+    "question": "What is the term for a figure of speech that exaggerates for effect?",
+    "answers": [
+      "Hyperbole",
+      "Metaphor",
+      "Simile",
+      "Onomatopoeia"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "From Greek 'hyper' (over) + 'ballein' (to throw)."
+  },
+  {
+    "id": "ak-la-044",
+    "question": "Which language family does Finnish belong to?",
+    "answers": [
+      "Uralic",
+      "Indo-European",
+      "Altaic",
+      "Slavic"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Finnish is in the Finno-Ugric branch of the Uralic family, alongside Hungarian and Estonian."
+  },
+  {
+    "id": "ak-la-045",
+    "question": "What does the prefix 'mis-' usually indicate?",
+    "answers": [
+      "Wrongly or badly",
+      "Beyond",
+      "Self",
+      "Across"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "As in 'misspell', 'misunderstand', 'misplace'."
+  },
+  {
+    "id": "ak-la-046",
+    "question": "Which language is the official language of Japan?",
+    "answers": [
+      "Japanese",
+      "Mandarin Chinese",
+      "Korean",
+      "Okinawan"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "About 125 million native speakers."
+  },
+  {
+    "id": "ak-la-047",
+    "question": "What does the Spanish word 'hola' mean?",
+    "answers": [
+      "Hello",
+      "Goodbye",
+      "Thank you",
+      "Yes"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The most common Spanish greeting."
+  },
+  {
+    "id": "ak-la-048",
+    "question": "Which family of languages does Swahili belong to?",
+    "answers": [
+      "Bantu",
+      "Afroasiatic",
+      "Niger-Congo",
+      "Nilo-Saharan"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Bantu is a subgroup of the Niger-Congo family — both answers are technically related, but Swahili is specifically a Bantu language."
+  },
+  {
+    "id": "ak-la-049",
+    "question": "What does 'OK' stand for, according to the most accepted theory?",
+    "answers": [
+      "Oll Korrect",
+      "Orderly Kept",
+      "Optimal Knowledge",
+      "Out of Kentucky"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "From a 19th-century American fad of comically misspelled abbreviations."
+  },
+  {
+    "id": "ak-la-050",
+    "question": "Which letter is the only one that doesn't appear in any US state name?",
+    "answers": [
+      "Q",
+      "X",
+      "Z",
+      "J"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Q does not appear in any of the 50 US state names."
+  },
+  {
+    "id": "ak-la-051",
+    "question": "What is the term for a word that imitates the sound it describes (e.g. 'buzz', 'crash')?",
+    "answers": [
+      "Onomatopoeia",
+      "Hyperbole",
+      "Synecdoche",
+      "Metonymy"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "From Greek 'onoma' (name) + 'poiein' (to make)."
+  },
+  {
+    "id": "ak-la-052",
+    "question": "Which language is the official language of Israel?",
+    "answers": [
+      "Hebrew",
+      "Yiddish",
+      "Arabic",
+      "Aramaic"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Hebrew is the sole official language since a 2018 law (Arabic has special status)."
+  },
+  {
+    "id": "ak-la-053",
+    "question": "What does 'gracias' mean in Spanish?",
+    "answers": [
+      "Thank you",
+      "Hello",
+      "Goodbye",
+      "Please"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "From Latin 'gratias', meaning thanks."
+  },
+  {
+    "id": "ak-la-054",
+    "question": "What is the only number in English whose letters appear in alphabetical order?",
+    "answers": [
+      "Forty",
+      "Fifty",
+      "Sixty",
+      "Hundred"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "F-O-R-T-Y."
+  },
+  {
+    "id": "ak-la-055",
+    "question": "What does the prefix 'tele-' mean?",
+    "answers": [
+      "Far / at a distance",
+      "Around",
+      "Beyond",
+      "Half"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "From Greek 'tele', meaning 'afar'."
+  },
+  {
+    "id": "ak-la-056",
+    "question": "Which language is spoken in the largest number of countries as an official language?",
+    "answers": [
+      "English",
+      "French",
+      "Spanish",
+      "Arabic"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "English is official in around 60 countries."
+  },
+  {
+    "id": "ak-la-057",
+    "question": "What does the word 'amen' mean (originally, in Hebrew/Aramaic)?",
+    "answers": [
+      "So be it",
+      "Hallelujah",
+      "Holy",
+      "Praise"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Used to affirm a statement, especially in prayer."
+  },
+  {
+    "id": "ak-la-058",
+    "question": "Which Romance language is closest to Latin in vocabulary?",
+    "answers": [
+      "Italian",
+      "Sardinian",
+      "Romanian",
+      "Spanish"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Sardinian, spoken on the island of Sardinia, is considered the most conservative Romance language."
+  },
+  {
+    "id": "ak-la-059",
+    "question": "What does the word 'tsunami' mean in Japanese?",
+    "answers": [
+      "Harbour wave",
+      "Big wave",
+      "Killer wave",
+      "Wave of death"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Literally 'harbour' + 'wave'."
+  },
+  {
+    "id": "ak-la-060",
+    "question": "What is a 'portmanteau' word?",
+    "answers": [
+      "A word formed by blending parts of two other words",
+      "A word with multiple meanings",
+      "A loanword",
+      "A word with a silent letter"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "From Lewis Carroll, who likened it to a suitcase carrying two meanings."
+  },
+  {
+    "id": "ak-la-061",
+    "question": "Which language is spoken in Wales (Welsh)?",
+    "answers": [
+      "Cymraeg",
+      "Gaelic",
+      "Cornish",
+      "Manx"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "'Cymraeg' is the Welsh name for the Welsh language."
+  },
+  {
+    "id": "ak-la-062",
+    "question": "What does 'haiku' refer to?",
+    "answers": [
+      "A 17-syllable Japanese poem",
+      "A Japanese sword",
+      "A Japanese dance form",
+      "A Japanese folk song"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Three lines of 5, 7, and 5 syllables."
+  },
+  {
+    "id": "ak-la-063",
+    "question": "What does the prefix 'sub-' mean?",
+    "answers": [
+      "Under or below",
+      "Above or over",
+      "Inside",
+      "Around"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "From Latin 'sub', meaning 'under'."
+  },
+  {
+    "id": "ak-la-064",
+    "question": "Which Arabic-derived English word originally meant 'sugar'?",
+    "answers": [
+      "Candy",
+      "Sugar",
+      "Coffee",
+      "Tea"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "'Candy' comes via French from Arabic 'qandi', from Persian 'qand', meaning sugar."
+  },
+  {
+    "id": "ak-la-065",
+    "question": "What does the German word 'Schadenfreude' mean?",
+    "answers": [
+      "Pleasure at another's misfortune",
+      "Grief from loss",
+      "Tiredness from work",
+      "Excitement from celebration"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Literally 'damage-joy'."
+  },
+  {
+    "id": "ak-la-066",
+    "question": "Which alphabet is the oldest still in use?",
+    "answers": [
+      "Hebrew",
+      "Greek",
+      "Latin",
+      "Phoenician"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Hebrew, in continuous use for around 3,000 years."
+  },
+  {
+    "id": "ak-la-067",
+    "question": "What does the suffix '-ology' mean?",
+    "answers": [
+      "Study of",
+      "Hatred of",
+      "Love of",
+      "Fear of"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "From Greek 'logia', meaning 'study'."
+  },
+  {
+    "id": "ak-la-068",
+    "question": "Which language is the most widely spoken in South America?",
+    "answers": [
+      "Spanish",
+      "Portuguese",
+      "English",
+      "Quechua"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Spanish is official in 9 South American countries; Portuguese in 1 (Brazil), but Brazil has the largest population."
+  },
+  {
+    "id": "ak-la-069",
+    "question": "What is the meaning of 'merci' in French?",
+    "answers": [
+      "Thank you",
+      "Please",
+      "Hello",
+      "Goodbye"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "From the Latin 'mercedem' meaning 'reward', then 'mercy'."
+  },
+  {
+    "id": "ak-la-070",
+    "question": "What is a 'neologism'?",
+    "answers": [
+      "A newly coined word",
+      "A word from a foreign language",
+      "An obsolete word",
+      "A misspelled word"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "From Greek 'neos' (new) + 'logos' (word)."
+  },
+  {
+    "id": "ak-la-071",
+    "question": "Which language is Dutch most closely related to?",
+    "answers": [
+      "German",
+      "English",
+      "Frisian",
+      "Danish"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Both are West Germanic languages."
+  },
+  {
+    "id": "ak-la-072",
+    "question": "What is the English word 'algebra' derived from?",
+    "answers": [
+      "Arabic 'al-jabr'",
+      "Greek 'algos'",
+      "Latin 'algebrum'",
+      "Hebrew 'algeber'"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "From the title of a 9th-century treatise by Al-Khwarizmi."
+  },
+  {
+    "id": "ak-la-073",
+    "question": "What does 'manga' mean in Japanese?",
+    "answers": [
+      "Whimsical pictures",
+      "Animation",
+      "Cartoon character",
+      "Children's drawing"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Used since the 19th century for comics; popularised internationally from the late 20th century."
+  },
+  {
+    "id": "ak-la-074",
+    "question": "Which is the third-most-spoken native language in the world?",
+    "answers": [
+      "Hindi",
+      "English",
+      "Spanish",
+      "Arabic"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Native speakers: Mandarin ~900M, Spanish ~485M, Hindi ~345M."
+  },
+  {
+    "id": "ak-la-075",
+    "question": "What is the term for a word whose meaning has changed over time?",
+    "answers": [
+      "Semantic shift",
+      "Phonetic change",
+      "Linguistic drift",
+      "Etymological inversion"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "For example, 'awful' once meant 'inspiring awe'."
+  },
+  {
+    "id": "ak-la-076",
+    "question": "Which language has the most living speakers as a second language?",
+    "answers": [
+      "English",
+      "French",
+      "Mandarin Chinese",
+      "Spanish"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Around 1 billion second-language speakers of English."
+  },
+  {
+    "id": "ak-la-077",
+    "question": "What is the longest word in standard English consisting of only vowels?",
+    "answers": [
+      "Euouae",
+      "Eulogy",
+      "Iouea",
+      "Audio"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "'Euouae' has six letters, all vowels."
+  },
+  {
+    "id": "ak-la-078",
+    "question": "Which letter was added most recently to the modern English alphabet?",
+    "answers": [
+      "J",
+      "K",
+      "L",
+      "M"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "J was the last letter added — distinguished from I only in the 17th century."
+  },
+  {
+    "id": "ak-la-079",
+    "question": "What does 'guten Tag' mean in German?",
+    "answers": [
+      "Good day",
+      "Good morning",
+      "Good evening",
+      "Good night"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Standard daytime greeting."
+  },
+  {
+    "id": "ak-la-080",
+    "question": "Which language has gendered nouns: 'le' and 'la'?",
+    "answers": [
+      "French",
+      "German",
+      "Spanish",
+      "Italian"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "French uses 'le' for masculine and 'la' for feminine singular nouns."
+  },
+  {
+    "id": "ak-la-081",
+    "question": "What is the term for a stylistic device that gives human qualities to non-human things?",
+    "answers": [
+      "Personification",
+      "Metaphor",
+      "Anthropomorphism",
+      "Simile"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Personification is the literary device; anthropomorphism is the broader concept."
+  },
+  {
+    "id": "ak-la-082",
+    "question": "Which language family does Hungarian belong to?",
+    "answers": [
+      "Uralic",
+      "Indo-European",
+      "Altaic",
+      "Turkic"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Hungarian is distantly related to Finnish and Estonian, but not to its European neighbours."
+  },
+  {
+    "id": "ak-la-083",
+    "question": "What does the Spanish phrase 'mañana' mean?",
+    "answers": [
+      "Tomorrow",
+      "Yesterday",
+      "Today",
+      "Never"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Can mean 'tomorrow' or 'morning' depending on context."
+  },
+  {
+    "id": "ak-la-084",
+    "question": "Which is the official language of Catalonia (in Spain)?",
+    "answers": [
+      "Catalan",
+      "Spanish",
+      "Basque",
+      "Galician"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Catalan is co-official with Spanish in Catalonia."
+  }
+]

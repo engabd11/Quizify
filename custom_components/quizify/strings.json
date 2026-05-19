@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Quizify",
+        "description": "Quizify will add a sidebar panel and serve the quiz game. No further setup needed."
+      }
+    },
+    "abort": {
+      "already_configured": "Quizify is already configured."
+    }
+  }
+}

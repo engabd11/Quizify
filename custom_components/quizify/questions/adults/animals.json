@@ -1,0 +1,1094 @@
+[
+  {
+    "id": "ak-an-001",
+    "question": "What is the largest land animal on Earth?",
+    "answers": [
+      "The African elephant",
+      "The white rhinoceros",
+      "The giraffe",
+      "The hippopotamus"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "African elephants can weigh up to 6,000 kg."
+  },
+  {
+    "id": "ak-an-002",
+    "question": "Which mammal lays eggs?",
+    "answers": [
+      "The platypus",
+      "The kangaroo",
+      "The koala",
+      "The wombat"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The platypus and the four species of echidna are the only egg-laying mammals."
+  },
+  {
+    "id": "ak-an-003",
+    "question": "What is the fastest land animal?",
+    "answers": [
+      "The cheetah",
+      "The lion",
+      "The horse",
+      "The pronghorn antelope"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Cheetahs can reach speeds of around 110 km/h in short bursts."
+  },
+  {
+    "id": "ak-an-004",
+    "question": "How many legs does a spider have?",
+    "answers": [
+      "8",
+      "6",
+      "4",
+      "10"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Spiders are arachnids, distinct from insects (which have 6 legs)."
+  },
+  {
+    "id": "ak-an-005",
+    "question": "Which is the largest ocean predator?",
+    "answers": [
+      "The killer whale",
+      "The great white shark",
+      "The polar bear",
+      "The sperm whale"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Orcas have no natural predators and hunt almost everything else in the ocean."
+  },
+  {
+    "id": "ak-an-006",
+    "question": "Which animal is known for its ability to change colour?",
+    "answers": [
+      "The chameleon",
+      "The frog",
+      "The lizard",
+      "The snake"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Some species change colour through specialised skin cells called iridophores and melanophores."
+  },
+  {
+    "id": "ak-an-007",
+    "question": "Which insect lives in colonies with a queen?",
+    "answers": [
+      "Bees",
+      "Ladybirds",
+      "Butterflies",
+      "Dragonflies"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Eusocial insects: honeybees, ants, and termites all have queens."
+  },
+  {
+    "id": "ak-an-008",
+    "question": "What is the tallest land animal?",
+    "answers": [
+      "The giraffe",
+      "The African elephant",
+      "The ostrich",
+      "The moose"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Adult male giraffes can reach 5.5 m tall."
+  },
+  {
+    "id": "ak-an-009",
+    "question": "Which is the world's biggest fish (by weight)?",
+    "answers": [
+      "The whale shark",
+      "The basking shark",
+      "The great white shark",
+      "The sunfish"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Whale sharks can grow up to 18 m long and weigh over 20 tonnes. They feed on plankton."
+  },
+  {
+    "id": "ak-an-010",
+    "question": "Which animal is famous for hibernating through winter in cold climates?",
+    "answers": [
+      "The brown bear",
+      "The wolf",
+      "The lynx",
+      "The fox"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Bears enter a state called 'torpor' or 'denning' — not true deep hibernation."
+  },
+  {
+    "id": "ak-an-011",
+    "question": "Which bird is the largest in the world?",
+    "answers": [
+      "The ostrich",
+      "The emu",
+      "The albatross",
+      "The condor"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Native to Africa; can weigh up to 145 kg and stand 2.7 m tall."
+  },
+  {
+    "id": "ak-an-012",
+    "question": "What is the largest species of monkey?",
+    "answers": [
+      "The mandrill",
+      "The chimpanzee",
+      "The baboon",
+      "The macaque"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Mandrills can weigh up to 35 kg. (Chimpanzees, gorillas and orangutans are apes, not monkeys.)"
+  },
+  {
+    "id": "ak-an-013",
+    "question": "Which mammal can fly?",
+    "answers": [
+      "The bat",
+      "The flying squirrel",
+      "The colugo",
+      "The sugar glider"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Bats are the only mammals capable of true sustained flight."
+  },
+  {
+    "id": "ak-an-014",
+    "question": "Which marine animal has eight arms and three hearts?",
+    "answers": [
+      "The octopus",
+      "The squid",
+      "The cuttlefish",
+      "The starfish"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Two hearts pump blood through the gills; the third pumps blood through the body."
+  },
+  {
+    "id": "ak-an-015",
+    "question": "What kind of animal is a komodo dragon?",
+    "answers": [
+      "A lizard",
+      "A snake",
+      "A crocodile",
+      "An amphibian"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Native to Indonesia; can grow to 3 m and weigh 70 kg."
+  },
+  {
+    "id": "ak-an-016",
+    "question": "Which is the largest species of penguin?",
+    "answers": [
+      "The emperor penguin",
+      "The king penguin",
+      "The Adélie penguin",
+      "The chinstrap penguin"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Can stand up to 1.2 m tall."
+  },
+  {
+    "id": "ak-an-017",
+    "question": "Which animal has the longest gestation period?",
+    "answers": [
+      "The African elephant",
+      "The blue whale",
+      "The giraffe",
+      "The rhinoceros"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Around 22 months."
+  },
+  {
+    "id": "ak-an-018",
+    "question": "Which fish is famous for being able to live in water with very low oxygen levels and breathe air?",
+    "answers": [
+      "The lungfish",
+      "The clownfish",
+      "The seahorse",
+      "The eel"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Lungfish have functional lungs in addition to gills."
+  },
+  {
+    "id": "ak-an-019",
+    "question": "What is the only big cat that lives in social groups (prides)?",
+    "answers": [
+      "The lion",
+      "The tiger",
+      "The leopard",
+      "The cheetah"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "All other big cats are largely solitary."
+  },
+  {
+    "id": "ak-an-020",
+    "question": "Which animal has the strongest bite force?",
+    "answers": [
+      "The saltwater crocodile",
+      "The hippopotamus",
+      "The great white shark",
+      "The lion"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Around 16,000 newtons — strong enough to crush a turtle's shell."
+  },
+  {
+    "id": "ak-an-021",
+    "question": "What is the largest type of bear?",
+    "answers": [
+      "The polar bear",
+      "The Kodiak bear",
+      "The grizzly bear",
+      "The sun bear"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Adult polar bears can weigh over 700 kg. The Kodiak brown bear is comparable in size on land."
+  },
+  {
+    "id": "ak-an-022",
+    "question": "Which is the largest reptile in the world?",
+    "answers": [
+      "The saltwater crocodile",
+      "The Nile crocodile",
+      "The Komodo dragon",
+      "The American alligator"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Can grow over 6 m long; native to coastal areas of Australia and Southeast Asia."
+  },
+  {
+    "id": "ak-an-023",
+    "question": "Which colour are flamingos when they are born?",
+    "answers": [
+      "Grey or white",
+      "Pink",
+      "Black",
+      "Yellow"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "They become pink later from carotenoid pigments in their food."
+  },
+  {
+    "id": "ak-an-024",
+    "question": "Which animal is the largest carnivore on land?",
+    "answers": [
+      "The polar bear",
+      "The brown bear",
+      "The lion",
+      "The tiger"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Adult males can weigh up to 800 kg."
+  },
+  {
+    "id": "ak-an-025",
+    "question": "What is the smallest bird in the world?",
+    "answers": [
+      "The bee hummingbird",
+      "The bumblebee hummingbird",
+      "The wren",
+      "The goldcrest"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Native to Cuba; about 5-6 cm long."
+  },
+  {
+    "id": "ak-an-026",
+    "question": "What is the most venomous snake in the world (by venom potency)?",
+    "answers": [
+      "The inland taipan",
+      "The black mamba",
+      "The king cobra",
+      "The Russell's viper"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Found in central Australia; one bite has enough venom to kill 100 people."
+  },
+  {
+    "id": "ak-an-027",
+    "question": "Which group of animals includes frogs, toads and salamanders?",
+    "answers": [
+      "Amphibians",
+      "Reptiles",
+      "Mammals",
+      "Insects"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Amphibians live both in water and on land."
+  },
+  {
+    "id": "ak-an-028",
+    "question": "Which animal has the largest eyes of any animal?",
+    "answers": [
+      "The colossal squid",
+      "The blue whale",
+      "The ostrich",
+      "The horse"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Eyes around 27 cm across — the size of a soccer ball."
+  },
+  {
+    "id": "ak-an-029",
+    "question": "Which bird is famous for its loud, complex song and mimicry of human voices and other sounds?",
+    "answers": [
+      "The parrot",
+      "The peacock",
+      "The crow",
+      "The eagle"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Some parrot species learn hundreds of words."
+  },
+  {
+    "id": "ak-an-030",
+    "question": "Which animals are believed to have evolved into modern birds?",
+    "answers": [
+      "Dinosaurs",
+      "Reptiles",
+      "Mammals",
+      "Insects"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Birds are technically a surviving lineage of theropod dinosaurs."
+  },
+  {
+    "id": "ak-an-031",
+    "question": "Which is the heaviest snake in the world?",
+    "answers": [
+      "The green anaconda",
+      "The reticulated python",
+      "The Burmese python",
+      "The king cobra"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Native to South America; can weigh over 250 kg."
+  },
+  {
+    "id": "ak-an-032",
+    "question": "Which animal has the longest tongue relative to its body size?",
+    "answers": [
+      "The chameleon",
+      "The giraffe",
+      "The anteater",
+      "The frog"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "A chameleon's tongue can be twice the length of its body."
+  },
+  {
+    "id": "ak-an-033",
+    "question": "Which is the smallest mammal in the world (by length)?",
+    "answers": [
+      "The bumblebee bat",
+      "The Etruscan shrew",
+      "The mouse lemur",
+      "The pygmy possum"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Also called Kitti's hog-nosed bat; about 3 cm long."
+  },
+  {
+    "id": "ak-an-034",
+    "question": "Which bird is famous for performing elaborate courtship dances?",
+    "answers": [
+      "The bird-of-paradise",
+      "The eagle",
+      "The pigeon",
+      "The seagull"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Found mainly in New Guinea and surrounding islands."
+  },
+  {
+    "id": "ak-an-035",
+    "question": "Which mammal sleeps the most hours per day on average?",
+    "answers": [
+      "The koala",
+      "The sloth",
+      "The cat",
+      "The bat"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Koalas sleep up to 22 hours per day, but sloths sleep around 15-20 hours."
+  },
+  {
+    "id": "ak-an-036",
+    "question": "What is the largest living lizard?",
+    "answers": [
+      "The Komodo dragon",
+      "The water monitor",
+      "The Gila monster",
+      "The green iguana"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Can grow to 3 m and weigh 70 kg."
+  },
+  {
+    "id": "ak-an-037",
+    "question": "Which animal has the longest lifespan?",
+    "answers": [
+      "The ocean quahog clam",
+      "The Galápagos tortoise",
+      "The bowhead whale",
+      "The Greenland shark"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "One ocean quahog clam was estimated to be 507 years old."
+  },
+  {
+    "id": "ak-an-038",
+    "question": "Which animal is responsible for the most human deaths each year?",
+    "answers": [
+      "The mosquito",
+      "The snake",
+      "The dog",
+      "The crocodile"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Mosquitoes transmit malaria, dengue, yellow fever, and more — killing hundreds of thousands annually."
+  },
+  {
+    "id": "ak-an-039",
+    "question": "Which animal sleeps standing up?",
+    "answers": [
+      "Horses",
+      "Bears",
+      "Whales",
+      "Bats"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Horses can lock their leg joints to sleep upright, though they also lie down for deep sleep."
+  },
+  {
+    "id": "ak-an-040",
+    "question": "Which animal is the symbol of the World Wildlife Fund?",
+    "answers": [
+      "The giant panda",
+      "The polar bear",
+      "The tiger",
+      "The blue whale"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Chosen in 1961, partly because pandas look beloved and a panda is recognisable in black-and-white print."
+  },
+  {
+    "id": "ak-an-041",
+    "question": "What is the deepest-diving mammal?",
+    "answers": [
+      "The Cuvier's beaked whale",
+      "The sperm whale",
+      "The blue whale",
+      "The orca"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Recorded diving to nearly 3,000 m."
+  },
+  {
+    "id": "ak-an-042",
+    "question": "Which is the largest land predator in the Arctic?",
+    "answers": [
+      "The polar bear",
+      "The Arctic fox",
+      "The grey wolf",
+      "The brown bear"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Spends most of its life on sea ice, hunting seals."
+  },
+  {
+    "id": "ak-an-043",
+    "question": "Which animal is the only mammal native to New Zealand?",
+    "answers": [
+      "Bats",
+      "The kiwi (a bird)",
+      "The platypus",
+      "The kangaroo"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "All other mammals were introduced. Kiwis are birds, not mammals."
+  },
+  {
+    "id": "ak-an-044",
+    "question": "What is the world's largest rodent?",
+    "answers": [
+      "The capybara",
+      "The beaver",
+      "The porcupine",
+      "The marmot"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Native to South America; can weigh up to 80 kg."
+  },
+  {
+    "id": "ak-an-045",
+    "question": "Which is the only species of bear that is primarily a herbivore?",
+    "answers": [
+      "The giant panda",
+      "The polar bear",
+      "The brown bear",
+      "The black bear"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Despite being classified as a carnivore, around 99% of its diet is bamboo."
+  },
+  {
+    "id": "ak-an-046",
+    "question": "What is the largest type of seal?",
+    "answers": [
+      "The southern elephant seal",
+      "The leopard seal",
+      "The harp seal",
+      "The grey seal"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Males can weigh 4 tonnes — heavier than a car."
+  },
+  {
+    "id": "ak-an-047",
+    "question": "Which deer is the largest in the world?",
+    "answers": [
+      "The moose",
+      "The reindeer",
+      "The elk (or wapiti)",
+      "The red deer"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Adult male moose can stand 2 m tall at the shoulder."
+  },
+  {
+    "id": "ak-an-048",
+    "question": "What is the world's smallest dog breed?",
+    "answers": [
+      "The Chihuahua",
+      "The Pomeranian",
+      "The Yorkshire Terrier",
+      "The Maltese"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Native to Mexico; typically weighs 1.5-3 kg."
+  },
+  {
+    "id": "ak-an-049",
+    "question": "What is the most-farmed fish in the world?",
+    "answers": [
+      "Carp",
+      "Salmon",
+      "Tuna",
+      "Cod"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "China's freshwater aquaculture is dominated by carp species."
+  },
+  {
+    "id": "ak-an-050",
+    "question": "Which is the largest cat species in the world?",
+    "answers": [
+      "The Siberian tiger",
+      "The lion",
+      "The jaguar",
+      "The leopard"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Male Siberian (Amur) tigers can weigh over 300 kg."
+  },
+  {
+    "id": "ak-an-051",
+    "question": "Which animal builds dams across rivers using sticks and mud?",
+    "answers": [
+      "The beaver",
+      "The otter",
+      "The muskrat",
+      "The water vole"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Beavers create wetlands that benefit many other species."
+  },
+  {
+    "id": "ak-an-052",
+    "question": "Which is the world's largest seabird (by wingspan)?",
+    "answers": [
+      "The wandering albatross",
+      "The pelican",
+      "The frigatebird",
+      "The condor"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Wingspan can reach 3.5 m."
+  },
+  {
+    "id": "ak-an-053",
+    "question": "What's the term for the study of birds?",
+    "answers": [
+      "Ornithology",
+      "Entomology",
+      "Herpetology",
+      "Ichthyology"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "From Greek 'ornis' (bird) and 'logia' (study)."
+  },
+  {
+    "id": "ak-an-054",
+    "question": "Which animal is the symbol of medicine, depicted in the Rod of Asclepius?",
+    "answers": [
+      "The snake",
+      "The dove",
+      "The owl",
+      "The lion"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The classical Greek god Asclepius was associated with healing and snakes."
+  },
+  {
+    "id": "ak-an-055",
+    "question": "Which is the largest bony fish in the world?",
+    "answers": [
+      "The ocean sunfish",
+      "The whale shark",
+      "The Atlantic blue marlin",
+      "The giant grouper"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Can weigh over 2 tonnes. The whale shark is bigger but is a cartilaginous fish."
+  },
+  {
+    "id": "ak-an-056",
+    "question": "Which bird cannot fly but is the largest in the world?",
+    "answers": [
+      "The ostrich",
+      "The emu",
+      "The cassowary",
+      "The kiwi"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Native to Africa; uses its wings for balance when running, up to 70 km/h."
+  },
+  {
+    "id": "ak-an-057",
+    "question": "Which is the world's largest predator?",
+    "answers": [
+      "The sperm whale",
+      "The orca",
+      "The great white shark",
+      "The polar bear"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Sperm whales can be over 16 m long and eat giant squid."
+  },
+  {
+    "id": "ak-an-058",
+    "question": "What does an entomologist study?",
+    "answers": [
+      "Insects",
+      "Birds",
+      "Reptiles",
+      "Fish"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "From Greek 'entomon', meaning insect."
+  },
+  {
+    "id": "ak-an-059",
+    "question": "Which is the largest species of dolphin?",
+    "answers": [
+      "The orca",
+      "The bottlenose dolphin",
+      "The common dolphin",
+      "The Risso's dolphin"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Despite the name 'killer whale', orcas are technically the largest member of the dolphin family."
+  },
+  {
+    "id": "ak-an-060",
+    "question": "Which animal has a 'pouch' to carry its young?",
+    "answers": [
+      "Marsupials",
+      "Birds",
+      "Reptiles",
+      "Amphibians"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Marsupials include kangaroos, koalas, opossums, and wombats."
+  },
+  {
+    "id": "ak-an-061",
+    "question": "Which is the largest snake species by length?",
+    "answers": [
+      "The reticulated python",
+      "The green anaconda",
+      "The Burmese python",
+      "The king cobra"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Found in Southeast Asia; can grow over 7 m long. (The green anaconda is heavier but shorter.)"
+  },
+  {
+    "id": "ak-an-062",
+    "question": "What is the loudest animal on land?",
+    "answers": [
+      "The howler monkey",
+      "The lion",
+      "The elephant",
+      "The hyena"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Their calls can be heard up to 5 km away through dense rainforest."
+  },
+  {
+    "id": "ak-an-063",
+    "question": "Which migratory bird flies the longest distance each year?",
+    "answers": [
+      "The Arctic tern",
+      "The bar-tailed godwit",
+      "The Canada goose",
+      "The albatross"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Travels around 70,000 km each year between Arctic breeding and Antarctic wintering grounds."
+  },
+  {
+    "id": "ak-an-064",
+    "question": "Which is the largest jellyfish?",
+    "answers": [
+      "The lion's mane jellyfish",
+      "The box jellyfish",
+      "The moon jellyfish",
+      "The Portuguese man o' war"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Bell can be over 2 m across; tentacles up to 30 m long."
+  },
+  {
+    "id": "ak-an-065",
+    "question": "Which bear species is the smallest?",
+    "answers": [
+      "The sun bear",
+      "The sloth bear",
+      "The Andean bear",
+      "The Asian black bear"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Native to Southeast Asia; weighs 25-65 kg."
+  },
+  {
+    "id": "ak-an-066",
+    "question": "Which animal is known for using tools, such as cracking nuts with stones?",
+    "answers": [
+      "The chimpanzee",
+      "The dolphin",
+      "The crow",
+      "All of the above"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Chimps were among the first non-human animals observed using tools."
+  },
+  {
+    "id": "ak-an-067",
+    "question": "What is a group of crows called?",
+    "answers": [
+      "A murder",
+      "A flock",
+      "A herd",
+      "A swarm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "An old English collective noun."
+  },
+  {
+    "id": "ak-an-068",
+    "question": "What is a group of lions called?",
+    "answers": [
+      "A pride",
+      "A pack",
+      "A herd",
+      "A clan"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Typically consists of related lionesses and their young, plus a few adult males."
+  },
+  {
+    "id": "ak-an-069",
+    "question": "What is a group of wolves called?",
+    "answers": [
+      "A pack",
+      "A pride",
+      "A herd",
+      "A flock"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A pack is usually a family group led by a breeding pair."
+  },
+  {
+    "id": "ak-an-070",
+    "question": "Which animal's milk is naturally pink?",
+    "answers": [
+      "The hippopotamus",
+      "The reindeer",
+      "The pig",
+      "The polar bear"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Hippo milk contains red pigments (hipposudoric and norhipposudoric acid) that give it a pink colour."
+  },
+  {
+    "id": "ak-an-071",
+    "question": "Which insect produces silk used to make fabric?",
+    "answers": [
+      "The silkworm",
+      "The spider",
+      "The ant",
+      "The wasp"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The larvae of the Bombyx mori moth."
+  },
+  {
+    "id": "ak-an-072",
+    "question": "Which is the only mammal that cannot jump?",
+    "answers": [
+      "The elephant",
+      "The hippopotamus",
+      "The rhinoceros",
+      "The giraffe"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Their leg structure and weight prevent it. Rhinos can sort of leap, but elephants truly cannot."
+  },
+  {
+    "id": "ak-an-073",
+    "question": "What is the term for a species that has only one mate for life?",
+    "answers": [
+      "Monogamous",
+      "Polygamous",
+      "Polyandrous",
+      "Hermaphroditic"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Examples include some albatross species, gibbons, and prairie voles."
+  },
+  {
+    "id": "ak-an-074",
+    "question": "Which animal has the largest brain of any creature?",
+    "answers": [
+      "The sperm whale",
+      "The elephant",
+      "The blue whale",
+      "The dolphin"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "A sperm whale's brain weighs about 7.8 kg."
+  },
+  {
+    "id": "ak-an-075",
+    "question": "What is the term for an animal that eats only meat?",
+    "answers": [
+      "Carnivore",
+      "Herbivore",
+      "Omnivore",
+      "Insectivore"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "From Latin 'caro' (flesh) + 'vorare' (to devour)."
+  },
+  {
+    "id": "ak-an-076",
+    "question": "Which mammal has the most teeth?",
+    "answers": [
+      "The giant armadillo",
+      "The dolphin",
+      "The opossum",
+      "The dog"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Giant armadillos have around 100 teeth, more than any other land mammal."
+  },
+  {
+    "id": "ak-an-077",
+    "question": "Which is the largest species of antelope?",
+    "answers": [
+      "The giant eland",
+      "The kudu",
+      "The wildebeest",
+      "The impala"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Bulls can weigh up to 940 kg."
+  },
+  {
+    "id": "ak-an-078",
+    "question": "Which animal is the closest living relative to humans?",
+    "answers": [
+      "The bonobo",
+      "The gorilla",
+      "The orangutan",
+      "The gibbon"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Bonobos and chimpanzees share about 98.7% of their DNA with humans."
+  },
+  {
+    "id": "ak-an-079",
+    "question": "What is a group of fish called?",
+    "answers": [
+      "A school",
+      "A pack",
+      "A flock",
+      "A herd"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Or a 'shoal' when they are loosely gathered."
+  },
+  {
+    "id": "ak-an-080",
+    "question": "Which is the only continent without native reptiles or snakes?",
+    "answers": [
+      "Antarctica",
+      "Australia",
+      "Europe",
+      "Africa"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Far too cold for reptiles, which are ectothermic."
+  },
+  {
+    "id": "ak-an-081",
+    "question": "Which mammal has the longest tusks?",
+    "answers": [
+      "The African elephant",
+      "The narwhal",
+      "The walrus",
+      "The warthog"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Bull elephants' tusks can grow to 3 m long."
+  },
+  {
+    "id": "ak-an-082",
+    "question": "What is the term for animals that are active at night?",
+    "answers": [
+      "Nocturnal",
+      "Diurnal",
+      "Crepuscular",
+      "Cathemeral"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Diurnal animals are active in the day; crepuscular animals are active at dawn and dusk."
+  },
+  {
+    "id": "ak-an-083",
+    "question": "Which insect has the longest lifespan?",
+    "answers": [
+      "The termite queen",
+      "The mayfly",
+      "The dragonfly",
+      "The mosquito"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Termite queens have been recorded living over 50 years."
+  },
+  {
+    "id": "ak-an-084",
+    "question": "Which is the world's tallest tree species?",
+    "answers": [
+      "The coast redwood",
+      "The giant sequoia",
+      "The Douglas fir",
+      "The Eucalyptus regnans"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Coast redwoods can exceed 115 m. Sequoias are more massive but not as tall."
+  }
+]

@@ -1,7 +1,0 @@
-{
-  "name": "Quizify",
-  "render_readme": true,
-  "country": ["AU", "US", "GB", "DE", "FR", "NZ", "CA", "IE"],
-  "homeassistant": "2024.1.0",
-  "zip_release": false
-}

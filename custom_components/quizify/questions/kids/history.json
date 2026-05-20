@@ -1,0 +1,202 @@
+[
+  {
+    "id": "kd-hi-001",
+    "question": "Who lived in caves a very long time ago?",
+    "answers": ["Cave people", "Robots", "Astronauts", "Pirates"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Long ago, early humans sometimes sheltered in caves for safety and warmth."
+  },
+  {
+    "id": "kd-hi-002",
+    "question": "What did dinosaurs look like?",
+    "answers": ["Giant reptiles", "Tiny insects", "Talking robots", "Flying horses"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Dinosaurs were a group of reptiles that lived millions of years ago."
+  },
+  {
+    "id": "kd-hi-003",
+    "question": "Who was the first person to walk on the Moon?",
+    "answers": ["Neil Armstrong", "Buzz Lightyear", "Albert Einstein", "Christopher Columbus"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Neil Armstrong walked on the Moon in 1969."
+  },
+  {
+    "id": "kd-hi-004",
+    "question": "Pyramids were built by which ancient people?",
+    "answers": ["Ancient Egyptians", "Vikings", "Romans", "Aborigines"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Ancient Egyptians built pyramids as tombs for their kings, called pharaohs."
+  },
+  {
+    "id": "kd-hi-005",
+    "question": "Who fought with swords and shields and rode in long ships?",
+    "answers": ["Vikings", "Astronauts", "Cowboys", "Knights of the Round Table only"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Vikings sailed in longships from Scandinavia about a thousand years ago."
+  },
+  {
+    "id": "kd-hi-006",
+    "question": "What did people use before they had cars?",
+    "answers": ["Horses", "Planes", "Trains only", "Spaceships"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "People rode horses, used wagons, or walked before cars were invented."
+  },
+  {
+    "id": "kd-hi-007",
+    "question": "Knights wore special clothes made of metal called what?",
+    "answers": ["Armour", "Pyjamas", "T-shirts", "Crowns"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Armour protected knights during battles."
+  },
+  {
+    "id": "kd-hi-008",
+    "question": "Who explored the seas and discovered new lands in 1492?",
+    "answers": ["Christopher Columbus", "Captain Cook only", "Marco Polo only", "Vasco da Gama only"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Columbus sailed across the Atlantic in 1492 and reached the Americas."
+  },
+  {
+    "id": "kd-hi-009",
+    "question": "What did Thomas Edison famously invent?",
+    "answers": ["The light bulb", "The telephone", "The car", "The radio"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Edison improved the light bulb to make it long-lasting and useful in homes."
+  },
+  {
+    "id": "kd-hi-010",
+    "question": "Cave paintings show that ancient people enjoyed doing what?",
+    "answers": ["Drawing pictures", "Watching TV", "Playing video games", "Riding bikes"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Early humans painted on cave walls thousands of years before TV or bikes existed!"
+  },
+  {
+    "id": "kd-hi-011",
+    "question": "Who built lots of straight roads across Europe long ago?",
+    "answers": ["The Romans", "The Vikings", "The Pharaohs", "The Pirates"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Roman roads helped their armies move quickly. Many are still visible today!"
+  },
+  {
+    "id": "kd-hi-012",
+    "question": "What did people use to write before there were pencils and pens?",
+    "answers": ["Feathers dipped in ink", "Crayons", "Markers", "Stickers"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A 'quill' is a feather with a sharpened tip used as a writing tool."
+  },
+  {
+    "id": "kd-hi-013",
+    "question": "Who was a famous Egyptian queen?",
+    "answers": ["Cleopatra", "Snow White", "Queen Elsa", "Wonder Woman"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Cleopatra was the last queen of ancient Egypt."
+  },
+  {
+    "id": "kd-hi-014",
+    "question": "Pirates sailed the seas looking for what?",
+    "answers": ["Treasure", "Ice cream", "School books", "Trains"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Pirates were sea robbers who hunted ships and treasure."
+  },
+  {
+    "id": "kd-hi-015",
+    "question": "Who painted the Mona Lisa a long time ago?",
+    "answers": ["Leonardo da Vinci", "Pablo Picasso only", "Vincent van Gogh", "Michelangelo only"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Leonardo da Vinci was a famous painter and inventor in the 1500s."
+  },
+  {
+    "id": "kd-hi-016",
+    "question": "What was the very first sport in the ancient Olympics?",
+    "answers": ["Running", "Swimming", "Football", "Basketball"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The first ancient Olympic Games in 776 BC featured a footrace called the 'stadion'."
+  },
+  {
+    "id": "kd-hi-017",
+    "question": "Where did the Wright Brothers fly the first powered airplane?",
+    "answers": ["Kitty Hawk, USA", "London, England", "Paris, France", "Tokyo, Japan"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Orville and Wilbur Wright made the first powered flight in 1903."
+  },
+  {
+    "id": "kd-hi-018",
+    "question": "Who wrote plays like 'Romeo and Juliet'?",
+    "answers": ["William Shakespeare", "Walt Disney", "Mozart", "Beethoven"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Shakespeare wrote plays in England over 400 years ago."
+  },
+  {
+    "id": "kd-hi-019",
+    "question": "What did Vikings travel in across the sea?",
+    "answers": ["Longships", "Submarines", "Hot air balloons", "Spaceships"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Longships had sails and oars and could land on beaches."
+  },
+  {
+    "id": "kd-hi-020",
+    "question": "Castles had a wide ditch around them filled with water. What was it called?",
+    "answers": ["A moat", "A river", "A swimming pool", "A puddle"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A moat made it harder for enemies to reach the castle walls."
+  },
+  {
+    "id": "kd-hi-021",
+    "question": "Which country is the bullet train (Shinkansen) famous from?",
+    "answers": ["Japan", "Egypt", "Brazil", "Norway"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The first Shinkansen began service in Japan in 1964."
+  },
+  {
+    "id": "kd-hi-022",
+    "question": "What was used to fight in long, long ago times before guns?",
+    "answers": ["Swords and bows", "Lasers", "Phones", "Robots"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Swords, bows, and spears were common weapons in ancient times."
+  },
+  {
+    "id": "kd-hi-023",
+    "question": "What did Albert Einstein become famous for?",
+    "answers": ["Being a great scientist", "Being a sportsman", "Being a chef", "Being a singer"],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Einstein created theories that changed how we understand the universe."
+  },
+  {
+    "id": "kd-hi-024",
+    "question": "Who was Mahatma Gandhi famous for?",
+    "answers": ["Leading India peacefully to independence", "Inventing the lightbulb", "Climbing Everest first", "Building pyramids"],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Gandhi led India to independence from Britain through nonviolent protest."
+  },
+  {
+    "id": "kd-hi-025",
+    "question": "What did people use to tell the time before clocks?",
+    "answers": ["The Sun", "Phones", "Computers", "Radio"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Sundials used the position of the Sun's shadow to show the time of day."
+  }
+]

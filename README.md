@@ -3,7 +3,7 @@
 > **Multiplayer trivia quiz for Home Assistant** — scan a QR code, answer questions, see who's smartest in the room. Inspired by [Beatify](https://github.com/mholzi/beatify).
 
 [![Home Assistant 2024.1+](https://img.shields.io/badge/Home%20Assistant-2024.1%2B-41BDF5?style=flat-square&logo=homeassistant&logoColor=white)](https://www.home-assistant.io/)
-[![Version 0.3.0](https://img.shields.io/badge/Version-0.3.0-ff5cf0?style=flat-square)](#)
+[![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-ff5cf0?style=flat-square)](#)
 [![License MIT](https://img.shields.io/badge/License-MIT-5cf0d4?style=flat-square)](LICENSE)
 
 ---

@@ -38,6 +38,8 @@ from .const import (
     EVENT_QUESTION,
     EVENT_RESUMED,
     EVENT_REVEAL,
+    MAX_PLAYER_NAME_LENGTH,
+    MAX_PLAYERS_PER_SESSION,
     SPEED_BONUS_MAX,
     STATE_ANNOUNCING,
     STATE_ENDED,
@@ -56,6 +58,40 @@ _LOGGER = logging.getLogger(__name__)
 Listener = Callable[[dict[str, Any]], Awaitable[None]]
 
 
+class SessionFullError(Exception):
+    """Raised when a player tries to join a session at capacity."""
+
+
+def _sanitize_player_name(name: str) -> str:
+    """Strip control chars / zero-width chars and cap length.
+
+    Player names appear in the UI, in the TTS announcement string, and in
+    HA sensor attributes. Control characters and zero-width glyphs can
+    break TTS pronunciation, make scoreboard rows look mangled, and let a
+    determined player impersonate another by appending invisible chars.
+    We allow normal printable text (including non-Latin scripts and
+    emoji) and strip the dangerous bits.
+    """
+    if not name:
+        return ""
+    cleaned_chars: list[str] = []
+    for ch in name:
+        # Drop ASCII control + line breaks + tab
+        if ord(ch) < 0x20 or ord(ch) == 0x7F:
+            continue
+        # Drop zero-width joiners / non-joiners / BOM-likes that don't
+        # render but can be used to spoof identical-looking names.
+        if ch in ("\u200b", "\u200c", "\u200d", "\u2060", "\ufeff"):
+            continue
+        cleaned_chars.append(ch)
+    # Collapse internal whitespace runs to a single space.
+    cleaned = "".join(cleaned_chars).strip()
+    # Re-collapse any double spaces from the strip.
+    while "  " in cleaned:
+        cleaned = cleaned.replace("  ", " ")
+    return cleaned[:MAX_PLAYER_NAME_LENGTH]
+
+
 @dataclass
 class Player:
     """A player in a game session."""
@@ -70,6 +106,8 @@ class Player:
     joined_at: float = field(default_factory=time.time)
     # Lifeline tracking — armed for the CURRENT question only.
     double_points_armed: bool = False
+    # Reveal lifeline — usable once per entire game.
+    peek_answer_used: bool = False
     # Stats across the game
     fastest_answer: float | None = None  # seconds; correct answers only
     total_elapsed: float = 0.0
@@ -86,6 +124,7 @@ class Player:
             "best_streak": self.best_streak,
             "correct_count": self.correct_count,
             "double_points_armed": self.double_points_armed,
+            "peek_answer_used": self.peek_answer_used,
         }
 
 
@@ -166,15 +205,32 @@ class GameSession:
     # --- player management -------------------------------------------------
 
     def add_player(self, name: str) -> Player:
-        """Add a new player, returning the Player object."""
+        """Add a new player, returning the Player object.
+
+        Raises:
+            SessionFullError: if the session has hit ``MAX_PLAYERS_PER_SESSION``.
+        """
+        if len(self.players) >= MAX_PLAYERS_PER_SESSION:
+            raise SessionFullError(
+                f"Session is full ({MAX_PLAYERS_PER_SESSION} players max)"
+            )
         player_id = secrets.token_urlsafe(8)
         existing_names = {p.name.lower() for p in self.players.values()}
-        base_name = (name or "").strip()[:20] or "Player"
+        # Strip control chars / zero-width glyphs before length capping so
+        # invisible-character collisions can't be smuggled past the dedup.
+        base_name = _sanitize_player_name(name) or "Player"
         final_name = base_name
         n = 2
         while final_name.lower() in existing_names:
             final_name = f"{base_name} {n}"
+            # Re-cap in case the " 2"/" 12"/etc. suffix overshoots.
+            final_name = final_name[:MAX_PLAYER_NAME_LENGTH]
             n += 1
+            if n > MAX_PLAYERS_PER_SESSION + 2:
+                # Defensive: should be unreachable thanks to the cap, but
+                # never let this loop forever.
+                final_name = f"{base_name} {player_id[:4]}"
+                break
         player = Player(player_id=player_id, name=final_name)
         # Late joiners inherit the average score so they aren't out of contention.
         if self.players and self.state != STATE_LOBBY:

@@ -453,3 +453,90 @@ def test_end_game_emits_highlights():
     assert "lightning" in h
     assert h["lightning"]["name"] == "A"
 
+
+# ---------------------------------------------------------------------------
+# v1.0 hardening tests
+# ---------------------------------------------------------------------------
+
+
+def test_player_token_oversize_rejected():
+    """Tokens larger than MAX_TOKEN_LENGTH should be rejected outright."""
+    from custom_components.quizify.const import MAX_TOKEN_LENGTH
+    mgr = _mgr()
+    # Build a garbage string longer than the cap. Must not even try to split.
+    huge = "a." * (MAX_TOKEN_LENGTH + 100)
+    assert mgr.verify_player_token(huge, "sess1") is None
+    # And a string of exactly cap+1 length.
+    assert mgr.verify_player_token("x" * (MAX_TOKEN_LENGTH + 1), "s") is None
+
+
+def test_player_name_sanitizer_strips_control_chars():
+    """Newlines, NULs, and zero-width chars must not appear in stored names."""
+    s = _make_session()
+    # Mix of control chars and zero-width joiners around a real name.
+    p = s.add_player("\u0000Bob\nFoo\u200b\u200c")
+    # Internal whitespace from the \n becomes a single space.
+    assert "\u0000" not in p.name
+    assert "\n" not in p.name
+    assert "\u200b" not in p.name
+    assert "Bob" in p.name and "Foo" in p.name
+
+
+def test_player_name_zero_width_dedup():
+    """A name that's a zero-width variant of an existing one shouldn't slip past dedup."""
+    s = _make_session()
+    a = s.add_player("Alice")
+    # Zero-width chars between letters used to be a sneaky way to claim
+    # an "identical" looking name. The sanitizer strips them, so this
+    # should dedup to "Alice 2".
+    b = s.add_player("A\u200bli\u200bce")
+    assert a.name == "Alice"
+    assert b.name == "Alice 2"
+
+
+def test_player_name_length_capped():
+    """Names beyond MAX_PLAYER_NAME_LENGTH must be trimmed."""
+    from custom_components.quizify.const import MAX_PLAYER_NAME_LENGTH
+    s = _make_session()
+    p = s.add_player("X" * 200)
+    assert len(p.name) <= MAX_PLAYER_NAME_LENGTH
+
+
+def test_session_full_raises_after_cap():
+    """add_player must raise SessionFullError once the cap is hit."""
+    from custom_components.quizify.const import MAX_PLAYERS_PER_SESSION
+    from custom_components.quizify.game import SessionFullError
+    s = _make_session()
+    for i in range(MAX_PLAYERS_PER_SESSION):
+        s.add_player(f"P{i}")
+    assert len(s.players) == MAX_PLAYERS_PER_SESSION
+    try:
+        s.add_player("OneMore")
+    except SessionFullError:
+        pass
+    else:
+        raise AssertionError("Expected SessionFullError")
+
+
+def test_too_many_sessions_raises():
+    """create_session must raise once the concurrent cap is hit."""
+    from custom_components.quizify.const import MAX_CONCURRENT_SESSIONS
+    from custom_components.quizify.manager import TooManySessionsError
+    mgr = _mgr()
+    # Seed a fake bank so create_session can build sessions without files.
+    mgr.bank = _FakeBank([{
+        "id": "q1", "question": "?", "answers": ["a", "b"],
+        "correct": 0, "difficulty": "easy",
+    }])
+    settings = GameSettings(
+        mode="adults", category="general_knowledge", difficulty="mixed",
+    )
+    for _ in range(MAX_CONCURRENT_SESSIONS):
+        mgr.create_session(settings)
+    try:
+        mgr.create_session(settings)
+    except TooManySessionsError:
+        pass
+    else:
+        raise AssertionError("Expected TooManySessionsError")
+

@@ -139,6 +139,11 @@ export function PlayerApp({ initialJoinCode }) {
           });
           if (event.game) setGame(event.game);
           if (event.you) setMe(event.you);
+          // Sync once-per-game lifeline state from the server so a refresh
+          // doesn't grant the reveal lifeline again.
+          if (event.you?.peek_answer_used) {
+            setLifelines((prev) => ({ ...prev, revealAnswer: true }));
+          }
           if (event.event === "joined") setBusy(false);
           return;
         }
@@ -147,13 +152,14 @@ export function PlayerApp({ initialJoinCode }) {
         if (event?.event === "question") {
           setSelected(null);
           setLocalCorrect(null);
-          // Reset ALL lifeline states each question — bet is available every round
-          setLifelines({
+          // Reset per-question lifelines, but PRESERVE revealAnswer —
+          // it's once per game, not once per question.
+          setLifelines((prev) => ({
             doublePointsActive: false,
             doublePointsRequested: false,
-            revealAnswer: false,      // reveal is still once per game
+            revealAnswer: prev.revealAnswer, // keep used flag across questions
             revealedIndex: null,
-          });
+          }));
         }
       },
     });

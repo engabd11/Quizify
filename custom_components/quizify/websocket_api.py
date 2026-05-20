@@ -39,7 +39,7 @@ from .const import (
     WS_TYPE_LIST_TTS,
 )
 from .game import GameSettings
-from .manager import QuizifyManager, get_manager
+from .manager import QuizifyManager, TooManySessionsError, get_manager
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -160,7 +160,11 @@ async def ws_game_create(
         tts_entity=msg.get("tts_entity"),
         tts_personality=msg.get("tts_personality", "hype"),
     )
-    session = mgr.create_session(settings)
+    try:
+        session = mgr.create_session(settings)
+    except TooManySessionsError as err:
+        connection.send_error(msg["id"], "too_many_sessions", str(err))
+        return
     mgr.wire_session_music(session)
     connection.send_result(
         msg["id"],
@@ -247,9 +251,15 @@ async def ws_game_rematch(
     if old is None:
         connection.send_error(msg["id"], "not_found", "Session not found")
         return
-    new_session = mgr.create_session(old.settings)
+    try:
+        new_session = mgr.create_session(old.settings)
+    except TooManySessionsError as err:
+        connection.send_error(msg["id"], "too_many_sessions", str(err))
+        return
     mgr.wire_session_music(new_session)
     # End the old session so the join code is freed and listeners detach.
+    # We only do this AFTER the new session is successfully created so a
+    # failed rematch doesn't kill the game the admin is currently looking at.
     await mgr.end_session(msg["session_id"])
     connection.send_result(
         msg["id"],

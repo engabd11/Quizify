@@ -27,10 +27,18 @@ from homeassistant.core import HomeAssistant
 
 from .const import (
     JOIN_URL_PREFIX,
+    MAX_PLAYER_NAME_LENGTH,
+    MAX_SESSION_ID_LENGTH,
+    MAX_TOKEN_LENGTH,
     PLAY_URL,
+    PLAYER_WS_JOIN_TIMEOUT,
+    PLAYER_WS_STRICT_ORIGIN,
     PLAYER_WS_URL,
+    QR_RATE_LIMIT_REQUESTS,
+    QR_RATE_LIMIT_WINDOW,
     STATIC_URL,
 )
+from .game import SessionFullError
 from .manager import get_manager
 
 _LOGGER = logging.getLogger(__name__)
@@ -41,6 +49,13 @@ _NO_CACHE_HEADERS = {
     "Cache-Control": "no-cache, no-store, must-revalidate",
     "Pragma": "no-cache",
     "Expires": "0",
+    # Defensive security headers for the unauthenticated player page.
+    # The page itself is small and contains no third-party assets, but
+    # these mitigate a class of attacks if the integration is ever
+    # exposed beyond the local network (reverse proxy, Cloudflare, etc.).
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "same-origin",
+    "X-Frame-Options": "SAMEORIGIN",
 }
 
 _html_cache: dict[str, str] = {}
@@ -96,8 +111,36 @@ class QuizifyQRView(HomeAssistantView):
 
     def __init__(self, hass: HomeAssistant) -> None:
         self.hass = hass
+        # Per-IP token bucket for the QR endpoint. PIL rendering runs on
+        # the executor pool; a flood of requests could starve other HA
+        # work. We sweep entries lazily on access.
+        self._rate_buckets: dict[str, list[float]] = {}
+        self._last_sweep: float = 0.0
+
+    def _check_rate_limit(self, ip: str) -> bool:
+        now = time.time()
+        cutoff = now - QR_RATE_LIMIT_WINDOW
+        # Periodic GC to stop the bucket dict from growing without bound on
+        # an internet-exposed instance with many unique source IPs.
+        if now - self._last_sweep > 300:
+            self._rate_buckets = {
+                k: [t for t in v if t > cutoff]
+                for k, v in self._rate_buckets.items()
+                if any(t > cutoff for t in v)
+            }
+            self._last_sweep = now
+        times = [t for t in self._rate_buckets.get(ip, []) if t > cutoff]
+        if len(times) >= QR_RATE_LIMIT_REQUESTS:
+            self._rate_buckets[ip] = times
+            return False
+        times.append(now)
+        self._rate_buckets[ip] = times
+        return True
 
     async def get(self, request: web.Request) -> web.Response:
+        client_ip = request.remote or "unknown"
+        if not self._check_rate_limit(client_ip):
+            return web.Response(status=429, text="Too many QR requests")
         data = request.query.get("data", "")
         if not data:
             return web.Response(status=400, text="missing 'data' parameter")
@@ -199,8 +242,48 @@ class QuizifyPlayerWSHandler:
         times.append(now)
         return True
 
+    def _check_origin(self, request: web.Request) -> bool:
+        """Default-deny Origin check for the player WebSocket.
+
+        The player socket is unauthenticated — any browser on the LAN can
+        connect by design (it's how guests join). But we don't want a
+        malicious third-party website embedded in a phone tab opening
+        connections to a known HA URL from anywhere on the internet. We
+        accept connections that either:
+          * have no Origin header (native apps, some QR launchers, curl), or
+          * have an Origin matching the Host of the request (same-origin).
+
+        Disable by setting ``PLAYER_WS_STRICT_ORIGIN = False`` in const.py.
+        """
+        if not PLAYER_WS_STRICT_ORIGIN:
+            return True
+        origin = request.headers.get("Origin")
+        # No Origin header: typical for native apps, in-app QR readers,
+        # and direct WS clients. Accept.
+        if not origin:
+            return True
+        host = request.headers.get("Host", "")
+        if not host:
+            return False
+        # Origin may be "https://example.com" or "https://example.com:8123";
+        # Host is "example.com:8123" or just "example.com". Compare the
+        # authority (host[:port]) only.
+        try:
+            from urllib.parse import urlparse  # noqa: PLC0415
+            parsed = urlparse(origin)
+            origin_authority = parsed.netloc.lower()
+        except Exception:
+            return False
+        return origin_authority == host.lower()
+
     async def handle(self, request: web.Request) -> web.StreamResponse:
         client_ip = request.remote or "unknown"
+        if not self._check_origin(request):
+            _LOGGER.warning(
+                "Rejecting player WS from disallowed Origin %r (ip=%s)",
+                request.headers.get("Origin"), client_ip,
+            )
+            return web.Response(status=403, text="Origin not allowed")
         if not self._check_connection_rate_limit(client_ip):
             return web.Response(status=429, text="Too many connections")
 
@@ -232,6 +315,29 @@ class QuizifyPlayerWSHandler:
                 if pid and pid in session.players else None,
             }
             await _ws_send(ws, payload)
+
+        # Idle-join watchdog: if the client connects but never sends a
+        # join/resume within PLAYER_WS_JOIN_TIMEOUT, drop the socket so a
+        # bot can't hold open sockets indefinitely (heartbeats alone would
+        # let them sit forever).
+        async def _idle_join_watchdog() -> None:
+            try:
+                await asyncio.sleep(PLAYER_WS_JOIN_TIMEOUT)
+            except asyncio.CancelledError:
+                return
+            if bound["session_id"] is None and not ws.closed:
+                _LOGGER.debug(
+                    "Closing idle player WS (no join within %ss) ip=%s",
+                    PLAYER_WS_JOIN_TIMEOUT, client_ip,
+                )
+                try:
+                    await _ws_send(ws, {"event": "error", "code": "idle_timeout",
+                                        "message": "No join received"})
+                except Exception:
+                    pass
+                await ws.close()
+
+        idle_task = asyncio.create_task(_idle_join_watchdog())
 
         try:
             async for msg in ws:
@@ -288,6 +394,12 @@ class QuizifyPlayerWSHandler:
                     await _ws_send(ws, {"event": "error", "code": "internal",
                                         "message": "Internal error"})
         finally:
+            # Tear down the idle-join watchdog regardless of how we exited.
+            idle_task.cancel()
+            try:
+                await idle_task
+            except (asyncio.CancelledError, Exception):
+                pass
             unsubscribe = bound.get("unsubscribe")
             if unsubscribe:
                 try:
@@ -315,14 +427,26 @@ async def _handle_join(manager, ws, data, bound, forward):
         await _ws_send(ws, {"event": "error", "code": "bad_request",
                             "message": "join_code and name are required"})
         return
-    if len(name) > 30:
-        name = name[:30]
+    # Reject obviously absurd input lengths before doing any session lookup.
+    if len(join_code) > 16 or len(name) > 200:
+        await _ws_send(ws, {"event": "error", "code": "bad_request",
+                            "message": "Input too long"})
+        return
+    # The server-side add_player applies the canonical name sanitization +
+    # length cap; the soft trim here is just a quick guard.
+    if len(name) > MAX_PLAYER_NAME_LENGTH:
+        name = name[:MAX_PLAYER_NAME_LENGTH]
     session = manager.get_by_join_code(join_code)
     if session is None:
         await _ws_send(ws, {"event": "error", "code": "not_found",
                             "message": "No game with that code"})
         return
-    player = session.add_player(name)
+    try:
+        player = session.add_player(name)
+    except SessionFullError as err:
+        await _ws_send(ws, {"event": "error", "code": "session_full",
+                            "message": str(err)})
+        return
     token = manager.issue_player_token(session.session_id, player.player_id)
     bound["session_id"] = session.session_id
     bound["player_id"] = player.player_id
@@ -348,6 +472,16 @@ async def _handle_resume(manager, ws, data, bound, forward):
     if not session_id or not token:
         await _ws_send(ws, {"event": "error", "code": "bad_request",
                             "message": "session_id and player_token required"})
+        return
+    # Defense-in-depth: reject oversize inputs before HMAC work. The
+    # 16KB WS frame cap already bounds this but explicit limits document
+    # intent and catch any future framing changes.
+    if (
+        len(session_id) > MAX_SESSION_ID_LENGTH
+        or len(token) > MAX_TOKEN_LENGTH
+    ):
+        await _ws_send(ws, {"event": "error", "code": "bad_request",
+                            "message": "Token or session_id too long"})
         return
     verified = manager.verify_player_token(token, session_id)
     if not verified:
@@ -393,7 +527,12 @@ async def _handle_answer(manager, ws, data, bound):
 
 
 async def _handle_peek_answer(manager, ws, bound):
-    """Lifeline: reveal the correct answer index to the requesting player only."""
+    """Lifeline: reveal the correct answer index to the requesting player only.
+
+    Server-enforced once-per-game: the player's ``peek_answer_used`` flag is
+    checked and set here so a malicious or buggy client cannot reveal more
+    than once per session.
+    """
     if bound["session_id"] is None:
         await _ws_send(ws, {"event": "error", "code": "not_joined",
                             "message": "Join first"})
@@ -402,6 +541,15 @@ async def _handle_peek_answer(manager, ws, bound):
     if session is None:
         await _ws_send(ws, {"event": "error", "code": "not_found",
                             "message": "Session ended"})
+        return
+    player = session.players.get(bound["player_id"])
+    if player is None:
+        await _ws_send(ws, {"event": "peek_result", "correct": None,
+                            "message": "Player not in session"})
+        return
+    if player.peek_answer_used:
+        await _ws_send(ws, {"event": "peek_result", "correct": None,
+                            "message": "Already used"})
         return
     from .const import STATE_QUESTION
     if session.state != STATE_QUESTION:
@@ -412,7 +560,12 @@ async def _handle_peek_answer(manager, ws, bound):
         await _ws_send(ws, {"event": "peek_result", "correct": None})
         return
     correct = session.questions[session.current_index]["correct"]
-    await _ws_send(ws, {"event": "peek_result", "correct": correct})
+    # Try to deliver the result first; only mark the lifeline used if the
+    # client actually got it. A blip during send shouldn't burn the
+    # one-per-game lifeline silently.
+    sent = await _ws_send(ws, {"event": "peek_result", "correct": correct})
+    if sent:
+        player.peek_answer_used = True
 
 
 async def _handle_lifeline(manager, ws, data, bound):
@@ -468,12 +621,19 @@ async def _handle_resume_game(manager, ws, bound):
 
 
 async def _ws_send(ws: web.WebSocketResponse,
-                   payload: dict[str, Any]) -> None:
+                   payload: dict[str, Any]) -> bool:
+    """Send a JSON message; return True iff it was delivered.
+
+    Returning a status lets callers (e.g. the peek lifeline) avoid burning
+    a one-shot side-effect when the client's connection just died.
+    """
     if ws.closed:
-        return
+        return False
     try:
         await ws.send_json(payload)
+        return True
     except ConnectionResetError:
-        pass
+        return False
     except Exception:
         _LOGGER.debug("Failed to send WS message", exc_info=True)
+        return False

@@ -6,6 +6,7 @@ import hmac
 import logging
 import secrets
 import time
+from collections.abc import Callable
 from hashlib import sha256
 from pathlib import Path
 from typing import Any
@@ -13,11 +14,15 @@ from typing import Any
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers import entity_registry as er
 
-from .const import DOMAIN, PLAYER_TOKEN_TTL
+from .const import DOMAIN, MAX_CONCURRENT_SESSIONS, MAX_TOKEN_LENGTH, PLAYER_TOKEN_TTL
 from .game import GameSession, GameSettings
 from .questions import QuestionBank
 
 _LOGGER = logging.getLogger(__name__)
+
+
+class TooManySessionsError(Exception):
+    """Raised when ``create_session`` is called past ``MAX_CONCURRENT_SESSIONS``."""
 
 
 class QuizifyManager:
@@ -34,6 +39,12 @@ class QuizifyManager:
         self._token_secret = secrets.token_bytes(32)
         questions_path = Path(__file__).parent / "questions"
         self.bank = QuestionBank(questions_path)
+        # Callbacks invoked when sessions are created/removed. Used by the
+        # sensor platform to wire entity state to live game state without
+        # the game/manager modules needing to know about entities.
+        # Each callback receives ``(action, session)`` where ``action`` is
+        # ``"created"`` or ``"ended"``.
+        self._session_listeners: list[Callable[[str, GameSession], None]] = []
 
     async def async_setup(self) -> None:
         """Load question banks."""
@@ -42,22 +53,42 @@ class QuizifyManager:
     # --- session lifecycle -------------------------------------------------
 
     def create_session(self, settings: GameSettings) -> GameSession:
-        """Create a new game session with a unique join code."""
+        """Create a new game session with a unique join code.
+
+        Raises:
+            TooManySessionsError: if there are already
+                ``MAX_CONCURRENT_SESSIONS`` games running, or if we
+                somehow couldn't find a free join code (vanishingly
+                unlikely given 32^6 ≈ 1 billion codes).
+        """
+        if len(self._sessions) >= MAX_CONCURRENT_SESSIONS:
+            raise TooManySessionsError(
+                f"Maximum {MAX_CONCURRENT_SESSIONS} concurrent games reached"
+            )
         session_id = secrets.token_urlsafe(12)
         # Re-roll the join code on the rare collision with an in-flight game.
-        for _ in range(8):
-            session = GameSession(session_id, settings, self.bank, hass=self.hass)
-            if session.join_code not in self._join_index:
+        session: GameSession | None = None
+        for _ in range(16):
+            candidate = GameSession(session_id, settings, self.bank, hass=self.hass)
+            if candidate.join_code not in self._join_index:
+                session = candidate
                 break
-        else:
-            _LOGGER.warning(
-                "Eight join-code collisions in a row; using whatever we got"
+        if session is None:
+            # 32^6 ≈ 1 billion codes; getting here means something is
+            # seriously wrong (e.g. a degenerate RNG). Fail loudly rather
+            # than overwrite another active session's join code.
+            _LOGGER.error(
+                "Could not find a unique join code in 16 attempts; aborting"
+            )
+            raise TooManySessionsError(
+                "Could not allocate a unique join code"
             )
         self._sessions[session_id] = session
         self._join_index[session.join_code] = session_id
         _LOGGER.info(
             "Created session %s (join code %s)", session_id, session.join_code
         )
+        self._notify_session_listeners("created", session)
         return session
 
     def get_session(self, session_id: str) -> GameSession | None:
@@ -81,6 +112,37 @@ class QuizifyManager:
             self._join_index.pop(session.join_code, None)
         await session.cancel()
         await self.stop_music(session)
+        self._notify_session_listeners("ended", session)
+
+    # --- session lifecycle listeners --------------------------------------
+
+    def subscribe_sessions(
+        self, callback: Callable[[str, GameSession], None]
+    ) -> Callable[[], None]:
+        """Register a callback for session create/end events.
+
+        ``callback`` is called as ``callback(action, session)`` where
+        ``action`` is ``"created"`` or ``"ended"``. Returns an unsubscribe
+        callable.
+        """
+        self._session_listeners.append(callback)
+
+        def unsubscribe() -> None:
+            try:
+                self._session_listeners.remove(callback)
+            except ValueError:
+                pass
+
+        return unsubscribe
+
+    def _notify_session_listeners(
+        self, action: str, session: GameSession
+    ) -> None:
+        for callback in list(self._session_listeners):
+            try:
+                callback(action, session)
+            except Exception:  # pragma: no cover - defensive
+                _LOGGER.exception("Session listener raised; continuing")
 
     # --- player tokens -----------------------------------------------------
 
@@ -97,6 +159,9 @@ class QuizifyManager:
 
     def verify_player_token(self, token: str, session_id: str) -> str | None:
         """Verify a token; return the player_id if valid, else None."""
+        # Reject obviously malformed inputs before doing any string work.
+        if not token or len(token) > MAX_TOKEN_LENGTH:
+            return None
         try:
             expiry_str, sid, player_id, sig = token.split(".", 3)
         except ValueError:

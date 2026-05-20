@@ -148,3 +148,39 @@ STATE_ENDED: Final = "ended"
 # Config
 CONF_MUSIC_PLAYER: Final = "music_player"
 CONF_DEFAULT_MODE: Final = "default_mode"
+
+# --- Safety / resource limits (v1.0) ----------------------------------------
+# Cap how many concurrent games a single HA instance will run. Each session
+# is cheap, but unbounded creation by a runaway automation could exhaust
+# memory. 16 simultaneous games in one house is well past reasonable.
+MAX_CONCURRENT_SESSIONS: Final = 16
+
+# Cap players per session. Each player holds a small Player dataclass +
+# their answers; the real bottleneck is event fan-out, which is O(players).
+# 25 keeps the game responsive even on a Raspberry Pi.
+MAX_PLAYERS_PER_SESSION: Final = 25
+
+# Player name length cap (also enforced client-side via the input maxLength).
+MAX_PLAYER_NAME_LENGTH: Final = 20
+
+# Cap how large a player_token / session_id we'll even try to parse on the
+# unauthenticated player socket. Anything longer is malformed by definition
+# and we want to reject it before doing any string work on it.
+MAX_TOKEN_LENGTH: Final = 256
+MAX_SESSION_ID_LENGTH: Final = 64
+
+# Per-IP rate limit for the public QR endpoint. PIL renders QRs on a
+# background thread; flooding it could starve the executor pool.
+QR_RATE_LIMIT_REQUESTS: Final = 30  # per window
+QR_RATE_LIMIT_WINDOW: Final = 60.0  # seconds
+
+# Player-socket connection idle timeout. If a socket connects but doesn't
+# send a join/resume within this window, we drop it. Heartbeats keep
+# joined sockets alive past this.
+PLAYER_WS_JOIN_TIMEOUT: Final = 30.0  # seconds
+
+# Origin policy for the unauthenticated player WebSocket. By default we
+# accept connections only from the same Origin as the HA instance, plus
+# missing Origin headers (which native apps and some QR-launchers send).
+# Set to False to disable Origin checking entirely (not recommended).
+PLAYER_WS_STRICT_ORIGIN: Final = True

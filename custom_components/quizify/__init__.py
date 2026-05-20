@@ -13,6 +13,7 @@ import logging
 
 from homeassistant.components import frontend
 from homeassistant.config_entries import ConfigEntry
+from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
 
 from .const import (
@@ -28,6 +29,8 @@ from .manager import QuizifyManager
 from .websocket_api import async_register_commands
 
 _LOGGER = logging.getLogger(__name__)
+
+PLATFORMS: list[Platform] = [Platform.SENSOR]
 
 
 async def async_setup(hass: HomeAssistant, config: dict) -> bool:
@@ -70,12 +73,22 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         )
         hass.data[DOMAIN]["_registered"] = True
 
+    # Forward to platforms (sensor) AFTER the manager is in hass.data so
+    # the platform's async_setup_entry can resolve it.
+    await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
+
     entry.async_on_unload(entry.add_update_listener(_async_update_listener))
     return True
 
 
 async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Unload a config entry, tearing down sessions and the panel."""
+    # Unload platforms first so entities cleanly detach from the manager
+    # before we tear it down.
+    unload_ok = await hass.config_entries.async_unload_platforms(entry, PLATFORMS)
+    if not unload_ok:
+        return False
+
     manager: QuizifyManager | None = hass.data.get(DOMAIN, {}).pop(entry.entry_id, None)
     if manager:
         for session in list(manager.list_sessions()):

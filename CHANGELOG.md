@@ -5,6 +5,145 @@ All notable changes to Quizify will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.0.0] — Production hardening, security review, polish
+
+First stable release. The gameplay surface is unchanged from 0.3.6 — this
+release is dedicated to security review, resource limits, and small
+quality-of-life additions so Quizify is safe to deploy on an HA instance
+that might be reachable beyond the local network (reverse proxy, VPN,
+Cloudflare Tunnel, etc.).
+
+### Security — Origin check on the player WebSocket
+
+The player socket is intentionally unauthenticated — guests scan a QR
+code and join without an HA account. That made it trivially reachable
+from any third-party website that knew the HA URL. The player socket now
+runs a default-strict same-origin check on the WS handshake: connections
+without an Origin header (native QR launchers, in-app browsers, curl)
+still work, but a browser tab on `evil.example.com` can no longer open
+a connection to `homeassistant.local:8123/api/quizify/player_ws`. The
+behaviour is toggleable via `PLAYER_WS_STRICT_ORIGIN` in `const.py` for
+the rare setups where the Host header is mangled by a proxy.
+
+### Security — Player name sanitization
+
+Player names previously went through a soft `strip()[:20]` only, so they
+could carry through control characters (newlines, NULs) and zero-width
+glyphs. Two real problems with this:
+
+- The TTS announcement strings interpolate names raw; control chars
+  produced odd pronunciation and could split announcements across lines.
+- Two players could appear "identical" in the scoreboard by having one
+  use a zero-width joiner between letters — the dedup check compared
+  raw strings, so `Alice` and `A‌l‌i‌c‌e` both passed.
+
+`add_player` now runs every name through `_sanitize_player_name()` which
+strips ASCII control characters, the seven common zero-width / BOM
+glyphs, collapses internal whitespace, and re-applies the length cap.
+
+### Security — Resource and rate limits
+
+A handful of unbounded-resource paths now have explicit caps:
+
+- **Per-IP QR rate limit** (`/api/quizify/qr`): 30 requests per minute.
+  PIL renders QRs on the executor pool; a flood could starve other HA
+  work. The 512-byte cap on `?data=` was already in place.
+- **Concurrent sessions cap**: 16 games maximum across the integration.
+  Each is cheap, but a runaway automation calling `quizify/game/create`
+  could exhaust memory.
+- **Players per session cap**: 25. Event fan-out is O(players); 25 keeps
+  the game responsive even on a Raspberry Pi. The admin gets a
+  `too_many_sessions` error and joining guests get a `session_full`
+  error, both with human-readable messages.
+- **Token / session-id length caps** on the resume path: 256/64 bytes.
+  The 16 KB WS frame cap already bounded these, but explicit guards
+  document intent and protect against future framing changes.
+- **Idle-join watchdog** on the player socket: if a connection doesn't
+  send a join or resume within 30 seconds, it's closed. Heartbeats alone
+  let an idle bot hold sockets open indefinitely; this closes that gap.
+
+### Security — Defensive HTTP headers on the player page
+
+`Cache-Control: no-store` was already set. v1.0 adds
+`X-Content-Type-Options: nosniff`, `Referrer-Policy: same-origin`, and
+`X-Frame-Options: SAMEORIGIN` on the player HTML response. Belt-and-
+braces for instances reachable beyond the local network.
+
+### Fixed — Reveal lifeline could burn on a connection blip
+
+`peek_answer_used` was set to `True` *before* the `peek_result` was sent.
+If the send failed (browser refresh, disconnect at the wrong moment),
+the player lost their one-per-game reveal lifeline silently. The flag
+is now only set after `ws.send_json` confirms delivery.
+
+### Fixed — Join-code collision storm could clobber another game's code
+
+`create_session` previously fell through to "use whatever we got" after
+8 collision retries, which would overwrite another active session's
+join code in `_join_index` — orphaning it from its session. With 32^6
+≈ 1 billion codes this is vanishingly unlikely in practice, but the
+loop now raises `TooManySessionsError` rather than silently corrupting
+state. Retries bumped from 8 to 16 for good measure.
+
+### Fixed — Rematch could kill the current game on a failed create
+
+`quizify/game/rematch` called `end_session` on the current game before
+checking whether `create_session` for the new one succeeded. If the new
+session creation failed (e.g. now: hit the concurrent cap), the admin
+was left with no game at all. The order is now reversed: create the
+new session first, only end the old one once the new one exists.
+
+### Added — Click-to-copy join code and link
+
+The admin's QR card now has the join code and the join URL as buttons:
+tap either to copy to clipboard, with a "✓ Copied!" confirmation that
+fades after 1.5 s. Works on browsers without the async Clipboard API
+via a hidden-textarea fallback (older mobile, non-HTTPS contexts).
+
+### Tests
+
+Six new tests in `test_manager_and_game.py` cover the new limits:
+oversize-token rejection, control-char sanitization, zero-width-glyph
+dedup spoofing, name length cap enforcement, `SessionFullError` at
+the player cap, and `TooManySessionsError` at the session cap.
+**Full suite: 34 tests, all passing.**
+
+## [0.3.6] — Reveal lifeline once-per-game, leaderboard & current-song sensors
+
+### Fixed — Reveal lifeline could be used every question
+
+The reveal lifeline was meant to be a once-per-game peek, but every
+`question` event reset the lifeline state on the player client, so any
+player could tap it again on the very next question. The comment in the
+code even said "reveal is still once per game" while the line below
+reset the flag to `false`. Fixed two ways:
+
+- **Client:** preserve `revealAnswer` across questions in the player UI
+  so the button stays disabled and greyed out after the first use.
+- **Server:** `Player.peek_answer_used` now tracks usage per player; the
+  `peek_answer` WebSocket handler rejects further calls and the flag is
+  sent down on `joined`/`resumed` so a page refresh can't grant a second
+  peek either.
+
+### Added — Sensor entities for the leaderboard and current song
+
+The integration now creates two sensor entities so you can put live game
+state on a Lovelace dashboard or feed it into automations:
+
+- `sensor.quizify_leaderboard` — state is the leading player's name
+  (or the previous game's winner between games); attributes include the
+  ranked player list with scores, streaks, and best streaks, the
+  current question index, total questions, and join code.
+- `sensor.quizify_current_song` — state is the title of the track
+  playing on the active game's `music_player`; attributes include
+  artist, album, source media_player entity, duration, and entity_picture
+  (album art). Updates immediately when the speaker's metadata changes —
+  not just on quiz events.
+
+Both sensors are wired through a new `subscribe_sessions()` hook on the
+manager so the entities track session create/end events without the
+game/manager modules needing to know about entities.
+
 ## [0.3.5] — Announcement gating, real lifelines, pause, smarter music, finale stats
 
 ### Fixed — players saw Q1 before the host's intro finished

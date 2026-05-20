@@ -546,6 +546,35 @@ body:has(#quizify-root[data-view="player"]) {
   word-break: break-all;
 }
 
+/* Both clickable variants are <button> elements; strip the browser
+   chrome (background, border, padding, focus ring) while keeping them
+   keyboard-focusable. Hover/active states hint that they're copyable. */
+.qz-join-code-copy,
+.qz-join-url-copy {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  padding: 4px 8px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border-radius: 8px;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.qz-join-code-copy:hover,
+.qz-join-code-copy:focus-visible,
+.qz-join-url-copy:hover,
+.qz-join-url-copy:focus-visible {
+  background: rgba(255, 255, 255, 0.06);
+  outline: none;
+}
+
+.qz-join-code-copy:active,
+.qz-join-url-copy:active {
+  background: rgba(255, 255, 255, 0.12);
+}
+
 .qz-player-list {
   display: flex;
   flex-direction: column;

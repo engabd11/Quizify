@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import re
 import secrets
 import time
 from collections.abc import Awaitable, Callable
@@ -92,6 +93,51 @@ def _sanitize_player_name(name: str) -> str:
     return cleaned[:MAX_PLAYER_NAME_LENGTH]
 
 
+# Regex compiled once at import time. Matches anything inside *asterisks*
+# (stage directions like *gasps dramatically*) which Piper and similar
+# TTS engines read aloud literally otherwise.
+_STAGE_DIRECTION_RE = re.compile(r"\*[^*\n]+\*")
+# Match ellipses written either as three dots or the … character. Piper
+# pauses for an unnatural length on these and the personality templates
+# overuse them. We replace with a normal period.
+_ELLIPSIS_RE = re.compile(r"\.{2,}|…")
+
+
+def _sanitize_for_tts(text: str) -> str:
+    """Make a string safe and natural for a text-to-speech engine.
+
+    Local TTS engines like Piper read every character literally — they
+    don't know that ``*gasps dramatically*`` is a stage direction. They
+    say it out loud as "asterisk gasps dramatically asterisk", which is
+    both unfunny and breaks the immersion the personality is going for.
+
+    We strip:
+    - Stage directions in *asterisks* (the most common offender in the
+      "soap" personality templates).
+    - Long ellipses (``...`` or ``…``) replaced with a single period —
+      Piper holds these for an awkward pause.
+    - Multiple whitespace runs are collapsed.
+
+    We deliberately do NOT touch:
+    - ALL CAPS — this is intentional in the "hype" / "sports" personalities.
+      Most TTS engines pronounce normal capitalised words fine; the few
+      that spell out caps letter-by-letter are a TTS config issue, not
+      something to paper over here.
+    - Apostrophes and contractions.
+    - Punctuation that affects prosody (commas, exclamation marks).
+    """
+    if not text:
+        return ""
+    cleaned = _STAGE_DIRECTION_RE.sub("", text)
+    cleaned = _ELLIPSIS_RE.sub(".", cleaned)
+    # Collapse runs of whitespace (the asterisk-strip can leave doubles).
+    while "  " in cleaned:
+        cleaned = cleaned.replace("  ", " ")
+    # Stage-direction removal can leave dangling " ." or " ," — tidy.
+    cleaned = re.sub(r"\s+([.,!?])", r"\1", cleaned)
+    return cleaned.strip()
+
+
 @dataclass
 class Player:
     """A player in a game session."""
@@ -142,6 +188,10 @@ class GameSettings:
     music_uri: str | None = None
     tts_entity: str | None = None  # tts.* entity for announcements
     tts_personality: str = "hype"  # hype | drill | soap | conspiracy | parent | sports
+    # Optional conversation agent (Ollama, OpenAI, etc.) used to
+    # generate fresh announcement text instead of using static templates.
+    # When None, the static personality-themed templates are used.
+    conversation_agent_id: str | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -155,6 +205,7 @@ class GameSettings:
             "music_uri": self.music_uri,
             "tts_entity": self.tts_entity,
             "tts_personality": self.tts_personality,
+            "conversation_agent_id": self.conversation_agent_id,
         }
 
 
@@ -277,6 +328,12 @@ class GameSession:
         announcement, and wait for the speaker to finish playing it before
         flipping into the first question. That way players don't see Q1 pop
         up on their phones while the room is still hearing the intro.
+
+        If a conversation agent (Ollama, etc.) is configured, we generate
+        a fresh announcement here, before the TTS call. The generation
+        happens inside the announcing window the user sees — which is
+        natural-feeling anyway — so the game itself never waits on the
+        LLM during the audio path.
         """
         if self.state != STATE_LOBBY:
             return
@@ -294,13 +351,45 @@ class GameSession:
         self.current_index = -1
         # Pre-roll: announce, wait for it to finish, THEN start questions.
         self.state = STATE_ANNOUNCING
-        announcement = self._build_start_announcement()
         await self._emit(EVENT_ANNOUNCING, {"message": "Get ready…"})
         # If there's no TTS configured, fall through immediately (no wait).
         if self.settings.tts_entity:
+            announcement = await self._resolve_start_announcement()
             await self._announce(announcement)
+            # `blocking=True` in _announce already waits for playback to
+            # finish; the polling fallback is here for TTS providers
+            # that ignore blocking (rare, but seen in the wild).
             await self._wait_for_announcement_to_finish()
         self._task = asyncio.create_task(self._run_round())
+
+    async def _resolve_start_announcement(self) -> str:
+        """Get the start announcement text — AI-generated or static.
+
+        If a conversation agent is configured, try it first with a hard
+        timeout. On any failure (timeout, model errors, empty response,
+        agent not found) we silently fall back to the static template.
+        The game never blocks longer than ``CONVERSATION_TIMEOUT`` on
+        this path because the helper applies the timeout internally.
+        """
+        agent_id = self.settings.conversation_agent_id
+        if agent_id and self._hass is not None:
+            # Local import to avoid pulling the helper (and its homeassistant
+            # dependency) when the integration runs in the test environment.
+            from .conversation_helper import generate_announcement
+            text = await generate_announcement(
+                self._hass,
+                agent_id=agent_id,
+                kind="start",
+                personality=self.settings.tts_personality,
+                context={
+                    "player_names": [p.name for p in self.players.values()],
+                    "questions": self.settings.questions_per_round,
+                    "seconds": self.settings.question_time,
+                },
+            )
+            if text:
+                return text
+        return self._build_start_announcement()
 
     async def _wait_for_announcement_to_finish(self) -> None:
         """Block until the speaker is no longer playing the announcement.
@@ -387,13 +476,13 @@ class GameSession:
                 f"I'm looking at you, {names_str}. {n} questions. {t} seconds each. No excuses. NO WHINING. BEGIN!",
             ],
             "soap": [
-                f"*gasps dramatically* Oh... OH! After all these years... after everything we've been through... "
-                f"the quiz is finally... BEGINNING. {names_str} — and yes, {count} souls total — gather 'round. "
-                f"Someone tonight will be betrayed. Someone will triumph. Someone will cry. This... is Quizify.",
+                f"Oh. OH! After all these years, after everything we've been through, "
+                f"the quiz is finally beginning. {names_str}, and yes, {count} souls in total, gather 'round. "
+                f"Someone tonight will be betrayed. Someone will triumph. Someone will cry. This is Quizify.",
 
-                f"Previously on Quizify... {names_str} dared to believe they were the smartest. Tonight, "
-                f"with {n} questions standing between them and glory, only ONE can claim the ultimate prize. "
-                f"Will it be love? Will it be revenge? *dramatic sting* It will be... TRIVIA.",
+                f"Previously on Quizify: {names_str} dared to believe they were the smartest. Tonight, "
+                f"with {n} questions standing between them and glory, only one can claim the ultimate prize. "
+                f"Will it be love? Will it be revenge? It will be trivia.",
             ],
             "conspiracy": [
                 f"They don't want you to know the answers. The elites, the algorithm, the shadow council — "
@@ -435,7 +524,7 @@ class GameSession:
         # Pre-build runner-up phrases per personality to avoid apostrophes inside f-string {}
         ru_hype     = f"Runner up {runner_up_name} gave it everything — respect." if runner_up_name else ""
         ru_drill    = f"Second place {runner_up_name} — not bad, soldier. Not good. But not bad." if runner_up_name else ""
-        ru_soap     = f"And {runner_up_name}... so close. So heartbreakingly close." if runner_up_name else ""
+        ru_soap     = f"And {runner_up_name}, so close. So heartbreakingly close." if runner_up_name else ""
         ru_conspi   = f"Runner up {runner_up_name} — look into it." if runner_up_name else ""
         ru_parent   = f"And {runner_up_name} — second place is nothing to be ashamed of. I am a little ashamed. But you should not be." if runner_up_name else ""
         ru_sports   = f"And {runner_up_name} pushing all the way to the line — what heart! What determination!" if runner_up_name else ""
@@ -462,14 +551,14 @@ class GameSession:
                 f"It just was not enough. DISMISSED!",
             ],
             "soap": [
-                f"*long pause* ... {winner_name}. *another pause* After everything... after ALL of that... "
+                f"{winner_name}. After everything, after all of that, "
                 f"it was {winner_name} all along. {winner_score:,} points. "
                 f"{ru_soap} "
-                f"*swells of orchestral music* This is not the end. This is never the end. Until next time... on Quizify.",
+                f"This is not the end. This is never the end. Until next time, on Quizify.",
 
-                f"*dramatic whisper* They said it could not be done. They said {winner_name} was just a dreamer. "
-                f"But here — with {winner_score:,} points burning in their heart — {winner_name} has proven them ALL wrong. "
-                f"The trophy is real. The glory is real. The others... must live with their choices.",
+                f"They said it could not be done. They said {winner_name} was just a dreamer. "
+                f"But here, with {winner_score:,} points burning in their heart, {winner_name} has proven them all wrong. "
+                f"The trophy is real. The glory is real. The others must live with their choices.",
             ],
             "conspiracy": [
                 f"Interesting. VERY interesting. {winner_name} — {winner_score:,} points. "
@@ -616,7 +705,9 @@ class GameSession:
         if ranked:
             winner = ranked[0]
             runner_up = ranked[1].name if len(ranked) > 1 else None
-            announcement = self._build_end_announcement(winner.name, winner.score, runner_up)
+            announcement = await self._resolve_end_announcement(
+                winner.name, winner.score, runner_up
+            )
             await self._announce(announcement)
         await self._emit(
             EVENT_GAME_ENDED,
@@ -627,6 +718,38 @@ class GameSession:
                 "highlights": highlights,
             },
         )
+
+    async def _resolve_end_announcement(
+        self,
+        winner_name: str,
+        winner_score: int,
+        runner_up_name: str | None,
+    ) -> str:
+        """Get the end announcement text — AI-generated or static.
+
+        Same fallback logic as ``_resolve_start_announcement``: if an
+        agent is configured we try it first with a hard timeout; on any
+        failure we fall back to the static template. The end-of-game
+        screen is already showing on player phones by the time this
+        runs, so a 30s LLM call here is invisible to the UX.
+        """
+        agent_id = self.settings.conversation_agent_id
+        if agent_id and self._hass is not None:
+            from .conversation_helper import generate_announcement
+            text = await generate_announcement(
+                self._hass,
+                agent_id=agent_id,
+                kind="end",
+                personality=self.settings.tts_personality,
+                context={
+                    "winner_name": winner_name,
+                    "winner_score": winner_score,
+                    "runner_up_name": runner_up_name,
+                },
+            )
+            if text:
+                return text
+        return self._build_end_announcement(winner_name, winner_score, runner_up_name)
 
     def _player_with_stats(self, player: Player) -> dict[str, Any]:
         """Serialize a player with extended stats for the finale screen."""
@@ -883,12 +1006,23 @@ class GameSession:
     # --- TTS ---------------------------------------------------------------
 
     async def _announce(self, message: str) -> None:
-        """Speak a TTS announcement.
+        """Speak a TTS announcement and wait for it to finish.
 
         tts.speak expects:
-          entity_id            = the TTS engine entity  (e.g. tts.google_translate)
-          media_player_entity_id = the speaker to play on (e.g. media_player.living_room)
+          entity_id            = the TTS engine entity  (e.g. tts.piper)
+          media_player_entity_id = the speaker to play on
           message              = text to speak
+
+        We pass ``blocking=True`` so HA returns from this call only after
+        the audio has actually finished playing. That's the cleanest way
+        to gate the next game state on the announcement being done —
+        much more reliable than polling the media_player's state, which
+        is racy when the speaker is also playing background music and
+        only briefly transitions through the TTS clip.
+
+        The message is run through ``_sanitize_for_tts`` first: stage
+        directions in ``*asterisks*`` and long ellipses are stripped so
+        engines like Piper don't read them out literally.
         """
         if self._hass is None:
             return
@@ -896,19 +1030,28 @@ class GameSession:
         music_player = self.settings.music_player  # speaker
         if not tts_entity:
             return  # TTS not configured — skip silently
+        sanitized = _sanitize_for_tts(message)
+        if not sanitized:
+            return
         try:
             service_data: dict[str, Any] = {
                 "entity_id": tts_entity,
-                "message": message,
+                "message": sanitized,
                 "cache": False,
             }
             if music_player:
                 service_data["media_player_entity_id"] = music_player
+            # blocking=True: HA waits until TTS finishes playing on the
+            # configured media player before returning. This is the
+            # *primary* mechanism that prevents Q1 from appearing while
+            # the intro is still being spoken. The polling fallback in
+            # _wait_for_announcement_to_finish is now belt-and-braces
+            # for the rare TTS provider that ignores blocking.
             await self._hass.services.async_call(
                 "tts",
                 "speak",
                 service_data,
-                blocking=False,
+                blocking=True,
             )
         except Exception:
             _LOGGER.warning("TTS announcement failed", exc_info=True)

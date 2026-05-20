@@ -175,3 +175,39 @@ export function TtsPicker({ ttsEntities, value, onChange }) {
     </select>
   );
 }
+
+/**
+ * Optional AI-powered announcer. Lets the admin pick a conversation
+ * agent (Ollama, OpenAI, etc.) which generates fresh announcement text
+ * at game start and end. None selected = the static personality
+ * templates are used (the original behaviour).
+ *
+ * Only rendered by AdminApp when (a) TTS is configured AND (b) there's
+ * at least one conversation.* entity in HA — so this picker is
+ * invisible to users who haven't set up a conversation agent.
+ */
+export function AiAnnouncerPicker({ agents, value, onChange }) {
+  return (
+    <div className="qz-stack">
+      <div className="qz-label">AI announcer (optional)</div>
+      <select
+        className="qz-select"
+        value={value || ""}
+        onChange={(e) => onChange(e.target.value || null)}
+      >
+        <option value="">Use built-in templates</option>
+        {agents.map((a) => (
+          <option key={a.entity_id} value={a.entity_id}>
+            {a.name}
+          </option>
+        ))}
+      </select>
+      <div className="qz-muted" style={{ fontSize: 12 }}>
+        Generates fresh announcements for the start and end of the game.
+        Generation happens before audio plays, so it never causes mid-game
+        delays. If the agent is slow or errors, the personality template
+        is used as a fallback.
+      </div>
+    </div>
+  );
+}

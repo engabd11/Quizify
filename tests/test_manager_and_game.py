@@ -120,6 +120,10 @@ _load_module("custom_components.quizify.const", _QZ / "const.py")
 _load_module("custom_components.quizify.questions", _QZ / "questions.py")
 _game_mod = _load_module("custom_components.quizify.game", _QZ / "game.py")
 _mgr_mod = _load_module("custom_components.quizify.manager", _QZ / "manager.py")
+_load_module(
+    "custom_components.quizify.conversation_helper",
+    _QZ / "conversation_helper.py",
+)
 
 GameSession = _game_mod.GameSession
 GameSettings = _game_mod.GameSettings
@@ -539,4 +543,133 @@ def test_too_many_sessions_raises():
         pass
     else:
         raise AssertionError("Expected TooManySessionsError")
+
+
+# ---------------------------------------------------------------------------
+# TTS sanitization + AI announcement tests (v1.1)
+# ---------------------------------------------------------------------------
+
+
+def test_sanitize_for_tts_strips_stage_directions():
+    """Asterisk-wrapped stage directions must not survive into TTS."""
+    from custom_components.quizify.game import _sanitize_for_tts
+    out = _sanitize_for_tts(
+        "*gasps dramatically* Oh no. *dramatic pause* The winner is Bob."
+    )
+    assert "*" not in out
+    assert "gasps" not in out
+    assert "dramatic pause" not in out
+    assert "The winner is Bob." in out
+
+
+def test_sanitize_for_tts_collapses_ellipses():
+    """Long ellipses become a single period to avoid awkward Piper pauses."""
+    from custom_components.quizify.game import _sanitize_for_tts
+    out = _sanitize_for_tts("After all these years... the quiz is here.")
+    assert "..." not in out
+    assert "…" not in out
+    # The replacement should still parse as a sentence break.
+    assert "years." in out or "years ." not in out  # no trailing space-period
+
+
+def test_sanitize_for_tts_unicode_ellipsis():
+    """The single-character ellipsis (…) gets handled too."""
+    from custom_components.quizify.game import _sanitize_for_tts
+    out = _sanitize_for_tts("Well… that was something.")
+    assert "…" not in out
+
+
+def test_sanitize_for_tts_preserves_caps_and_punctuation():
+    """ALL CAPS is intentional in hype/sports personalities; don't strip it."""
+    from custom_components.quizify.game import _sanitize_for_tts
+    out = _sanitize_for_tts("AND THE WINNER IS Alice! What a performance!")
+    assert "AND THE WINNER IS" in out
+    assert "Alice!" in out
+
+
+def test_sanitize_for_tts_empty_input():
+    from custom_components.quizify.game import _sanitize_for_tts
+    assert _sanitize_for_tts("") == ""
+    assert _sanitize_for_tts(None) == ""
+
+
+def test_static_soap_template_has_no_stage_directions():
+    """The default soap personality must not contain asterisked stage directions."""
+    s = _make_session()
+    s.settings.tts_personality = "soap"
+    # Build the announcement many times to cover both variants in the pool.
+    for _ in range(50):
+        msg = s._build_start_announcement()
+        assert "*" not in msg, f"Stage direction leaked: {msg!r}"
+    for _ in range(50):
+        msg = s._build_end_announcement("Alice", 1000, "Bob")
+        assert "*" not in msg, f"Stage direction leaked in end: {msg!r}"
+
+
+def test_resolve_start_announcement_falls_back_without_agent():
+    """No conversation_agent_id configured -> static template is used."""
+    s = _make_session()
+    s.settings.conversation_agent_id = None
+
+    async def run():
+        msg = await s._resolve_start_announcement()
+        assert isinstance(msg, str)
+        assert len(msg) > 0
+    asyncio.run(run())
+
+
+def test_resolve_end_announcement_falls_back_without_agent():
+    s = _make_session()
+    s.settings.conversation_agent_id = None
+
+    async def run():
+        msg = await s._resolve_end_announcement("Alice", 1000, "Bob")
+        assert "Alice" in msg
+    asyncio.run(run())
+
+
+def test_conversation_helper_clean_output_strips_preamble():
+    """LLMs often prefix with 'Here is the announcement:' — strip it."""
+    from custom_components.quizify.conversation_helper import _clean_llm_output
+    out = _clean_llm_output("Here's the announcement: ATTENTION recruits, fall in!")
+    assert not out.lower().startswith("here")
+    assert "ATTENTION" in out
+
+
+def test_conversation_helper_clean_output_strips_code_fences():
+    from custom_components.quizify.conversation_helper import _clean_llm_output
+    text = "```\nWelcome to Quizify!\n```"
+    out = _clean_llm_output(text)
+    assert "```" not in out
+    assert "Welcome to Quizify!" in out
+
+
+def test_conversation_helper_clean_output_strips_outer_quotes():
+    from custom_components.quizify.conversation_helper import _clean_llm_output
+    out = _clean_llm_output('"And so the quiz begins."')
+    assert not out.startswith('"')
+    assert "And so the quiz begins" in out
+
+
+def test_conversation_helper_extract_speech_modern_shape():
+    """The current HA shape is response.speech.plain.speech."""
+    from custom_components.quizify.conversation_helper import _extract_speech
+    fake = {
+        "response": {
+            "speech": {
+                "plain": {"speech": "Get ready, players!"}
+            }
+        }
+    }
+    assert _extract_speech(fake) == "Get ready, players!"
+
+
+def test_conversation_helper_extract_speech_handles_garbage():
+    """Anything malformed must return empty string, not crash."""
+    from custom_components.quizify.conversation_helper import _extract_speech
+    assert _extract_speech(None) == ""
+    assert _extract_speech("not a dict") == ""
+    assert _extract_speech({}) == ""
+    assert _extract_speech({"response": None}) == ""
+    assert _extract_speech({"response": {"speech": "just a string"}}) == "just a string"
 

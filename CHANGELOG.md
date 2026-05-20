@@ -5,6 +5,107 @@ All notable changes to Quizify will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] — TTS timing fix, pronunciation cleanup, optional AI announcer
+
+This release polishes the announcer experience based on real-world play
+on local TTS engines like Piper. Two fixes and one optional new feature.
+
+### Fixed — Questions could appear before the intro announcement finished
+
+The previous implementation called `tts.speak` with `blocking=False` and
+then polled the speaker's `media_player.state` waiting for it to leave
+the `playing` state. That polling is racy when the same speaker is also
+the background-music output: it might already be in `playing` from the
+intro music, or briefly drop out and back in around the TTS clip, and
+the game would decide the announcement was finished while Piper was
+still mid-sentence. Question 1 would then pop up on player phones
+before the room had heard "Get ready".
+
+Fix: `_announce()` now calls `tts.speak` with `blocking=True`. Home
+Assistant returns from the service call only after the audio has
+actually finished playing on the configured `media_player_entity_id`.
+That's the cleanest possible gate — no polling, no race. The existing
+`_wait_for_announcement_to_finish()` polling stays as a belt-and-braces
+fallback for the few TTS providers that ignore the blocking flag.
+
+### Fixed — Soap-opera personality read stage directions aloud
+
+The static templates for the `soap` personality contained `*gasps
+dramatically*`, `*dramatic sting*`, `*swelling music*`, `*long pause*`
+and similar prose-only stage directions. Local TTS engines like Piper
+have no model for these — they read them out literally as "asterisk
+gasps dramatically asterisk", which is both unfunny and breaks the
+character. The same applied to the `...` ellipses scattered through
+the soap and parent personalities: Piper holds them for an unnaturally
+long pause that confuses listeners.
+
+Two fixes layered together:
+
+1. **Static templates rewritten** — every `*stage direction*` removed
+   and every `...` rewritten as a normal sentence break. The soap
+   personality still sounds dramatic; it just reads cleanly.
+2. **New `_sanitize_for_tts()` helper** — automatically applied to
+   every message inside `_announce()`. Strips anything inside
+   `*asterisks*`, collapses `...` or `…` to a single period, and tidies
+   up the leftover whitespace. This catches anything that slips into
+   future templates or comes back from the LLM, so the cleanup is
+   defence-in-depth, not just a one-time content fix.
+3. **ALL CAPS is preserved** — it's intentional for the hype and sports
+   personalities, and Piper pronounces capitalised words normally.
+
+### Added — Optional AI announcer via HA's conversation integration
+
+If the admin picks a conversation agent (Ollama, OpenAI Conversation,
+Google Generative AI, Anthropic, custom — anything that registers a
+`conversation.*` entity in HA), the start and end announcements are
+generated fresh by the LLM instead of using the static templates.
+Picks up the user's selected personality and includes the player names,
+question count, and final score in the prompt, so the output is always
+contextually relevant.
+
+The integration uses HA's standard `conversation.process` service —
+there's no Ollama-specific dependency, no API key handling, nothing
+that breaks if the user later swaps providers. Whatever conversation
+agent is configured in HA, Quizify can use.
+
+**Timing is the headline design constraint here.** An LLM call cannot
+appear in the audio path during the game, or every question would have
+a noticeable lag while the model thinks. So:
+
+- The **start announcement** is generated inside the existing "Get
+  ready" announcing window (before TTS starts). The user already sees
+  a brief "Get ready…" screen while the speaker queues up; the LLM
+  call happens in that window. No new perceived delay.
+- The **end announcement** is generated during the natural game-over
+  pause, before the finale screen finishes its reveal animation. The
+  player phones are already showing the leaderboard by the time the
+  LLM is invoked.
+- Per call timeout: 30 seconds (covers slow local models on CPU). On
+  timeout, model error, missing agent, malformed response, or empty
+  output, we **silently fall back to the static personality template**.
+  The game never stalls and never errors because of the LLM.
+
+The prompt includes hard rules so even small local models (1B-7B) tend
+to behave: no asterisks, no ellipses, no markdown, no preambles like
+"Here is your announcement:", under 80 words, plain prose only. A
+post-processing pass strips the few common LLM-output noise patterns
+that still slip through (triple-backtick code fences, surrounding
+quotes, "Here's the announcement:" prefixes).
+
+The picker is **opt-in and invisible by default**: it only renders in
+the admin UI when (a) a TTS engine is already configured and (b) at
+least one `conversation.*` entity exists in HA. Users who haven't set
+up a conversation agent won't see any change.
+
+### Tests
+
+Thirteen new tests covering: stage-direction stripping, ASCII and
+Unicode ellipsis collapse, CAPS preservation, empty-input robustness,
+static-template purity, the fallback path when no agent is configured
+(both start and end), LLM output cleanup (preambles, code fences,
+quotes), the modern HA conversation-response shape, and graceful
+handling of malformed responses. **Full suite: 47 tests, all passing.**
+
 ## [1.0.0] — Production hardening, security review, polish
 
 First stable release. The gameplay surface is unchanged from 0.3.6 — this

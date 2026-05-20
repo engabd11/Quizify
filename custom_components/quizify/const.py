@@ -184,3 +184,19 @@ PLAYER_WS_JOIN_TIMEOUT: Final = 30.0  # seconds
 # missing Origin headers (which native apps and some QR-launchers send).
 # Set to False to disable Origin checking entirely (not recommended).
 PLAYER_WS_STRICT_ORIGIN: Final = True
+
+# --- AI announcement generation (optional) ---------------------------------
+# If the admin picks a conversation agent (Ollama, OpenAI, etc.) the START
+# and END announcements are generated fresh by the LLM instead of using the
+# static templates. Generation happens AHEAD of the moment we need to
+# speak, so there's never an LLM call in the audio path during the game.
+#
+# Timeout for one LLM call. 30s tolerates slow local models running on
+# CPU; if exceeded we silently fall back to the static template so the
+# game never stalls.
+CONVERSATION_TIMEOUT: Final = 30.0
+# Cap how many characters of LLM output we'll send to TTS. Some models
+# love to ramble; this keeps announcements snappy and predictable.
+CONVERSATION_MAX_CHARS: Final = 1200
+
+WS_TYPE_LIST_CONVERSATION: Final = "quizify/conversation/list"

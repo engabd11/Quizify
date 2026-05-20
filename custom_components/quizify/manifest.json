@@ -1,7 +1,7 @@
 {
   "domain": "quizify",
   "name": "Quizify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "documentation": "https://github.com/engabd11/Quizify",
   "issue_tracker": "https://github.com/engabd11/Quizify/issues",
   "codeowners": ["@engabd11"],

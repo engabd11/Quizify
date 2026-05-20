@@ -9,6 +9,7 @@ import {
   SpeakerPicker,
   TtsPicker,
   PersonalityPicker,
+  AiAnnouncerPicker,
 } from "./Pickers";
 import { QrCard } from "./QrCard";
 import { PlayerList, Scoreboard } from "./PlayerList";
@@ -25,6 +26,9 @@ const DEFAULT_SETTINGS = {
   music_uri: "",
   tts_entity: null,
   tts_personality: "hype",
+  // Optional: id of a HA conversation agent (Ollama, OpenAI, etc.) that
+  // generates fresh announcement text. null = use static templates.
+  conversation_agent_id: null,
 };
 
 export function AdminApp({ hass }) {
@@ -34,6 +38,9 @@ export function AdminApp({ hass }) {
   const [categories, setCategories] = useState(null);
   const [speakers, setSpeakers] = useState([]);
   const [ttsEntities, setTtsEntities] = useState([]);
+  // Available conversation agents (Ollama, OpenAI, etc.). Empty array
+  // means none configured in HA — the AI picker hides entirely.
+  const [conversationAgents, setConversationAgents] = useState([]);
   const [settings, setSettings] = useState(DEFAULT_SETTINGS);
   const [game, setGame] = useState(null);
   const [toast, setToast] = useState(null);
@@ -70,6 +77,15 @@ export function AdminApp({ hass }) {
         if (!cancelled) setTtsEntities(r?.tts_entities || []);
       } catch {
         if (!cancelled) setTtsEntities([]);
+      }
+      // Conversation agents are optional; ignore errors silently so an
+      // older HA without this command (or no agents at all) just hides
+      // the AI picker rather than breaking the setup screen.
+      try {
+        const r = await adminCallWS(hass, { type: "quizify/conversation/list" });
+        if (!cancelled) setConversationAgents(r?.agents || []);
+      } catch {
+        if (!cancelled) setConversationAgents([]);
       }
     })();
     return () => {
@@ -139,6 +155,7 @@ export function AdminApp({ hass }) {
         music_uri: settings.music_uri || null,
         tts_entity: settings.tts_entity || null,
         tts_personality: settings.tts_personality || "hype",
+        conversation_agent_id: settings.conversation_agent_id || null,
       });
       setGame(result.game);
       await subscribeToSession(result.session_id);
@@ -321,6 +338,15 @@ export function AdminApp({ hass }) {
                 value={settings.tts_personality}
                 onChange={(v) =>
                   setSettings((s) => ({ ...s, tts_personality: v }))
+                }
+              />
+            )}
+            {settings.tts_entity && conversationAgents.length > 0 && (
+              <AiAnnouncerPicker
+                agents={conversationAgents}
+                value={settings.conversation_agent_id}
+                onChange={(v) =>
+                  setSettings((s) => ({ ...s, conversation_agent_id: v }))
                 }
               />
             )}

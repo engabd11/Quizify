@@ -35,9 +35,11 @@ from .const import (
     WS_TYPE_GAME_RESUME,
     WS_TYPE_GAME_START,
     WS_TYPE_LIST_CATEGORIES,
+    WS_TYPE_LIST_CONVERSATION,
     WS_TYPE_LIST_SPEAKERS,
     WS_TYPE_LIST_TTS,
 )
+from .conversation_helper import list_conversation_agents
 from .game import GameSettings
 from .manager import QuizifyManager, TooManySessionsError, get_manager
 
@@ -50,6 +52,7 @@ def async_register_commands(hass: HomeAssistant) -> None:
     websocket_api.async_register_command(hass, ws_list_categories)
     websocket_api.async_register_command(hass, ws_list_speakers)
     websocket_api.async_register_command(hass, ws_list_tts)
+    websocket_api.async_register_command(hass, ws_list_conversation)
     websocket_api.async_register_command(hass, ws_game_create)
     websocket_api.async_register_command(hass, ws_game_start)
     websocket_api.async_register_command(hass, ws_game_end)
@@ -115,6 +118,23 @@ def ws_list_tts(
     connection.send_result(msg["id"], {"tts_entities": out})
 
 
+@websocket_api.websocket_command({vol.Required("type"): WS_TYPE_LIST_CONVERSATION})
+@callback
+def ws_list_conversation(
+    hass: HomeAssistant,
+    connection: websocket_api.ActiveConnection,
+    msg: dict[str, Any],
+) -> None:
+    """Return conversation.* entities (Ollama, OpenAI, etc.) for AI announcements.
+
+    These are *optional* — the admin can pick "None" to use the static
+    personality templates instead, which is the default.
+    """
+    connection.send_result(
+        msg["id"], {"agents": list_conversation_agents(hass)}
+    )
+
+
 # --- admin commands ---------------------------------------------------------
 
 
@@ -136,6 +156,7 @@ def ws_list_tts(
         vol.Optional("tts_personality", default="hype"): vol.In(
             ["hype", "drill", "soap", "conspiracy", "parent", "sports"]
         ),
+        vol.Optional("conversation_agent_id"): vol.Any(str, None),
     }
 )
 @websocket_api.async_response
@@ -159,6 +180,7 @@ async def ws_game_create(
         music_uri=msg.get("music_uri"),
         tts_entity=msg.get("tts_entity"),
         tts_personality=msg.get("tts_personality", "hype"),
+        conversation_agent_id=msg.get("conversation_agent_id"),
     )
     try:
         session = mgr.create_session(settings)

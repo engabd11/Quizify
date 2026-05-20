@@ -1,0 +1,1094 @@
+[
+  {
+    "id": "ak-li-001",
+    "question": "Who wrote the novel '1984'?",
+    "answers": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Ray Bradbury",
+      "H.G. Wells"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in 1949, the year before Orwell's death."
+  },
+  {
+    "id": "ak-li-002",
+    "question": "Which playwright wrote 'Romeo and Juliet'?",
+    "answers": [
+      "William Shakespeare",
+      "Christopher Marlowe",
+      "Ben Jonson",
+      "John Webster"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Written in the early 1590s."
+  },
+  {
+    "id": "ak-li-003",
+    "question": "Who is the author of 'To Kill a Mockingbird'?",
+    "answers": [
+      "Harper Lee",
+      "Truman Capote",
+      "Carson McCullers",
+      "Flannery O'Connor"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Lee's only novel published in her lifetime, released in 1960."
+  },
+  {
+    "id": "ak-li-004",
+    "question": "Which Russian novelist wrote 'War and Peace'?",
+    "answers": [
+      "Leo Tolstoy",
+      "Fyodor Dostoevsky",
+      "Anton Chekhov",
+      "Ivan Turgenev"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Serialised between 1865 and 1867; considered one of the greatest novels ever written."
+  },
+  {
+    "id": "ak-li-005",
+    "question": "Who wrote 'The Catcher in the Rye'?",
+    "answers": [
+      "J.D. Salinger",
+      "John Steinbeck",
+      "Ernest Hemingway",
+      "F. Scott Fitzgerald"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1951, narrated by teenager Holden Caulfield."
+  },
+  {
+    "id": "ak-li-006",
+    "question": "Who wrote the dystopian novel 'Brave New World'?",
+    "answers": [
+      "Aldous Huxley",
+      "George Orwell",
+      "Ray Bradbury",
+      "Margaret Atwood"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1932."
+  },
+  {
+    "id": "ak-li-007",
+    "question": "Who is the author of 'Crime and Punishment'?",
+    "answers": [
+      "Fyodor Dostoevsky",
+      "Leo Tolstoy",
+      "Anton Chekhov",
+      "Nikolai Gogol"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1866."
+  },
+  {
+    "id": "ak-li-008",
+    "question": "Which novelist wrote 'Wuthering Heights'?",
+    "answers": [
+      "Emily Brontë",
+      "Charlotte Brontë",
+      "Anne Brontë",
+      "Jane Austen"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Her only novel, published in 1847."
+  },
+  {
+    "id": "ak-li-009",
+    "question": "Who wrote 'The Great Gatsby'?",
+    "answers": [
+      "F. Scott Fitzgerald",
+      "Ernest Hemingway",
+      "John Steinbeck",
+      "William Faulkner"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in 1925, set during the Jazz Age."
+  },
+  {
+    "id": "ak-li-010",
+    "question": "Which author created the detective Hercule Poirot?",
+    "answers": [
+      "Agatha Christie",
+      "Arthur Conan Doyle",
+      "Dorothy L. Sayers",
+      "P.D. James"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "First appeared in 'The Mysterious Affair at Styles' in 1920."
+  },
+  {
+    "id": "ak-li-011",
+    "question": "Which Colombian author wrote 'One Hundred Years of Solitude'?",
+    "answers": [
+      "Gabriel García Márquez",
+      "Mario Vargas Llosa",
+      "Jorge Luis Borges",
+      "Pablo Neruda"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1967; a landmark of magical realism."
+  },
+  {
+    "id": "ak-li-012",
+    "question": "Who wrote 'Don Quixote'?",
+    "answers": [
+      "Miguel de Cervantes",
+      "Lope de Vega",
+      "Federico García Lorca",
+      "Antonio Machado"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in two parts in 1605 and 1615."
+  },
+  {
+    "id": "ak-li-013",
+    "question": "Who created the character Sherlock Holmes?",
+    "answers": [
+      "Arthur Conan Doyle",
+      "Agatha Christie",
+      "G.K. Chesterton",
+      "Edgar Allan Poe"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "First appeared in 'A Study in Scarlet' in 1887."
+  },
+  {
+    "id": "ak-li-014",
+    "question": "Who wrote 'The Lord of the Rings'?",
+    "answers": [
+      "J.R.R. Tolkien",
+      "C.S. Lewis",
+      "T.H. White",
+      "Lloyd Alexander"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in three volumes between 1954 and 1955."
+  },
+  {
+    "id": "ak-li-015",
+    "question": "Which Irish author wrote 'Ulysses'?",
+    "answers": [
+      "James Joyce",
+      "W.B. Yeats",
+      "Samuel Beckett",
+      "Oscar Wilde"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in full in 1922; set on a single day, 16 June 1904."
+  },
+  {
+    "id": "ak-li-016",
+    "question": "Who wrote 'Beloved'?",
+    "answers": [
+      "Toni Morrison",
+      "Maya Angelou",
+      "Alice Walker",
+      "Zora Neale Hurston"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Won the Pulitzer Prize for Fiction in 1988."
+  },
+  {
+    "id": "ak-li-017",
+    "question": "Which novelist wrote 'A Tale of Two Cities'?",
+    "answers": [
+      "Charles Dickens",
+      "Thomas Hardy",
+      "George Eliot",
+      "William Thackeray"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in 1859, set during the French Revolution."
+  },
+  {
+    "id": "ak-li-018",
+    "question": "Who wrote 'The Brothers Karamazov'?",
+    "answers": [
+      "Fyodor Dostoevsky",
+      "Leo Tolstoy",
+      "Maxim Gorky",
+      "Ivan Turgenev"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Dostoevsky's final novel, published in 1880."
+  },
+  {
+    "id": "ak-li-019",
+    "question": "Who wrote 'Frankenstein'?",
+    "answers": [
+      "Mary Shelley",
+      "Bram Stoker",
+      "Edgar Allan Poe",
+      "Emily Brontë"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in 1818 when Shelley was just 20 years old."
+  },
+  {
+    "id": "ak-li-020",
+    "question": "Which poet wrote 'The Raven'?",
+    "answers": [
+      "Edgar Allan Poe",
+      "Walt Whitman",
+      "Emily Dickinson",
+      "Robert Frost"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1845."
+  },
+  {
+    "id": "ak-li-021",
+    "question": "Who wrote the play 'Waiting for Godot'?",
+    "answers": [
+      "Samuel Beckett",
+      "Eugène Ionesco",
+      "Harold Pinter",
+      "Tom Stoppard"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "First performed in 1953, a masterpiece of the Theatre of the Absurd."
+  },
+  {
+    "id": "ak-li-022",
+    "question": "Which author wrote 'Pride and Prejudice'?",
+    "answers": [
+      "Jane Austen",
+      "Charlotte Brontë",
+      "George Eliot",
+      "Mary Shelley"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in 1813; features Elizabeth Bennet and Mr Darcy."
+  },
+  {
+    "id": "ak-li-023",
+    "question": "Who wrote 'The Adventures of Huckleberry Finn'?",
+    "answers": [
+      "Mark Twain",
+      "Herman Melville",
+      "Walt Whitman",
+      "Nathaniel Hawthorne"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in the US in 1885; Mark Twain was the pen name of Samuel Clemens."
+  },
+  {
+    "id": "ak-li-024",
+    "question": "Who wrote 'Anna Karenina'?",
+    "answers": [
+      "Leo Tolstoy",
+      "Fyodor Dostoevsky",
+      "Anton Chekhov",
+      "Boris Pasternak"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Serialised between 1875 and 1877."
+  },
+  {
+    "id": "ak-li-025",
+    "question": "Which author wrote 'Hamlet'?",
+    "answers": [
+      "William Shakespeare",
+      "Christopher Marlowe",
+      "John Webster",
+      "Ben Jonson"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Written around 1599-1601."
+  },
+  {
+    "id": "ak-li-026",
+    "question": "Who wrote the Harry Potter series?",
+    "answers": [
+      "J.K. Rowling",
+      "Roald Dahl",
+      "Philip Pullman",
+      "Susan Cooper"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The first book was published in 1997."
+  },
+  {
+    "id": "ak-li-027",
+    "question": "Who wrote 'Moby-Dick'?",
+    "answers": [
+      "Herman Melville",
+      "Joseph Conrad",
+      "Jack London",
+      "Robert Louis Stevenson"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1851."
+  },
+  {
+    "id": "ak-li-028",
+    "question": "Which English writer is famous for 'Oliver Twist' and 'David Copperfield'?",
+    "answers": [
+      "Charles Dickens",
+      "Thomas Hardy",
+      "Anthony Trollope",
+      "George Eliot"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "One of the most popular novelists of the Victorian era."
+  },
+  {
+    "id": "ak-li-029",
+    "question": "Who wrote 'The Picture of Dorian Gray'?",
+    "answers": [
+      "Oscar Wilde",
+      "Bram Stoker",
+      "Robert Louis Stevenson",
+      "H.G. Wells"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Wilde's only novel, published in 1890."
+  },
+  {
+    "id": "ak-li-030",
+    "question": "Who wrote 'Things Fall Apart'?",
+    "answers": [
+      "Chinua Achebe",
+      "Wole Soyinka",
+      "Ngũgĩ wa Thiong'o",
+      "Ben Okri"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Nigerian author Achebe's 1958 novel — a classic of African literature."
+  },
+  {
+    "id": "ak-li-031",
+    "question": "Which author wrote 'The Old Man and the Sea'?",
+    "answers": [
+      "Ernest Hemingway",
+      "John Steinbeck",
+      "William Faulkner",
+      "F. Scott Fitzgerald"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Won the Pulitzer Prize for Fiction in 1953."
+  },
+  {
+    "id": "ak-li-032",
+    "question": "Who wrote 'Jane Eyre'?",
+    "answers": [
+      "Charlotte Brontë",
+      "Emily Brontë",
+      "Anne Brontë",
+      "Elizabeth Gaskell"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1847 under the pen name Currer Bell."
+  },
+  {
+    "id": "ak-li-033",
+    "question": "Which Czech-born author wrote 'The Metamorphosis'?",
+    "answers": [
+      "Franz Kafka",
+      "Milan Kundera",
+      "Bohumil Hrabal",
+      "Karel Čapek"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1915; opens with the protagonist transformed into an insect."
+  },
+  {
+    "id": "ak-li-034",
+    "question": "Who created the spy character James Bond?",
+    "answers": [
+      "Ian Fleming",
+      "John le Carré",
+      "Frederick Forsyth",
+      "Tom Clancy"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "First appeared in 'Casino Royale' in 1953."
+  },
+  {
+    "id": "ak-li-035",
+    "question": "Who wrote 'Slaughterhouse-Five'?",
+    "answers": [
+      "Kurt Vonnegut",
+      "Joseph Heller",
+      "Norman Mailer",
+      "Philip Roth"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1969, drawing on Vonnegut's experiences in WWII."
+  },
+  {
+    "id": "ak-li-036",
+    "question": "Who wrote 'Catch-22'?",
+    "answers": [
+      "Joseph Heller",
+      "Kurt Vonnegut",
+      "John Updike",
+      "Ken Kesey"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1961, set during World War II."
+  },
+  {
+    "id": "ak-li-037",
+    "question": "Which Russian poet wrote 'Eugene Onegin'?",
+    "answers": [
+      "Alexander Pushkin",
+      "Mikhail Lermontov",
+      "Nikolay Gogol",
+      "Anna Akhmatova"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "A 'novel in verse', written between 1825 and 1832."
+  },
+  {
+    "id": "ak-li-038",
+    "question": "Who wrote the 'Discworld' series?",
+    "answers": [
+      "Terry Pratchett",
+      "Neil Gaiman",
+      "Douglas Adams",
+      "Tom Holt"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "41 novels published between 1983 and 2015."
+  },
+  {
+    "id": "ak-li-039",
+    "question": "Who wrote 'The Hitchhiker's Guide to the Galaxy'?",
+    "answers": [
+      "Douglas Adams",
+      "Terry Pratchett",
+      "Neil Gaiman",
+      "Iain M. Banks"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Started as a 1978 BBC radio comedy."
+  },
+  {
+    "id": "ak-li-040",
+    "question": "Which author wrote 'Lord of the Flies'?",
+    "answers": [
+      "William Golding",
+      "George Orwell",
+      "J.D. Salinger",
+      "Anthony Burgess"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1954."
+  },
+  {
+    "id": "ak-li-041",
+    "question": "Who wrote 'On the Road'?",
+    "answers": [
+      "Jack Kerouac",
+      "Allen Ginsberg",
+      "William S. Burroughs",
+      "Norman Mailer"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1957; a defining novel of the Beat Generation."
+  },
+  {
+    "id": "ak-li-042",
+    "question": "Who wrote 'The Handmaid's Tale'?",
+    "answers": [
+      "Margaret Atwood",
+      "Doris Lessing",
+      "Ursula K. Le Guin",
+      "Octavia Butler"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in 1985; set in a dystopian theocracy."
+  },
+  {
+    "id": "ak-li-043",
+    "question": "Which author wrote 'A Brief History of Time'?",
+    "answers": [
+      "Stephen Hawking",
+      "Richard Feynman",
+      "Carl Sagan",
+      "Brian Greene"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in 1988; popularised cosmology for general readers."
+  },
+  {
+    "id": "ak-li-044",
+    "question": "Which Japanese author wrote 'Norwegian Wood'?",
+    "answers": [
+      "Haruki Murakami",
+      "Kenzaburō Ōe",
+      "Yukio Mishima",
+      "Yasunari Kawabata"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in Japanese in 1987; brought Murakami international fame."
+  },
+  {
+    "id": "ak-li-045",
+    "question": "Who wrote 'Beloved' and 'Song of Solomon'?",
+    "answers": [
+      "Toni Morrison",
+      "James Baldwin",
+      "Alice Walker",
+      "Ralph Ellison"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Won the Nobel Prize in Literature in 1993."
+  },
+  {
+    "id": "ak-li-046",
+    "question": "Who wrote the 'A Song of Ice and Fire' series, on which 'Game of Thrones' is based?",
+    "answers": [
+      "George R.R. Martin",
+      "Robert Jordan",
+      "Brandon Sanderson",
+      "Patrick Rothfuss"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The first novel, 'A Game of Thrones', was published in 1996."
+  },
+  {
+    "id": "ak-li-047",
+    "question": "Which 20th-century Latin American poet wrote 'Twenty Love Poems and a Song of Despair'?",
+    "answers": [
+      "Pablo Neruda",
+      "Federico García Lorca",
+      "Octavio Paz",
+      "Jorge Luis Borges"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Chilean poet Pablo Neruda published it in 1924, aged 19."
+  },
+  {
+    "id": "ak-li-048",
+    "question": "Who wrote the play 'Death of a Salesman'?",
+    "answers": [
+      "Arthur Miller",
+      "Tennessee Williams",
+      "Eugene O'Neill",
+      "Edward Albee"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Won the Pulitzer Prize for Drama in 1949."
+  },
+  {
+    "id": "ak-li-049",
+    "question": "Who wrote 'Of Mice and Men'?",
+    "answers": [
+      "John Steinbeck",
+      "Ernest Hemingway",
+      "Sinclair Lewis",
+      "Theodore Dreiser"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1937."
+  },
+  {
+    "id": "ak-li-050",
+    "question": "Which Scottish author wrote 'Treasure Island'?",
+    "answers": [
+      "Robert Louis Stevenson",
+      "Arthur Conan Doyle",
+      "Walter Scott",
+      "James Hogg"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Serialised in 1881-82."
+  },
+  {
+    "id": "ak-li-051",
+    "question": "Who wrote 'The Strange Case of Dr Jekyll and Mr Hyde'?",
+    "answers": [
+      "Robert Louis Stevenson",
+      "Bram Stoker",
+      "Mary Shelley",
+      "H.G. Wells"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1886."
+  },
+  {
+    "id": "ak-li-052",
+    "question": "Which playwright wrote 'A Streetcar Named Desire'?",
+    "answers": [
+      "Tennessee Williams",
+      "Arthur Miller",
+      "Edward Albee",
+      "Eugene O'Neill"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Premiered on Broadway in 1947."
+  },
+  {
+    "id": "ak-li-053",
+    "question": "Who wrote the autobiographical book 'I Know Why the Caged Bird Sings'?",
+    "answers": [
+      "Maya Angelou",
+      "Toni Morrison",
+      "Alice Walker",
+      "Zora Neale Hurston"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1969."
+  },
+  {
+    "id": "ak-li-054",
+    "question": "Who wrote 'A Clockwork Orange'?",
+    "answers": [
+      "Anthony Burgess",
+      "Aldous Huxley",
+      "George Orwell",
+      "Kingsley Amis"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1962; written in a fictional Anglo-Russian slang called Nadsat."
+  },
+  {
+    "id": "ak-li-055",
+    "question": "Who wrote 'Dracula'?",
+    "answers": [
+      "Bram Stoker",
+      "Mary Shelley",
+      "Edgar Allan Poe",
+      "H.P. Lovecraft"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in 1897, an epistolary Gothic horror novel."
+  },
+  {
+    "id": "ak-li-056",
+    "question": "Which French novelist wrote 'Madame Bovary'?",
+    "answers": [
+      "Gustave Flaubert",
+      "Victor Hugo",
+      "Honoré de Balzac",
+      "Émile Zola"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1856; one of the most influential novels of all time."
+  },
+  {
+    "id": "ak-li-057",
+    "question": "Which novel begins 'It was the best of times, it was the worst of times'?",
+    "answers": [
+      "A Tale of Two Cities",
+      "Great Expectations",
+      "Bleak House",
+      "Hard Times"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Charles Dickens, 1859."
+  },
+  {
+    "id": "ak-li-058",
+    "question": "Who wrote 'The Trial' and 'The Castle'?",
+    "answers": [
+      "Franz Kafka",
+      "Thomas Mann",
+      "Hermann Hesse",
+      "Robert Musil"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Both novels were published posthumously, against Kafka's wishes."
+  },
+  {
+    "id": "ak-li-059",
+    "question": "Who wrote 'The Divine Comedy'?",
+    "answers": [
+      "Dante Alighieri",
+      "Petrarch",
+      "Boccaccio",
+      "Machiavelli"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Written in the early 14th century in Italian — Inferno, Purgatorio, Paradiso."
+  },
+  {
+    "id": "ak-li-060",
+    "question": "Which 20th-century poet wrote 'The Waste Land'?",
+    "answers": [
+      "T.S. Eliot",
+      "W.B. Yeats",
+      "Ezra Pound",
+      "Wallace Stevens"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Published in 1922."
+  },
+  {
+    "id": "ak-li-061",
+    "question": "Who wrote 'Things Fall Apart' and 'No Longer at Ease'?",
+    "answers": [
+      "Chinua Achebe",
+      "Wole Soyinka",
+      "Ngũgĩ wa Thiong'o",
+      "Ayi Kwei Armah"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Foundational works of modern African literature."
+  },
+  {
+    "id": "ak-li-062",
+    "question": "Who wrote the novel 'Atonement'?",
+    "answers": [
+      "Ian McEwan",
+      "Julian Barnes",
+      "Kazuo Ishiguro",
+      "Martin Amis"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 2001; later adapted into a 2007 film."
+  },
+  {
+    "id": "ak-li-063",
+    "question": "Which Japanese-British author won the Nobel Prize for Literature in 2017?",
+    "answers": [
+      "Kazuo Ishiguro",
+      "Haruki Murakami",
+      "Banana Yoshimoto",
+      "Yukio Mishima"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Born in Nagasaki, raised in Britain; author of 'The Remains of the Day' and 'Never Let Me Go'."
+  },
+  {
+    "id": "ak-li-064",
+    "question": "Who wrote 'The Bell Jar'?",
+    "answers": [
+      "Sylvia Plath",
+      "Anne Sexton",
+      "Adrienne Rich",
+      "Elizabeth Bishop"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Plath's only novel, published in 1963 a month before her death."
+  },
+  {
+    "id": "ak-li-065",
+    "question": "Which Greek epic poem tells of the long journey home of Odysseus?",
+    "answers": [
+      "The Odyssey",
+      "The Iliad",
+      "The Aeneid",
+      "Theogony"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Attributed to Homer, composed around the 8th century BCE."
+  },
+  {
+    "id": "ak-li-066",
+    "question": "Who wrote the 'Foundation' series?",
+    "answers": [
+      "Isaac Asimov",
+      "Arthur C. Clarke",
+      "Robert Heinlein",
+      "Frank Herbert"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published between 1942 and 1993."
+  },
+  {
+    "id": "ak-li-067",
+    "question": "Which English poet wrote 'Paradise Lost'?",
+    "answers": [
+      "John Milton",
+      "John Donne",
+      "Andrew Marvell",
+      "Alexander Pope"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1667."
+  },
+  {
+    "id": "ak-li-068",
+    "question": "Who wrote 'Heart of Darkness'?",
+    "answers": [
+      "Joseph Conrad",
+      "Rudyard Kipling",
+      "Henry James",
+      "Thomas Hardy"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1899; later inspired the film 'Apocalypse Now'."
+  },
+  {
+    "id": "ak-li-069",
+    "question": "Which French novelist wrote 'In Search of Lost Time'?",
+    "answers": [
+      "Marcel Proust",
+      "André Gide",
+      "Albert Camus",
+      "Jean-Paul Sartre"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "A seven-volume novel published between 1913 and 1927."
+  },
+  {
+    "id": "ak-li-070",
+    "question": "Who wrote the children's book 'The Cat in the Hat'?",
+    "answers": [
+      "Dr Seuss",
+      "Roald Dahl",
+      "Maurice Sendak",
+      "Eric Carle"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in 1957 by Theodor Geisel, writing as Dr Seuss."
+  },
+  {
+    "id": "ak-li-071",
+    "question": "Who wrote 'The Stranger' (L'Étranger)?",
+    "answers": [
+      "Albert Camus",
+      "Jean-Paul Sartre",
+      "Simone de Beauvoir",
+      "André Malraux"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1942."
+  },
+  {
+    "id": "ak-li-072",
+    "question": "Which novel features the character Atticus Finch?",
+    "answers": [
+      "To Kill a Mockingbird",
+      "The Great Gatsby",
+      "East of Eden",
+      "Brideshead Revisited"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Atticus is a small-town lawyer defending a Black man in 1930s Alabama."
+  },
+  {
+    "id": "ak-li-073",
+    "question": "Who wrote 'The Master and Margarita'?",
+    "answers": [
+      "Mikhail Bulgakov",
+      "Boris Pasternak",
+      "Aleksandr Solzhenitsyn",
+      "Vladimir Nabokov"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Written in secret in the 1930s, published in censored form in 1966-67."
+  },
+  {
+    "id": "ak-li-074",
+    "question": "Which 19th-century English novelist used the pen name George Eliot?",
+    "answers": [
+      "Mary Ann Evans",
+      "Emily Brontë",
+      "Elizabeth Gaskell",
+      "Mary Shelley"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Used the male pseudonym to ensure her work was taken seriously."
+  },
+  {
+    "id": "ak-li-075",
+    "question": "Who wrote 'Animal Farm'?",
+    "answers": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Anthony Burgess",
+      "Kingsley Amis"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Published in 1945, an allegory on the Russian Revolution."
+  },
+  {
+    "id": "ak-li-076",
+    "question": "Who wrote 'The Color Purple'?",
+    "answers": [
+      "Alice Walker",
+      "Toni Morrison",
+      "Maya Angelou",
+      "Zora Neale Hurston"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Won the Pulitzer Prize for Fiction in 1983."
+  },
+  {
+    "id": "ak-li-077",
+    "question": "Which pen name does J.K. Rowling use for the Cormoran Strike detective novels?",
+    "answers": [
+      "Robert Galbraith",
+      "Joanne Murray",
+      "Jo Rowling",
+      "Robert Jones"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Rowling has published the Cormoran Strike series under this name since 2013."
+  },
+  {
+    "id": "ak-li-078",
+    "question": "Which Irish playwright wrote 'The Importance of Being Earnest'?",
+    "answers": [
+      "Oscar Wilde",
+      "George Bernard Shaw",
+      "W.B. Yeats",
+      "Samuel Beckett"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "First performed in 1895."
+  },
+  {
+    "id": "ak-li-079",
+    "question": "Who wrote the 'Earthsea' fantasy series?",
+    "answers": [
+      "Ursula K. Le Guin",
+      "Patricia A. McKillip",
+      "Tamora Pierce",
+      "Anne McCaffrey"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The first novel, 'A Wizard of Earthsea', was published in 1968."
+  },
+  {
+    "id": "ak-li-080",
+    "question": "Who wrote the 'His Dark Materials' trilogy?",
+    "answers": [
+      "Philip Pullman",
+      "Susan Cooper",
+      "Diana Wynne Jones",
+      "Garth Nix"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Trilogy began with 'Northern Lights' (or 'The Golden Compass' in the US) in 1995."
+  },
+  {
+    "id": "ak-li-081",
+    "question": "Who wrote 'The Sun Also Rises'?",
+    "answers": [
+      "Ernest Hemingway",
+      "F. Scott Fitzgerald",
+      "John Dos Passos",
+      "Sherwood Anderson"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1926; widely regarded as Hemingway's first great novel."
+  },
+  {
+    "id": "ak-li-082",
+    "question": "Who wrote 'Middlemarch'?",
+    "answers": [
+      "George Eliot",
+      "Charles Dickens",
+      "Anthony Trollope",
+      "Henry James"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Serialised in 1871-72; often considered one of the greatest English-language novels."
+  },
+  {
+    "id": "ak-li-083",
+    "question": "Who wrote the 'Bridget Jones' novels?",
+    "answers": [
+      "Helen Fielding",
+      "Sophie Kinsella",
+      "Marian Keyes",
+      "Nick Hornby"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Began as a newspaper column in 1995; the first novel was published in 1996."
+  },
+  {
+    "id": "ak-li-084",
+    "question": "Which novelist wrote 'Tess of the d'Urbervilles' and 'Far from the Madding Crowd'?",
+    "answers": [
+      "Thomas Hardy",
+      "George Eliot",
+      "D.H. Lawrence",
+      "Anthony Trollope"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Set in Hardy's semi-fictional Wessex."
+  }
+]

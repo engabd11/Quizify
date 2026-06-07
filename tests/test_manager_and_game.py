@@ -152,9 +152,8 @@ QuizifyManager = _mgr_mod.QuizifyManager
 
 
 def _mgr() -> QuizifyManager:
-    import tempfile
-    from homeassistant.core import HomeAssistant
-    return QuizifyManager(HomeAssistant(tempfile.mkdtemp()))
+    """Create a QuizifyManager with a dummy hass — token tests don't need HA."""
+    return QuizifyManager(object())  # type: ignore[arg-type]
 
 
 def test_player_token_roundtrip():

@@ -1090,5 +1090,681 @@
     "correct": 0,
     "difficulty": "medium",
     "explanation": "Set in Hardy's semi-fictional Wessex."
+  },
+  {
+    "id": "ak-li-085",
+    "question": "Which Shakespearean play features the tragic lovers Romeo and Juliet?",
+    "answers": [
+      "Romeo and Juliet",
+      "Hamlet",
+      "Macbeth",
+      "Othello"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A timeless tale of star-crossed lovers from feuding families, written by William Shakespeare."
+  },
+  {
+    "id": "ak-li-086",
+    "question": "Who is the author of 'Alice's Adventures in Wonderland'?",
+    "answers": [
+      "Lewis Carroll",
+      "J.M. Barrie",
+      "A.A. Milne",
+      "Beatrix Potter"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Charles Lutwidge Dodgson, under the pseudonym Lewis Carroll, penned this classic children's fantasy."
+  },
+  {
+    "id": "ak-li-087",
+    "question": "Which novel opens with the line 'Call me Ishmael.'?",
+    "answers": [
+      "Moby Dick",
+      "The Great Gatsby",
+      "Treasure Island",
+      "Robinson Crusoe"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "This famous opening line introduces Herman Melville's epic tale of Captain Ahab and the white whale."
+  },
+  {
+    "id": "ak-li-088",
+    "question": "What is the name of the wizard in J.R.R. Tolkien's 'The Hobbit' and 'The Lord of the Rings'?",
+    "answers": [
+      "Gandalf",
+      "Dumbledore",
+      "Merlin",
+      "Saruman"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Gandalf the Grey, later Gandalf the White, is a crucial mentor and guide to the protagonists."
+  },
+  {
+    "id": "ak-li-089",
+    "question": "Who wrote 'Pride and Prejudice'?",
+    "answers": [
+      "Jane Austen",
+      "Charlotte Brontë",
+      "Emily Brontë",
+      "Mary Shelley"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "This beloved novel of manners, romance, and societal expectations was penned by Jane Austen."
+  },
+  {
+    "id": "ak-li-090",
+    "question": "In which city is Victor Hugo's novel 'Les Misérables' primarily set?",
+    "answers": [
+      "Paris",
+      "London",
+      "Rome",
+      "Berlin"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "This historical novel explores the lives of several characters in 19th-century Paris."
+  },
+  {
+    "id": "ak-li-091",
+    "question": "Who authored the classic dystopian novel '1984'?",
+    "answers": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Ray Bradbury",
+      "Yevgeny Zamyatin"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A chilling vision of a totalitarian future written by George Orwell, published in 1949."
+  },
+  {
+    "id": "ak-li-092",
+    "question": "Which ancient Greek playwright is known for tragedies like 'Oedipus Rex'?",
+    "answers": [
+      "Sophocles",
+      "Euripides",
+      "Aeschylus",
+      "Aristophanes"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Sophocles is considered one of the three great ancient Greek tragedians whose plays have survived."
+  },
+  {
+    "id": "ak-li-093",
+    "question": "Who is the creator of the fictional detective Sherlock Holmes?",
+    "answers": [
+      "Arthur Conan Doyle",
+      "Agatha Christie",
+      "Raymond Chandler",
+      "Dashiell Hammett"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Sir Arthur Conan Doyle introduced the brilliant, eccentric detective in 1887."
+  },
+  {
+    "id": "ak-li-094",
+    "question": "Which literary term refers to a character who opposes the main character?",
+    "answers": [
+      "Antagonist",
+      "Protagonist",
+      "Narrator",
+      "Foil"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The antagonist creates conflict for the protagonist, also known as the main character."
+  },
+  {
+    "id": "ak-li-095",
+    "question": "What is the name of the boy who never grows up in J.M. Barrie's famous play and novel?",
+    "answers": [
+      "Peter Pan",
+      "Tom Sawyer",
+      "Pinocchio",
+      "Oliver Twist"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Peter Pan resides in Neverland and refuses to age, leading children on magical adventures."
+  },
+  {
+    "id": "ak-li-096",
+    "question": "Who wrote 'The Adventures of Tom Sawyer'?",
+    "answers": [
+      "Mark Twain",
+      "Charles Dickens",
+      "Robert Louis Stevenson",
+      "Washington Irving"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Samuel Clemens, known by his pen name Mark Twain, wrote this classic American novel."
+  },
+  {
+    "id": "ak-li-097",
+    "question": "Which novel features a green light at the end of a dock?",
+    "answers": [
+      "The Great Gatsby",
+      "To Kill a Mockingbird",
+      "Of Mice and Men",
+      "The Catcher in the Rye"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The green light symbolizes hope and Daisy Buchanan in F. Scott Fitzgerald's iconic novel."
+  },
+  {
+    "id": "ak-li-098",
+    "question": "Who wrote the play 'Hamlet'?",
+    "answers": [
+      "William Shakespeare",
+      "Christopher Marlowe",
+      "Ben Jonson",
+      "John Webster"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "One of William Shakespeare's most famous tragedies, exploring themes of revenge and madness."
+  },
+  {
+    "id": "ak-li-099",
+    "question": "Which book is about a young wizard's adventures at Hogwarts School of Witchcraft and Wizardry?",
+    "answers": [
+      "Harry Potter and the Philosopher's Stone",
+      "The Lord of the Rings",
+      "The Chronicles of Narnia",
+      "Percy Jackson & The Lightning Thief"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The first book in J.K. Rowling's massively popular Harry Potter series."
+  },
+  {
+    "id": "ak-li-100",
+    "question": "Which poetic form consists of 14 lines, typically in iambic pentameter, with a specific rhyme scheme?",
+    "answers": [
+      "Sonnet",
+      "Haiku",
+      "Limerick",
+      "Ballad"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Sonnets are a popular form of lyrical poetry, often associated with Shakespeare and Petrarch."
+  },
+  {
+    "id": "ak-li-101",
+    "question": "Who is the author of 'The Catcher in the Rye'?",
+    "answers": [
+      "J.D. Salinger",
+      "F. Scott Fitzgerald",
+      "Ernest Hemingway",
+      "John Steinbeck"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "This coming-of-age novel follows the experiences of Holden Caulfield, written by J.D. Salinger."
+  },
+  {
+    "id": "ak-li-102",
+    "question": "Which classic children's book features characters like Wilbur the pig and Charlotte the spider?",
+    "answers": [
+      "Charlotte's Web",
+      "Stuart Little",
+      "The Trumpet of the Swan",
+      "Winnie-the-Pooh"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "E.B. White's beloved novel tells the story of a pig saved from slaughter by his friend, a spider."
+  },
+  {
+    "id": "ak-li-103",
+    "question": "Who wrote the play 'Macbeth'?",
+    "answers": [
+      "William Shakespeare",
+      "Ben Jonson",
+      "Christopher Marlowe",
+      "John Milton"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "One of William Shakespeare's darkest and most powerful tragedies, set in Scotland."
+  },
+  {
+    "id": "ak-li-104",
+    "question": "What is the name of the young orphan who runs away from Miss Hannigan's orphanage?",
+    "answers": [
+      "Annie",
+      "Oliver Twist",
+      "Matilda",
+      "Heidi"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Annie is the optimistic protagonist of the popular comic strip and musical."
+  },
+  {
+    "id": "ak-li-105",
+    "question": "Which literary movement emphasized reason, individualism, and skepticism, flourishing in the 18th century?",
+    "answers": [
+      "The Enlightenment",
+      "Romanticism",
+      "Modernism",
+      "Existentialism"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Enlightenment was a philosophical movement that profoundly influenced Western thought and literature."
+  },
+  {
+    "id": "ak-li-106",
+    "question": "Who wrote 'Little Women'?",
+    "answers": [
+      "Louisa May Alcott",
+      "Jane Austen",
+      "George Eliot",
+      "Charlotte Brontë"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "This classic novel tells the story of the four March sisters during the American Civil War."
+  },
+  {
+    "id": "ak-li-107",
+    "question": "Which famous poet wrote 'The Waste Land'?",
+    "answers": [
+      "T.S. Eliot",
+      "Ezra Pound",
+      "W.B. Yeats",
+      "Robert Frost"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A seminal work of Modernist poetry by T.S. Eliot, published in 1922."
+  },
+  {
+    "id": "ak-li-108",
+    "question": "What is the primary setting of 'The Wizard of Oz'?",
+    "answers": [
+      "Oz",
+      "Wonderland",
+      "Neverland",
+      "Narnia"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Dorothy is transported from Kansas to the magical land of Oz in L. Frank Baum's novel."
+  },
+  {
+    "id": "ak-li-109",
+    "question": "Which literary device involves a contrast between what is said and what is actually meant?",
+    "answers": [
+      "Irony",
+      "Metaphor",
+      "Simile",
+      "Alliteration"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Irony is a common literary technique used to add depth and humor to writing."
+  },
+  {
+    "id": "ak-li-110",
+    "question": "Which ancient Greek epic poem tells the story of Odysseus's ten-year journey home after the Trojan War?",
+    "answers": [
+      "The Odyssey",
+      "The Iliad",
+      "The Aeneid",
+      "Works and Days"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Credited to Homer, 'The Odyssey' is one of the foundational works of Western literature."
+  },
+  {
+    "id": "ak-li-111",
+    "question": "Who authored the dystopian novel '1984'?",
+    "answers": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Ray Bradbury",
+      "Yevgeny Zamyatin"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1949, it describes a totalitarian future where personal freedom is suppressed."
+  },
+  {
+    "id": "ak-li-112",
+    "question": "Which early 20th-century literary movement emphasized irrationality, the unconscious, and dreams?",
+    "answers": [
+      "Surrealism",
+      "Modernism",
+      "Existentialism",
+      "Symbolism"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "André Breton's 'Manifesto of Surrealism' (1924) is a key text of the movement."
+  },
+  {
+    "id": "ak-li-113",
+    "question": "Who wrote 'One Hundred Years of Solitude', a masterpiece of magical realism?",
+    "answers": [
+      "Gabriel García Márquez",
+      "Isabel Allende",
+      "Jorge Luis Borges",
+      "Mario Vargas Llosa"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The novel recounts the multi-generational story of the Buendía family in the fictional town of Macondo."
+  },
+  {
+    "id": "ak-li-114",
+    "question": "Which English poet wrote 'Paradise Lost', an epic poem about the Biblical story of the Fall of Man?",
+    "answers": [
+      "John Milton",
+      "Geoffrey Chaucer",
+      "William Wordsworth",
+      "Lord Byron"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1667, it is considered one of the greatest works in English literature."
+  },
+  {
+    "id": "ak-li-115",
+    "question": "Which Russian novelist wrote 'Crime and Punishment' and 'The Brothers Karamazov'?",
+    "answers": [
+      "Fyodor Dostoevsky",
+      "Leo Tolstoy",
+      "Anton Chekhov",
+      "Ivan Turgenev"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Dostoevsky is known for exploring psychological depth and philosophical themes in his works."
+  },
+  {
+    "id": "ak-li-116",
+    "question": "What is the name of the literary movement that emphasized emotion, individualism, and the glorification of nature, prominent in the late 18th and early 19th centuries?",
+    "answers": [
+      "Romanticism",
+      "Classicism",
+      "Realism",
+      "Enlightenment"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Key figures include William Wordsworth, Lord Byron, and Mary Shelley."
+  },
+  {
+    "id": "ak-li-117",
+    "question": "Who is the author of 'The Handmaid's Tale'?",
+    "answers": [
+      "Margaret Atwood",
+      "Ursula K. Le Guin",
+      "Octavia E. Butler",
+      "Shirley Jackson"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "This dystopian novel was published in 1985 and explores themes of subjugation and individual resistance."
+  },
+  {
+    "id": "ak-li-118",
+    "question": "Which play by William Shakespeare features the characters Romeo and Juliet?",
+    "answers": [
+      "Romeo and Juliet",
+      "Hamlet",
+      "Othello",
+      "Macbeth"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "This tragic love story is one of Shakespeare's most celebrated and frequently performed plays."
+  },
+  {
+    "id": "ak-li-119",
+    "question": "Who wrote 'The Metamorphosis', a novella about a man who wakes up to find himself transformed into a giant insect?",
+    "answers": [
+      "Franz Kafka",
+      "Albert Camus",
+      "Hermann Hesse",
+      "Thomas Mann"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1915, it is one of Kafka's most well-known works, exploring themes of alienation and absurdity."
+  },
+  {
+    "id": "ak-li-120",
+    "question": "Which American author wrote 'The Great Gatsby'?",
+    "answers": [
+      "F. Scott Fitzgerald",
+      "Ernest Hemingway",
+      "John Steinbeck",
+      "William Faulkner"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1925, it is a quintessential novel of the Jazz Age and the American Dream."
+  },
+  {
+    "id": "ak-li-121",
+    "question": "The Beat Generation was a literary movement that emerged in what decade?",
+    "answers": [
+      "1950s",
+      "1940s",
+      "1960s",
+      "1970s"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Key figures included Jack Kerouac, Allen Ginsberg, and William S. Burroughs, challenging mainstream American values."
+  },
+  {
+    "id": "ak-li-122",
+    "question": "Who is the Nigerian author of 'Things Fall Apart'?",
+    "answers": [
+      "Chinua Achebe",
+      "Wole Soyinka",
+      "Chimamanda Ngozi Adichie",
+      "Buchi Emecheta"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1958, it is a seminal work of African literature, depicting pre-colonial Igbo life and the impact of colonialism."
+  },
+  {
+    "id": "ak-li-123",
+    "question": "Which French philosopher and novelist wrote 'The Stranger' (L'Étranger) and developed the concept of absurdism?",
+    "answers": [
+      "Albert Camus",
+      "Jean-Paul Sartre",
+      "Simone de Beauvoir",
+      "André Gide"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1942, 'The Stranger' is a classic of existentialist and absurdist literature."
+  },
+  {
+    "id": "ak-li-124",
+    "question": "Which Victorian author wrote 'Great Expectations' and 'A Tale of Two Cities'?",
+    "answers": [
+      "Charles Dickens",
+      "Jane Austen",
+      "George Eliot",
+      "Thomas Hardy"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Dickens is renowned for his vivid characters, social commentary, and intricate plots."
+  },
+  {
+    "id": "ak-li-125",
+    "question": "Who is the celebrated Canadian short story writer and Nobel Prize laureate known for her works often set in rural Ontario?",
+    "answers": [
+      "Alice Munro",
+      "Margaret Atwood",
+      "Mavis Gallant",
+      "Robertson Davies"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Munro received the Nobel Prize in Literature in 2013, recognized as a master of the contemporary short story."
+  },
+  {
+    "id": "ak-li-126",
+    "question": "Which ancient Roman epic poem by Virgil tells the story of Aeneas, a Trojan hero who becomes the ancestor of the Romans?",
+    "answers": [
+      "The Aeneid",
+      "The Metamorphoses",
+      "The Histories",
+      "The Odyssey"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Considered a foundational text of Roman literature, it draws on Homeric epic traditions."
+  },
+  {
+    "id": "ak-li-127",
+    "question": "Who wrote 'Frankenstein; or, The Modern Prometheus'?",
+    "answers": [
+      "Mary Shelley",
+      "Bram Stoker",
+      "Edgar Allan Poe",
+      "H.P. Lovecraft"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1818, it is an early example of science fiction and a classic of Gothic literature."
+  },
+  {
+    "id": "ak-li-128",
+    "question": "Which American poet wrote 'The Love Song of J. Alfred Prufrock' and 'The Waste Land'?",
+    "answers": [
+      "T.S. Eliot",
+      "Ezra Pound",
+      "W.H. Auden",
+      "Robert Frost"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Eliot was a central figure in the Modernist movement in poetry."
+  },
+  {
+    "id": "ak-li-129",
+    "question": "Who penned 'Don Quixote', often considered the first modern novel?",
+    "answers": [
+      "Miguel de Cervantes",
+      "Lope de Vega",
+      "Tirso de Molina",
+      "Calderón de la Barca"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The novel was published in two parts, in 1605 and 1615, and is a foundational work of Western literature."
+  },
+  {
+    "id": "ak-li-130",
+    "question": "Which influential author wrote 'Mrs Dalloway' and 'To the Lighthouse', known for her stream-of-consciousness narrative style?",
+    "answers": [
+      "Virginia Woolf",
+      "Katherine Mansfield",
+      "E.M. Forster",
+      "James Joyce"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Woolf was a central figure in the Modernist movement of the early 20th century."
+  },
+  {
+    "id": "ak-li-131",
+    "question": "The Harlem Renaissance was a cultural, social, and artistic explosion centered in Harlem, New York, during which period?",
+    "answers": [
+      "1920s and 1930s",
+      "1910s and 1920s",
+      "1930s and 1940s",
+      "1940s and 1950s"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "It produced a wealth of African American literature, art, and music, with figures like Langston Hughes and Zora Neale Hurston."
+  },
+  {
+    "id": "ak-li-132",
+    "question": "Who wrote 'The Alchemist', a widely popular allegorical novel?",
+    "answers": [
+      "Paulo Coelho",
+      "Haruki Murakami",
+      "Jorge Amado",
+      "Isabel Allende"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "First published in 1988, it tells the story of a young shepherd's journey to find his destiny."
+  },
+  {
+    "id": "ak-li-133",
+    "question": "Which Norwegian playwright is considered the 'father of realism' in modern theatre, known for plays like 'A Doll's House'?",
+    "answers": [
+      "Henrik Ibsen",
+      "August Strindberg",
+      "Anton Chekhov",
+      "George Bernard Shaw"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Ibsen's plays often explored societal norms and individual freedom, sparking much controversy."
+  },
+  {
+    "id": "ak-li-134",
+    "question": "Who wrote 'Beloved', a novel based on the true story of a runaway slave?",
+    "answers": [
+      "Toni Morrison",
+      "Alice Walker",
+      "Maya Angelou",
+      "Zora Neale Hurston"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1987, it won the Pulitzer Prize for Fiction and later contributed to Morrison receiving the Nobel Prize."
+  },
+  {
+    "id": "ak-li-135",
+    "question": "Which Japanese author wrote 'The Tale of Genji', often cited as the world's first novel?",
+    "answers": [
+      "Murasaki Shikibu",
+      "Sei Shōnagon",
+      "Lady Nyo",
+      "Izumi Shikibu"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Written in the early 11th century, it provides a detailed depiction of the Heian court life."
+  },
+  {
+    "id": "ak-li-136",
+    "question": "Who is the author of 'Slaughterhouse-Five', a satirical anti-war novel?",
+    "answers": [
+      "Kurt Vonnegut",
+      "Joseph Heller",
+      "John Irving",
+      "Philip Roth"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Published in 1969, it uses science fiction elements to explore the horrors of World War II, particularly the bombing of Dresden."
   }
 ]

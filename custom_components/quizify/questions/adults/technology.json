@@ -1090,5 +1090,694 @@
     "correct": 0,
     "difficulty": "medium",
     "explanation": "Founded by Steve Chen, Chad Hurley, and Jawed Karim in February 2005. Acquired by Google in 2006."
+  },
+  {
+    "id": "ak-tc-085",
+    "question": "What is the primary function of a CPU in a computer?",
+    "answers": [
+      "To execute instructions and perform calculations",
+      "To store long-term data",
+      "To display images on the screen",
+      "To connect to the internet"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Central Processing Unit (CPU) is often called the 'brain' of the computer, responsible for carrying out most of the processing."
+  },
+  {
+    "id": "ak-tc-086",
+    "question": "Which of these is a common programming language used for web development?",
+    "answers": [
+      "HTML",
+      "SQL",
+      "Java",
+      "Python"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "HTML (HyperText Markup Language) is the standard language for creating web pages, defining their structure and content."
+  },
+  {
+    "id": "ak-tc-087",
+    "question": "What does 'Wi-Fi' stand for?",
+    "answers": [
+      "Wireless Fidelity",
+      "Wireless Fiber",
+      "Wide-area Fidelity",
+      "Web-fiber"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Wi-Fi is a family of wireless networking technologies based on the IEEE 802.11 standards, commonly used for local area networking of devices."
+  },
+  {
+    "id": "ak-tc-088",
+    "question": "What is the primary purpose of a firewall in cybersecurity?",
+    "answers": [
+      "To monitor and control incoming and outgoing network traffic",
+      "To create backup copies of data",
+      "To speed up internet connection",
+      "To encrypt files on a computer"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A firewall acts as a barrier, preventing unauthorized access to or from a private network."
+  },
+  {
+    "id": "ak-tc-089",
+    "question": "Which company developed the Windows operating system?",
+    "answers": [
+      "Microsoft",
+      "Apple",
+      "Google",
+      "IBM"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Microsoft Windows is a widely used family of graphical operating systems developed by Microsoft and first released in 1985."
+  },
+  {
+    "id": "ak-tc-090",
+    "question": "What is represented by 'RAM' in computer terminology?",
+    "answers": [
+      "Random Access Memory",
+      "Read-Only Memory",
+      "Remote Access Module",
+      "Rapid Application Management"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "RAM is a type of volatile computer memory that can be read from and written to randomly, used for temporarily storing data that the CPU needs quickly."
+  },
+  {
+    "id": "ak-tc-091",
+    "question": "Which social media platform is known for its short video clips?",
+    "answers": [
+      "TikTok",
+      "Facebook",
+      "Twitter",
+      "LinkedIn"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "TikTok allows users to create and share short-form videos with music, filters, and other effects."
+  },
+  {
+    "id": "ak-tc-092",
+    "question": "What is phishing in the context of cybersecurity?",
+    "answers": [
+      "Attempting to acquire sensitive information by masquerading as a trustworthy entity",
+      "Creating fake websites for entertainment",
+      "Installing updates on software",
+      "Deleting unwanted files from a computer"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Phishing often involves malicious emails or websites designed to trick individuals into revealing personal data like passwords or credit card numbers."
+  },
+  {
+    "id": "ak-tc-093",
+    "question": "Which of these is a common file format for images?",
+    "answers": [
+      "JPEG",
+      "DOCX",
+      "MP3",
+      "EXE"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "JPEG (Joint Photographic Experts Group) is a widely used method of lossy compression for digital images, particularly for photographs."
+  },
+  {
+    "id": "ak-tc-094",
+    "question": "What is the primary function of an operating system?",
+    "answers": [
+      "To manage computer hardware and software resources",
+      "To browse the internet",
+      "To create documents",
+      "To play games"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "An operating system (OS) acts as an intermediary between computer hardware and software, providing an environment for programs to run."
+  },
+  {
+    "id": "ak-tc-095",
+    "question": "What does WWW stand for?",
+    "answers": [
+      "World Wide Web",
+      "World Web Worm",
+      "Wide World Web",
+      "World Wide Widget"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The World Wide Web is a global system of interconnected computer networks that uses standard communication protocols to serve billions of users worldwide."
+  },
+  {
+    "id": "ak-tc-096",
+    "question": "Which device is used to connect multiple computers and other network devices within a single building or campus?",
+    "answers": [
+      "Router",
+      "Modem",
+      "Switch",
+      "Hub"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A router forwards data packets between computer networks, creating an overlay internetwork from two or more networks."
+  },
+  {
+    "id": "ak-tc-097",
+    "question": "What is a 'gigabyte' a measure of?",
+    "answers": [
+      "Digital information storage",
+      "Processor speed",
+      "Internet bandwidth",
+      "Screen resolution"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A gigabyte (GB) is a multiple of the unit byte for digital information, often used to describe the size of hard drives or RAM."
+  },
+  {
+    "id": "ak-tc-098",
+    "question": "Which company is known for its iPhone product line?",
+    "answers": [
+      "Apple",
+      "Samsung",
+      "Google",
+      "Huawei"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The iPhone is a line of smartphones designed and marketed by Apple Inc., running on the iOS mobile operating system."
+  },
+  {
+    "id": "ak-tc-099",
+    "question": "What is a 'cookie' in web browsing?",
+    "answers": [
+      "A small piece of data stored on the user's computer by the web browser",
+      "A type of web advertisement",
+      "A security vulnerability",
+      "A search engine algorithm"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Cookies are used to remember stateful information or to record the user's browsing activity, such as items in a shopping cart or login details."
+  },
+  {
+    "id": "ak-tc-100",
+    "question": "In programming, what is a 'bug'?",
+    "answers": [
+      "An error, flaw, or fault in a computer program or system",
+      "A security feature",
+      "A type of software update",
+      "A hardware component"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Bugs can lead to incorrect or unexpected results and may cause a program to crash or produce unintended behavior."
+  },
+  {
+    "id": "ak-tc-101",
+    "question": "What does 'URL' stand for?",
+    "answers": [
+      "Uniform Resource Locator",
+      "Universal Remote Link",
+      "Unified Resource Language",
+      "User Requirement List"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A URL is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it."
+  },
+  {
+    "id": "ak-tc-102",
+    "question": "Which type of software is designed to harm, disrupt, or gain unauthorized access to computer systems?",
+    "answers": [
+      "Malware",
+      "Shareware",
+      "Freeware",
+      "Firmware"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Malware is a broad term that includes viruses, worms, Trojan horses, ransomware, and spyware."
+  },
+  {
+    "id": "ak-tc-103",
+    "question": "What is the purpose of 'cloud storage'?",
+    "answers": [
+      "To store digital data in logically pooled physical servers, typically managed by a third-party hosting provider",
+      "To store data directly on your computer's hard drive",
+      "To back up data on external hard drives",
+      "To print documents wirelessly"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Cloud storage allows users to save and access their files online from any device with an internet connection, rather than relying solely on local storage."
+  },
+  {
+    "id": "ak-tc-104",
+    "question": "Which of these is a popular streaming service for movies and TV shows?",
+    "answers": [
+      "Netflix",
+      "Zoom",
+      "Spotify",
+      "WhatsApp"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Netflix is a global streaming service that offers a vast library of films and television series, often including original content."
+  },
+  {
+    "id": "ak-tc-105",
+    "question": "What is the main function of an antivirus program?",
+    "answers": [
+      "To detect, prevent, and remove malicious software",
+      "To optimize internet speed",
+      "To store passwords securely",
+      "To create digital artwork"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Antivirus software is a crucial part of cybersecurity, protecting computers from various types of harmful programs."
+  },
+  {
+    "id": "ak-tc-106",
+    "question": "Which peripheral device is used for typing text and commands into a computer?",
+    "answers": [
+      "Keyboard",
+      "Mouse",
+      "Monitor",
+      "Printer"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A keyboard is an input device that uses an arrangement of buttons or keys to act as mechanical levers or electronic switches."
+  },
+  {
+    "id": "ak-tc-107",
+    "question": "What is 'AI' commonly known as in computing?",
+    "answers": [
+      "Artificial Intelligence",
+      "Automated Integration",
+      "Advanced Internet",
+      "Analytical Information"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Artificial intelligence refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions."
+  },
+  {
+    "id": "ak-tc-108",
+    "question": "Which company developed the Android mobile operating system?",
+    "answers": [
+      "Google",
+      "Apple",
+      "Microsoft",
+      "Samsung"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, primarily designed for touchscreen mobile devices."
+  },
+  {
+    "id": "ak-tc-109",
+    "question": "What is the term for sending unsolicited bulk messages, especially email?",
+    "answers": [
+      "Spam",
+      "Phishing",
+      "Hacking",
+      "Malware"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Spam is a common nuisance on the internet and often carries malicious content or advertisements."
+  },
+  {
+    "id": "ak-tc-110",
+    "question": "Which type of cable is often used to connect a computer to a monitor?",
+    "answers": [
+      "HDMI",
+      "USB",
+      "Ethernet",
+      "Power cable"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "HDMI (High-Definition Multimedia Interface) is a proprietary audio/video interface for transmitting uncompressed video data and compressed or uncompressed digital audio data."
+  },
+  {
+    "id": "ak-tc-111",
+    "question": "What is the primary function of a web browser?",
+    "answers": [
+      "To access and display web pages",
+      "To edit documents",
+      "To store files locally",
+      "To create spreadsheets"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A web browser is a software application for retrieving, presenting, and traversing information resources on the World Wide Web."
+  },
+  {
+    "id": "ak-tc-112",
+    "question": "Which term describes a small, self-contained program that replicates itself to spread to other computers?",
+    "answers": [
+      "Virus",
+      "Firewall",
+      "Operating System",
+      "Web Browser"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A computer virus is a type of malicious software that, when executed, replicates itself by modifying other computer programs and inserting its own code."
+  },
+  {
+    "id": "ak-tc-113",
+    "question": "What is the primary function of a VPN?",
+    "answers": [
+      "To create a secure and encrypted connection over a less secure network",
+      "To increase internet speed",
+      "To block unwanted advertisements",
+      "To store cloud-based data"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A VPN (Virtual Private Network) extends a private network across a public network, enabling users to send and receive data securely."
+  },
+  {
+    "id": "ak-tc-114",
+    "question": "Which programming language is often used for data science and machine learning due to its extensive libraries?",
+    "answers": [
+      "Python",
+      "Java",
+      "C++",
+      "PHP"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Python's simplicity and its rich ecosystem of libraries like NumPy, Pandas, and scikit-learn make it ideal for data-intensive tasks and AI."
+  },
+  {
+    "id": "ak-tc-115",
+    "question": "What does 'HTTP' stand for?",
+    "answers": [
+      "Hypertext Transfer Protocol",
+      "Hypertext Terminal Program",
+      "High-level Text Protocol",
+      "Human-readable Text Processor"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "HTTP is an application protocol for distributed, collaborative, and hypermedia information systems, forming the foundation of data communication for the World Wide Web."
+  },
+  {
+    "id": "ak-tc-116",
+    "question": "Which company developed the Android operating system?",
+    "answers": [
+      "Google",
+      "Apple",
+      "Microsoft",
+      "Samsung"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Android Inc. was founded in 2003, and Google acquired it in 2005. The first Android device was launched in 2008."
+  },
+  {
+    "id": "ak-tc-117",
+    "question": "What is phishing in cybersecurity?",
+    "answers": [
+      "A fraudulent attempt to obtain sensitive information by disguising as a trustworthy entity",
+      "A type of malware that encrypts files and demands payment",
+      "A technique to bypass firewalls",
+      "A method for optimizing network traffic"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Phishing attacks typically involve deceptive emails or websites that trick users into revealing personal data like passwords or credit card numbers."
+  },
+  {
+    "id": "ak-tc-118",
+    "question": "Which component of a computer is responsible for executing instructions and performing calculations?",
+    "answers": [
+      "CPU (Central Processing Unit)",
+      "RAM (Random Access Memory)",
+      "GPU (Graphics Processing Unit)",
+      "SSD (Solid State Drive)"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The CPU is often referred to as the 'brain' of the computer, handling most of the processing and instruction execution."
+  },
+  {
+    "id": "ak-tc-119",
+    "question": "What is the internet protocol suite commonly known as?",
+    "answers": [
+      "TCP/IP",
+      "HTML/CSS",
+      "HTTP/FTP",
+      "USB/HDMI"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "TCP/IP (Transmission Control Protocol/Internet Protocol) is the fundamental set of protocols that govern how data is exchanged over the internet."
+  },
+  {
+    "id": "ak-tc-120",
+    "question": "Which of these is a popular version control system used by developers?",
+    "answers": [
+      "Git",
+      "Microsoft Word",
+      "Adobe Photoshop",
+      "Excel"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Git is a distributed version control system for tracking changes in source code during software development, allowing multiple developers to collaborate efficiently."
+  },
+  {
+    "id": "ak-tc-121",
+    "question": "What is a 'firewall' in the context of computer networks?",
+    "answers": [
+      "A security system that monitors and controls incoming and outgoing network traffic",
+      "A device that boosts Wi-Fi signals",
+      "Software for optimizing hard drive performance",
+      "A program for compressing files"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A firewall establishes a barrier between a trusted internal network and untrusted external networks, such as the internet."
+  },
+  {
+    "id": "ak-tc-122",
+    "question": "In artificial intelligence, what does 'NLP' refer to?",
+    "answers": [
+      "Natural Language Processing",
+      "Neural Learning Protocol",
+      "Network Logic Programming",
+      "New Language Paradigm"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "NLP is a field of AI that gives computers the ability to understand, interpret, and generate human language."
+  },
+  {
+    "id": "ak-tc-123",
+    "question": "Which company is known for its 'iPhone' series of smartphones?",
+    "answers": [
+      "Apple",
+      "Samsung",
+      "Google",
+      "Huawei"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The iPhone is a line of smartphones designed and marketed by Apple Inc., running on their iOS mobile operating system."
+  },
+  {
+    "id": "ak-tc-124",
+    "question": "What is the purpose of an operating system?",
+    "answers": [
+      "To manage computer hardware and software resources",
+      "To connect to the internet",
+      "To run antivirus scans",
+      "To design websites"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "An OS acts as an intermediary between the user and the computer hardware, performing basic tasks like recognizing input from the keyboard, sending output to the display screen, managing files and directories on the storage drives, and controlling peripheral devices."
+  },
+  {
+    "id": "ak-tc-125",
+    "question": "Which of these is a common programming paradigm where problems are viewed as objects interacting with each other?",
+    "answers": [
+      "Object-Oriented Programming (OOP)",
+      "Procedural Programming",
+      "Functional Programming",
+      "Declarative Programming"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "OOP uses objects, which are instances of classes, to structure programs and handle data and behavior."
+  },
+  {
+    "id": "ak-tc-126",
+    "question": "What is the primary function of a router in a network?",
+    "answers": [
+      "To forward data packets between computer networks",
+      "To store data files",
+      "To protect against viruses",
+      "To display web pages"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Routers direct traffic on the internet and within local networks, allowing devices to communicate across different networks."
+  },
+  {
+    "id": "ak-tc-127",
+    "question": "What is the term for a malicious software program that replicates itself and spreads to other computers?",
+    "answers": [
+      "Virus",
+      "Browser",
+      "Spreadsheet",
+      "Operating System"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A computer virus is a type of malicious software that, when executed, replicates itself by modifying other computer programs and inserting its own code."
+  },
+  {
+    "id": "ak-tc-128",
+    "question": "Which company developed the 'Windows' operating system?",
+    "answers": [
+      "Microsoft",
+      "Apple",
+      "IBM",
+      "Google"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Microsoft Windows, commonly known as Windows, is a group of several proprietary graphical operating system families developed and marketed by Microsoft."
+  },
+  {
+    "id": "ak-tc-129",
+    "question": "What is the main purpose of a database?",
+    "answers": [
+      "To store, organize, and manage large amounts of data",
+      "To browse the internet",
+      "To create presentations",
+      "To edit video files"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A database is an organized collection of structured information, or data, typically stored electronically in a computer system."
+  },
+  {
+    "id": "ak-tc-130",
+    "question": "Which type of artificial intelligence is designed to simulate human-like conversation?",
+    "answers": [
+      "Chatbot",
+      "Robotics",
+      "Computer Vision",
+      "Expert System"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Chatbots are AI programs that simulate human conversation through voice commands or text chats, common in customer service and information delivery."
+  },
+  {
+    "id": "ak-tc-131",
+    "question": "What is 'blockchain' primarily known for?",
+    "answers": [
+      "Creating a decentralized and secure ledger of transactions",
+      "Speeding up internet connections",
+      "Developing video games",
+      "Storing personal photos"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Blockchain is a distributed ledger technology that records transactions across many computers, providing a secure and tamper-resistant record."
+  },
+  {
+    "id": "ak-tc-132",
+    "question": "Which gadget is often used for reading digital books?",
+    "answers": [
+      "E-reader",
+      "Smartwatch",
+      "Fitness tracker",
+      "Smart speaker"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "E-readers, like the Amazon Kindle or Kobo, are designed for optimal digital reading with features like e-ink displays."
+  },
+  {
+    "id": "ak-tc-133",
+    "question": "What is the function of a compiler in programming?",
+    "answers": [
+      "To translate source code written in a high-level language into machine code",
+      "To execute machine code directly",
+      "To debug program errors",
+      "To manage project files"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A compiler is a special program that processes statements written in a particular programming language and turns them into machine language or 'code' that the computer's processor uses."
+  },
+  {
+    "id": "ak-tc-134",
+    "question": "What does 'IoT' stand for?",
+    "answers": [
+      "Internet of Things",
+      "International Online Technology",
+      "Integrated Operating Tools",
+      "Information of Telecommunications"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The IoT refers to the network of physical objects embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet."
+  },
+  {
+    "id": "ak-tc-135",
+    "question": "Which cybersecurity concept involves encrypting data so it can only be accessed by authorized parties?",
+    "answers": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Authentication"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Confidentiality ensures that information is not disclosed to unauthorized individuals, often achieved through encryption."
+  },
+  {
+    "id": "ak-tc-136",
+    "question": "What was the name of the first widely adopted graphical web browser?",
+    "answers": [
+      "Mosaic",
+      "Netscape Navigator",
+      "Internet Explorer",
+      "WorldWideWeb (Nexus)"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Mosaic, released in 1993, popularized the World Wide Web and was known for its easy-to-use graphical interface."
+  },
+  {
+    "id": "ak-tc-137",
+    "question": "Which type of computer memory is non-volatile and retains its data even when powered off?",
+    "answers": [
+      "ROM (Read-Only Memory)",
+      "RAM (Random Access Memory)",
+      "Cache Memory",
+      "Virtual Memory"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "ROM is typically used for firmware and important boot-up instructions that don't need to change, unlike volatile RAM which loses data without power."
   }
 ]

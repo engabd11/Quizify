@@ -1090,5 +1090,707 @@
     "correct": 0,
     "difficulty": "hard",
     "explanation": "From Japanese, roughly 'mutual striking' or 'to strike at one another'."
+  },
+  {
+    "id": "ak-sp-085",
+    "question": "Which major sporting event is held every four years and features athletes competing in a variety of sports?",
+    "answers": [
+      "Olympic Games",
+      "Commonwealth Games",
+      "Asian Games",
+      "Pan American Games"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Olympic Games are the world's foremost sports competition, featuring summer and winter sports competitions in which thousands of athletes from around the world participate in a variety of competitions."
+  },
+  {
+    "id": "ak-sp-086",
+    "question": "What is the name of the sport where players use clubs to hit a small ball into a series of holes on a course?",
+    "answers": [
+      "Golf",
+      "Tennis",
+      "Baseball",
+      "Basketball"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Golf is a club-and-ball sport in which players use various clubs to hit a ball into a series of holes on a course in as few strokes as possible."
+  },
+  {
+    "id": "ak-sp-087",
+    "question": "Who is often considered the greatest boxer of all time, known by the nickname 'The Greatest'?",
+    "answers": [
+      "Muhammad Ali",
+      "Mike Tyson",
+      "Floyd Mayweather Jr.",
+      "Manny Pacquiao"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Muhammad Ali was an American professional boxer and activist. He is widely regarded as one of the most significant and celebrated sports figures of the 20th century."
+  },
+  {
+    "id": "ak-sp-088",
+    "question": "In which sport do teams try to score by shooting a ball through a hoop elevated 10 feet off the ground?",
+    "answers": [
+      "Basketball",
+      "Volleyball",
+      "Handball",
+      "Water Polo"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball through the opponent's hoop while preventing the opposing team from shooting through their own hoop."
+  },
+  {
+    "id": "ak-sp-089",
+    "question": "What color flag is waved to indicate the leader of a Formula 1 race has completed the final lap?",
+    "answers": [
+      "Checkered flag",
+      "Yellow flag",
+      "Green flag",
+      "Red flag"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The checkered flag is displayed at the finish line to signal the end of a race."
+  },
+  {
+    "id": "ak-sp-090",
+    "question": "Which country has won the most Olympic gold medals in the history of the Summer Games?",
+    "answers": [
+      "United States",
+      "Soviet Union (now Russia)",
+      "Great Britain",
+      "China"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The United States has won more Summer Olympic gold medals than any other country, with a total exceeding 2,600 medals."
+  },
+  {
+    "id": "ak-sp-091",
+    "question": "What is the maximum number of players a soccer team can have on the field at one time?",
+    "answers": [
+      "11",
+      "9",
+      "10",
+      "12"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A soccer team consists of 11 players on the field, including a goalkeeper."
+  },
+  {
+    "id": "ak-sp-092",
+    "question": "Which track and field event involves throwing a heavy spherical object?",
+    "answers": [
+      "Shot put",
+      "Discus throw",
+      "Javelin throw",
+      "Hammer throw"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The shot put is a track and field event involving 'putting' (pushing rather than throwing) a heavy spherical ball—the shot—as far as possible."
+  },
+  {
+    "id": "ak-sp-093",
+    "question": "What is the term for a perfect score in gymnastics, which is no longer awarded under current scoring systems?",
+    "answers": [
+      "Perfect 10",
+      "Flawless 5",
+      "Maximum 20",
+      "Ultimate 100"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Before the open-ended scoring system was introduced in 2006, a 'perfect 10' was the highest possible score a gymnast could achieve."
+  },
+  {
+    "id": "ak-sp-094",
+    "question": "Which famous swimmer holds the record for the most Olympic gold medals won by any athlete?",
+    "answers": [
+      "Michael Phelps",
+      "Mark Spitz",
+      "Ian Thorpe",
+      "Larisa Latynina"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Michael Phelps is the most decorated Olympian of all time, with 28 medals in total, including 23 gold medals."
+  },
+  {
+    "id": "ak-sp-095",
+    "question": "In tennis, what is the score called when both players have won three points in a game (40-40)?",
+    "answers": [
+      "Deuce",
+      "Advantage",
+      "Love",
+      "Game point"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Deuce is the common term used when the score is 40-40, meaning either player needs to score two consecutive points to win the game."
+  },
+  {
+    "id": "ak-sp-096",
+    "question": "Which of these martial arts is known for its high kicks and jumping techniques?",
+    "answers": [
+      "Taekwondo",
+      "Judo",
+      "Karate",
+      "Aikido"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Taekwondo is a Korean martial art characterized by its emphasis on head-height kicks, jumping and spinning kicks, and fast kicking techniques."
+  },
+  {
+    "id": "ak-sp-097",
+    "question": "What is the name of the major annual cycling race that takes place primarily in France?",
+    "answers": [
+      "Tour de France",
+      "Giro d'Italia",
+      "Vuelta a España",
+      "Paris-Roubaix"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Tour de France is an annual multiple-stage bicycle race primarily held in France, while also occasionally passing through nearby countries. It is the most famous and prestigious of cycling's three Grand Tours."
+  },
+  {
+    "id": "ak-sp-098",
+    "question": "Which Winter Olympic sport involves sliding down an ice track on a small sled, face-first?",
+    "answers": [
+      "Skeleton",
+      "Luge",
+      "Bobsleigh",
+      "Curling"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Skeleton is a winter sliding sport in which a person rides a small sled, known as a skeleton bobsled, down a frozen track while lying face down and head-first."
+  },
+  {
+    "id": "ak-sp-099",
+    "question": "What is the object that cricket players use to hit the ball?",
+    "answers": [
+      "Bat",
+      "Club",
+      "Racket",
+      "Stick"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "In cricket, the bat is a specialized piece of sporting equipment, usually made of wood, and used by batsmen to hit the ball."
+  },
+  {
+    "id": "ak-sp-100",
+    "question": "Which team sport is played on ice with sticks and a puck?",
+    "answers": [
+      "Ice Hockey",
+      "Field Hockey",
+      "Bandys",
+      "Roller Hockey"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Ice hockey is a team sport played on ice, in which skaters use sticks to shoot a hard rubber puck into their opponent's net."
+  },
+  {
+    "id": "ak-sp-101",
+    "question": "Who was the first athlete to run a mile in under four minutes?",
+    "answers": [
+      "Roger Bannister",
+      "Hicham El Guerrouj",
+      "Sebastian Coe",
+      "Jim Ryun"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Roger Bannister, a British middle-distance runner, was the first to achieve this feat on 6 May 1954."
+  },
+  {
+    "id": "ak-sp-102",
+    "question": "In baseball, what is it called when a batter hits the ball out of the playing field fair territory, resulting in a run?",
+    "answers": [
+      "Home run",
+      "Strikeout",
+      "Walk",
+      "Double play"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A home run is a fair ball hit out of the playing field in such a way that the batter is able to round all the bases and score a run."
+  },
+  {
+    "id": "ak-sp-103",
+    "question": "What do you call the official who enforces the rules in a sports match?",
+    "answers": [
+      "Referee",
+      "Coach",
+      "Captain",
+      "Spectator"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A referee is an official who watches a game or match closely to ensure that the rules are being followed and to settle any disagreements."
+  },
+  {
+    "id": "ak-sp-104",
+    "question": "Which country is credited with inventing the sport of volleyball?",
+    "answers": [
+      "United States",
+      "Canada",
+      "England",
+      "Germany"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Volleyball was invented in 1895 by William G. Morgan, a director of physical education at the YMCA in Holyoke, Massachusetts, USA."
+  },
+  {
+    "id": "ak-sp-105",
+    "question": "How many players are on a team in a standard game of volleyball?",
+    "answers": [
+      "6",
+      "5",
+      "7",
+      "4"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A standard volleyball team consists of six players on the court at one time."
+  },
+  {
+    "id": "ak-sp-106",
+    "question": "Which sport uses terms like 'birdie', 'eagle', and 'bogey'?",
+    "answers": [
+      "Golf",
+      "Badminton",
+      "Tennis",
+      "Bowling"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "These terms refer to scores relative to par in golf; a birdie is one stroke under par, an eagle is two strokes under par, and a bogey is one stroke over par."
+  },
+  {
+    "id": "ak-sp-107",
+    "question": "What is the name of the trophy awarded to the winner of the NFL (National Football League) championship game?",
+    "answers": [
+      "Vince Lombardi Trophy",
+      "Stanley Cup",
+      "Larry O'Brien Championship Trophy",
+      "Commissioner's Trophy"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Vince Lombardi Trophy is awarded annually to the winning team of the National Football League's championship game, the Super Bowl."
+  },
+  {
+    "id": "ak-sp-108",
+    "question": "Which type of race is typically 26.2 miles (42.195 kilometers) long?",
+    "answers": [
+      "Marathon",
+      "Sprint",
+      "Half-marathon",
+      "Ultramarathon"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A marathon is a long-distance running race with an official distance of 42.195 kilometers (26 miles and 385 yards)."
+  },
+  {
+    "id": "ak-sp-109",
+    "question": "What equipment is essential for protecting a boxer's hands during a fight?",
+    "answers": [
+      "Gloves",
+      "Helmet",
+      "Shin guards",
+      "Mouthguard"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Boxing gloves are cushioned gloves that fighters wear on their hands during boxing matches and practices, essential for protection and safety."
+  },
+  {
+    "id": "ak-sp-110",
+    "question": "Which continent typically hosts the Winter Olympic Games?",
+    "answers": [
+      "Various continents",
+      "Europe",
+      "North America",
+      "Asia"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Winter Olympics are held every four years in various cities around the world, though they have predominantly been hosted in Europe and North America due to suitable mountainous terrain and cold climates."
+  },
+  {
+    "id": "ak-sp-111",
+    "question": "Which famously fast runner is known as 'Lightning Bolt'?",
+    "answers": [
+      "Usain Bolt",
+      "Carl Lewis",
+      "Jesse Owens",
+      "Michael Johnson"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Usain Bolt is a Jamaican former sprinter who is widely regarded as the greatest sprinter of all time, earning him the nickname 'Lightning Bolt'."
+  },
+  {
+    "id": "ak-sp-112",
+    "question": "In which sport is the 'alley-oop' a common offensive play?",
+    "answers": [
+      "Basketball",
+      "American Football",
+      "Soccer",
+      "Volleyball"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "An alley-oop is when one player lobs the ball up near the basket and a teammate jumps, catches the ball in mid-air, and dunks or lays it in before landing."
+  },
+  {
+    "id": "ak-sp-113",
+    "question": "Which country has won the most FIFA World Cups in men's soccer?",
+    "answers": [
+      "Brazil",
+      "Germany",
+      "Italy",
+      "Argentina"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Brazil has won the FIFA World Cup five times, more than any other nation."
+  },
+  {
+    "id": "ak-sp-114",
+    "question": "What is the term for a perfect score in bowling?",
+    "answers": [
+      "300",
+      "200",
+      "100",
+      "500"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A perfect game in bowling consists of 12 consecutive strikes, resulting in a score of 300 points."
+  },
+  {
+    "id": "ak-sp-115",
+    "question": "Which city hosted the first modern Olympic Games in 1896?",
+    "answers": [
+      "Athens",
+      "Paris",
+      "London",
+      "Rome"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The first modern Olympic Games were held in Athens, Greece, from April 6 to April 15, 1896."
+  },
+  {
+    "id": "ak-sp-116",
+    "question": "How many players are on a standard baseball team's field at one time?",
+    "answers": [
+      "9",
+      "11",
+      "7",
+      "5"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "There are nine players on each team on the field during a standard baseball game."
+  },
+  {
+    "id": "ak-sp-117",
+    "question": "In which Olympic sport would you perform a 'salchow'?",
+    "answers": [
+      "Figure Skating",
+      "Gymnastics",
+      "Diving",
+      "Ski Jumping"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The Salchow is a jump in figure skating, named after its inventor, Ulrich Salchow."
+  },
+  {
+    "id": "ak-sp-118",
+    "question": "Who is known as 'The Greatest' in boxing?",
+    "answers": [
+      "Muhammad Ali",
+      "Mike Tyson",
+      "Sugar Ray Leonard",
+      "Rocky Marciano"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Muhammad Ali adopted the nickname 'The Greatest' and is widely regarded as one of the most significant sports figures of the 20th century."
+  },
+  {
+    "id": "ak-sp-119",
+    "question": "What is the maximum number of points a single shot can be worth in basketball?",
+    "answers": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A shot from beyond the three-point line is worth three points. Free throws are worth one point and shots inside the arc are worth two."
+  },
+  {
+    "id": "ak-sp-120",
+    "question": "Which sport uses terms like 'love', 'deuce', and 'advantage'?",
+    "answers": [
+      "Tennis",
+      "Badminton",
+      "Squash",
+      "Table Tennis"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "These are scoring terms commonly used in tennis."
+  },
+  {
+    "id": "ak-sp-121",
+    "question": "What is the official distance of a marathon race?",
+    "answers": [
+      "26 miles, 385 yards",
+      "26 miles",
+      "25 miles",
+      "42 kilometers"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The official marathon distance is 26 miles and 385 yards (42.195 kilometers)."
+  },
+  {
+    "id": "ak-sp-122",
+    "question": "Which country invented the sport of table tennis?",
+    "answers": [
+      "England",
+      "China",
+      "Japan",
+      "United States"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Table tennis originated in England in the late 19th century as a parlor game."
+  },
+  {
+    "id": "ak-sp-123",
+    "question": "In wrestling, what is the objective of a 'pinfall'?",
+    "answers": [
+      "To hold an opponent's shoulders to the mat for a specified count",
+      "To make an opponent submit verbally",
+      "To throw an opponent out of the ring",
+      "To accumulate more points than the opponent"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A pinfall, or 'pin', occurs when a wrestler holds their opponent's shoulders to the mat for a count of three, ending the match."
+  },
+  {
+    "id": "ak-sp-124",
+    "question": "Which of these is not a swimming stroke?",
+    "answers": [
+      "Butterfly kick",
+      "Freestyle",
+      "Backstroke",
+      "Breaststroke"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The butterfly kick is part of the butterfly stroke, not a stroke on its own. Freestyle, backstroke, and breaststroke are three of the four competitive swimming strokes."
+  },
+  {
+    "id": "ak-sp-125",
+    "question": "What is the name of the trophy awarded to the winner of the NFL's championship game?",
+    "answers": [
+      "Lombardi Trophy",
+      "Stanley Cup",
+      "Commissioner's Trophy",
+      "Heisman Trophy"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The Vince Lombardi Trophy is awarded annually to the winner of the Super Bowl, the NFL's championship game."
+  },
+  {
+    "id": "ak-sp-126",
+    "question": "Which athlete holds the world record for the men's 100-meter dash?",
+    "answers": [
+      "Usain Bolt",
+      "Carl Lewis",
+      "Tyson Gay",
+      "Jesse Owens"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Usain Bolt set the current world record of 9.58 seconds in 2009."
+  },
+  {
+    "id": "ak-sp-127",
+    "question": "Which martial art translates to 'the way of the empty hand'?",
+    "answers": [
+      "Karate",
+      "Judo",
+      "Taekwondo",
+      "Kung Fu"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Karate is a Japanese martial art whose name literally means 'empty hands' (kara-te)."
+  },
+  {
+    "id": "ak-sp-128",
+    "question": "What color flag is waved to signal a race has been stopped in motorsports?",
+    "answers": [
+      "Red",
+      "Yellow",
+      "Checkered",
+      "Green"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A red flag is used to signal an immediate stop to a race, usually due to a dangerous incident."
+  },
+  {
+    "id": "ak-sp-129",
+    "question": "Which sport uses a 'shuttlecock'?",
+    "answers": [
+      "Badminton",
+      "Tennis",
+      "Volleyball",
+      "Squash"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A shuttlecock, also known as a birdie, is the projectile used in the sport of badminton."
+  },
+  {
+    "id": "ak-sp-130",
+    "question": "In which Olympic sport do athletes compete in a 'pommel horse' event?",
+    "answers": [
+      "Artistic Gymnastics",
+      "Equestrian",
+      "Modern Pentathlon",
+      "Trampoline"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The pommel horse is a piece of apparatus used in men's artistic gymnastics."
+  },
+  {
+    "id": "ak-sp-131",
+    "question": "What is the nickname of the New Zealand national rugby team?",
+    "answers": [
+      "All Blacks",
+      "Wallabies",
+      "Springboks",
+      "Pumas"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The New Zealand national rugby union team is known as the All Blacks."
+  },
+  {
+    "id": "ak-sp-132",
+    "question": "How many bases are there in a baseball infield?",
+    "answers": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "There are four bases: home plate, first base, second base, and third base."
+  },
+  {
+    "id": "ak-sp-133",
+    "question": "Which country is credited with inventing the sport of Judo?",
+    "answers": [
+      "Japan",
+      "China",
+      "South Korea",
+      "Russia"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Judo is a modern Japanese martial art and Olympic sport created in Japan by Jigoro Kano in 1882."
+  },
+  {
+    "id": "ak-sp-134",
+    "question": "In which sport would you find an 'oar'?",
+    "answers": [
+      "Rowing",
+      "Canoeing",
+      "Kayaking",
+      "Sailing"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Oars are used in rowing to propel a boat through water."
+  },
+  {
+    "id": "ak-sp-135",
+    "question": "What is the highest possible score in a single frame of ten-pin bowling?",
+    "answers": [
+      "30",
+      "10",
+      "20",
+      "15"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A strike (all ten pins down on the first ball) followed by two more strikes in the next two balls gives 30 points for that frame."
+  },
+  {
+    "id": "ak-sp-136",
+    "question": "Which legendary boxer was known as 'The Brown Bomber'?",
+    "answers": [
+      "Joe Louis",
+      "Jack Dempsey",
+      "Sonny Liston",
+      "Rocky Marciano"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Joe Louis was an American professional boxer who competed from 1934 to 1951, known by his nickname The Brown Bomber."
+  },
+  {
+    "id": "ak-sp-137",
+    "question": "In which sport are 'face-offs' used to restart play?",
+    "answers": [
+      "Ice Hockey",
+      "Basketball",
+      "Soccer",
+      "Handball"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "In ice hockey, a face-off is the method used to start play at the beginning of a period or to restart play after a stoppage."
+  },
+  {
+    "id": "ak-sp-138",
+    "question": "Which country has won the most gold medals in Olympic track and field events?",
+    "answers": [
+      "United States",
+      "Soviet Union",
+      "Great Britain",
+      "Finland"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The United States has historically dominated Olympic track and field, winning significantly more gold medals than any other nation."
   }
 ]

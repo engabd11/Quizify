@@ -1090,5 +1090,1006 @@
     "correct": 0,
     "difficulty": "medium",
     "explanation": "Reigned from 1837 to 1901 — the Victorian era."
+  },
+  {
+    "id": "ak-hi-085",
+    "question": "Which country is known for building the Great Wall?",
+    "answers": [
+      "China",
+      "India",
+      "Egypt",
+      "Rome"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Great Wall of China was built over centuries by various dynasties to protect against invasions."
+  },
+  {
+    "id": "ak-hi-086",
+    "question": "What ancient civilization built the pyramids at Giza?",
+    "answers": [
+      "Ancient Egypt",
+      "Maya",
+      "Aztec",
+      "Mesopotamia"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Ancient Egyptians built the pyramids as tombs for pharaohs and queens."
+  },
+  {
+    "id": "ak-hi-087",
+    "question": "In what year did Christopher Columbus first arrive in the Americas?",
+    "answers": [
+      "1492",
+      "1488",
+      "1500",
+      "1497"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Columbus's expedition reached the Americas on October 12, 1492."
+  },
+  {
+    "id": "ak-hi-088",
+    "question": "What major war was fought between 1914 and 1918?",
+    "answers": [
+      "World War I",
+      "World War II",
+      "Korean War",
+      "Vietnam War"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "World War I, also known as the Great War, involved the Central Powers and the Allies."
+  },
+  {
+    "id": "ak-hi-089",
+    "question": "Who was the queen of ancient Egypt famous for her relationships with Julius Caesar and Mark Antony?",
+    "answers": [
+      "Cleopatra",
+      "Nefertiti",
+      "Hatshepsut",
+      "Sobekneferu"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Cleopatra VII Philopator was the last active ruler of the Ptolemaic Kingdom of Egypt."
+  },
+  {
+    "id": "ak-hi-090",
+    "question": "Which ancient civilization developed the concept of democracy?",
+    "answers": [
+      "Ancient Greece",
+      "Ancient Rome",
+      "Ancient Egypt",
+      "Persian Empire"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Democracy originated in Athens, Greece, around the 5th century BC."
+  },
+  {
+    "id": "ak-hi-091",
+    "question": "What event marked the beginning of World War II in Europe?",
+    "answers": [
+      "Germany's invasion of Poland",
+      "Japan's attack on Pearl Harbor",
+      "The Treaty of Versailles",
+      "The assassination of Archduke Franz Ferdinand"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Germany invaded Poland on September 1, 1939, officially starting World War II."
+  },
+  {
+    "id": "ak-hi-092",
+    "question": "Which empire was known for its extensive road network and aqueducts?",
+    "answers": [
+      "Roman Empire",
+      "Inca Empire",
+      "Persian Empire",
+      "Mongol Empire"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Roman Empire was renowned for its sophisticated infrastructure, including roads and aqueducts."
+  },
+  {
+    "id": "ak-hi-093",
+    "question": "What was the primary cause of the American Civil War?",
+    "answers": [
+      "Slavery",
+      "Taxation without representation",
+      "Territorial disputes",
+      "Religious differences"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The fundamental cause was the issue of slavery, particularly its expansion into new territories."
+  },
+  {
+    "id": "ak-hi-094",
+    "question": "Which ancient city was famously destroyed by a volcanic eruption in 79 AD?",
+    "answers": [
+      "Pompeii",
+      "Troy",
+      "Babylon",
+      "Ur"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Mount Vesuvius erupted, burying Pompeii and its inhabitants under ash and pumice."
+  },
+  {
+    "id": "ak-hi-095",
+    "question": "Who wrote 'The Communist Manifesto' with Friedrich Engels?",
+    "answers": [
+      "Karl Marx",
+      "Vladimir Lenin",
+      "Joseph Stalin",
+      "Mao Zedong"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Karl Marx and Friedrich Engels co-authored the influential political pamphlet in 1848."
+  },
+  {
+    "id": "ak-hi-096",
+    "question": "When did the Berlin Wall fall?",
+    "answers": [
+      "1989",
+      "1991",
+      "1979",
+      "1961"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Berlin Wall fell on November 9, 1989, marking a pivotal moment in the end of the Cold War."
+  },
+  {
+    "id": "ak-hi-097",
+    "question": "Which ancient civilization invented paper and gunpowder?",
+    "answers": [
+      "China",
+      "India",
+      "Egypt",
+      "Mesopotamia"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "These inventions originated in ancient China and significantly impacted global development."
+  },
+  {
+    "id": "ak-hi-098",
+    "question": "What is the name of the ancient trade route connecting the East and West?",
+    "answers": [
+      "The Silk Road",
+      "The Spice Route",
+      "The Amber Road",
+      "The Incense Route"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Silk Road was an ancient network of trade routes that connected China and the West."
+  },
+  {
+    "id": "ak-hi-099",
+    "question": "What period of European history followed the Middle Ages?",
+    "answers": [
+      "The Renaissance",
+      "The Enlightenment",
+      "The Industrial Revolution",
+      "The Dark Ages"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Renaissance was a period of artistic, cultural, and scientific rebirth in Europe."
+  },
+  {
+    "id": "ak-hi-100",
+    "question": "Who famously said 'I think, therefore I am'?",
+    "answers": [
+      "René Descartes",
+      "Socrates",
+      "Plato",
+      "Aristotle"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "This philosophical proposition, 'Cogito, ergo sum', was coined by René Descartes."
+  },
+  {
+    "id": "ak-hi-101",
+    "question": "Which war resulted in the independence of the United States?",
+    "answers": [
+      "American Revolutionary War",
+      "War of 1812",
+      "French and Indian War",
+      "Mexican-American War"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The American Revolutionary War (1775–1783) led to the United States gaining independence from Great Britain."
+  },
+  {
+    "id": "ak-hi-102",
+    "question": "What was the name of the ship that brought the Pilgrims to America?",
+    "answers": [
+      "Mayflower",
+      "Santa Maria",
+      "Pinta",
+      "Nina"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Mayflower transported the Pilgrims from England to Plymouth Colony in 1620."
+  },
+  {
+    "id": "ak-hi-103",
+    "question": "Which Roman emperor made Christianity the state religion of the Roman Empire?",
+    "answers": [
+      "Theodosius I",
+      "Constantine I",
+      "Augustus",
+      "Nero"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Theodosius I made Nicene Christianity the state church of the Roman Empire in 380 AD."
+  },
+  {
+    "id": "ak-hi-104",
+    "question": "What year did the Titanic sink?",
+    "answers": [
+      "1912",
+      "1905",
+      "1920",
+      "1931"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The RMS Titanic sank on April 15, 1912, during its maiden voyage after hitting an iceberg."
+  },
+  {
+    "id": "ak-hi-105",
+    "question": "Who was the last pharaoh of ancient Egypt?",
+    "answers": [
+      "Cleopatra VII",
+      "Nefertiti",
+      "Hatshepsut",
+      "Tutankhamun"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Cleopatra VII Philopator was the last active ruler of the Ptolemaic Kingdom of Egypt."
+  },
+  {
+    "id": "ak-hi-106",
+    "question": "The Ottoman Empire was founded in which modern-day country?",
+    "answers": [
+      "Turkey",
+      "Greece",
+      "Egypt",
+      "Iran"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Ottoman Empire originated in Anatolia, the central part of modern-day Turkey, around the late 13th century."
+  },
+  {
+    "id": "ak-hi-107",
+    "question": "What was the primary purpose of the ancient Olympic Games?",
+    "answers": [
+      "To honor the god Zeus",
+      "To promote peace",
+      "To train soldiers",
+      "To settle disputes"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Olympic Games were held every four years in Olympia, Greece, as a religious festival to honor Zeus."
+  },
+  {
+    "id": "ak-hi-108",
+    "question": "Which famous explorer was the first to circumnavigate the Earth?",
+    "answers": [
+      "Ferdinand Magellan",
+      "Vasco da Gama",
+      "Christopher Columbus",
+      "James Cook"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Ferdinand Magellan's expedition completed the first circumnavigation of the Earth, although he himself died during the voyage."
+  },
+  {
+    "id": "ak-hi-109",
+    "question": "What year did the Soviet Union collapse?",
+    "answers": [
+      "1991",
+      "1989",
+      "1979",
+      "2000"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Soviet Union officially dissolved on December 26, 1991, leading to the formation of independent states."
+  },
+  {
+    "id": "ak-hi-110",
+    "question": "Which ancient civilization developed the first known writing system, cuneiform?",
+    "answers": [
+      "Sumerians",
+      "Egyptians",
+      "Mayans",
+      "Chinese"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Cuneiform originated in Sumer (Mesopotamia) around 3500-3000 BCE."
+  },
+  {
+    "id": "ak-hi-111",
+    "question": "The Hundred Years' War was fought primarily between which two countries?",
+    "answers": [
+      "England and France",
+      "France and Germany",
+      "England and Spain",
+      "Germany and Italy"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "This conflict lasted from 1337 to 1453, a total of 116 years."
+  },
+  {
+    "id": "ak-hi-112",
+    "question": "The fall of which city in 1453 is often considered the end of the Byzantine Empire?",
+    "answers": [
+      "Constantinople",
+      "Rome",
+      "Antioch",
+      "Alexandria"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The Ottoman Turks, led by Sultan Mehmed II, conquered the city, marking a significant shift in power."
+  },
+  {
+    "id": "ak-hi-113",
+    "question": "Which treaty ended World War I?",
+    "answers": [
+      "Treaty of Versailles",
+      "Treaty of Paris",
+      "Treaty of Brest-Litovsk",
+      "Treaty of Westphalia"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Signed on June 28, 1919, exactly five years after the assassination of Archduke Franz Ferdinand."
+  },
+  {
+    "id": "ak-hi-114",
+    "question": "Who led the Soviet Union during World War II?",
+    "answers": [
+      "Joseph Stalin",
+      "Vladimir Lenin",
+      "Leon Trotsky",
+      "Nikita Khrushchev"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Stalin was the General Secretary of the Communist Party of the Soviet Union from 1922 until his death in 1953."
+  },
+  {
+    "id": "ak-hi-115",
+    "question": "Which ancient wonder was located in Alexandria, Egypt?",
+    "answers": [
+      "Lighthouse of Alexandria",
+      "Colossus of Rhodes",
+      "Hanging Gardens of Babylon",
+      "Temple of Artemis at Ephesus"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "It was one of the tallest man-made structures in the world for many centuries."
+  },
+  {
+    "id": "ak-hi-116",
+    "question": "The term 'Cold War' primarily refers to the geopolitical rivalry between which two superpowers?",
+    "answers": [
+      "United States and Soviet Union",
+      "United States and China",
+      "Soviet Union and China",
+      "United States and Germany"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "This period of tension lasted from the end of World War II until the collapse of the Soviet Union in 1991."
+  },
+  {
+    "id": "ak-hi-117",
+    "question": "What significant event occurred on December 7, 1941?",
+    "answers": [
+      "Attack on Pearl Harbor",
+      "D-Day landings",
+      "Bombing of Hiroshima",
+      "Germany invades Poland"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "This surprise attack by the Imperial Japanese Navy Air Service led to the United States' entry into World War II."
+  },
+  {
+    "id": "ak-hi-118",
+    "question": "Which ancient civilization built the city of Machu Picchu?",
+    "answers": [
+      "Incas",
+      "Aztecs",
+      "Mayans",
+      "Olmecs"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "This 15th-century Inca citadel is located in the Eastern Cordillera of southern Peru."
+  },
+  {
+    "id": "ak-hi-119",
+    "question": "Who was the leader of Nazi Germany during World War II?",
+    "answers": [
+      "Adolf Hitler",
+      "Benito Mussolini",
+      "Hideki Tojo",
+      "Joseph Goebbels"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Hitler was the leader of the Nazi Party and Chancellor of Germany from 1933 to 1945."
+  },
+  {
+    "id": "ak-hi-120",
+    "question": "The Renaissance began in which European country?",
+    "answers": [
+      "Italy",
+      "France",
+      "England",
+      "Germany"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "It originated in Florence, Italy, in the 14th century and spread throughout Europe."
+  },
+  {
+    "id": "ak-hi-121",
+    "question": "Which famous Roman general was assassinated on the Ides of March in 44 BCE?",
+    "answers": [
+      "Julius Caesar",
+      "Pompey the Great",
+      "Mark Antony",
+      "Augustus"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "He was stabbed to death by a group of senators, including Brutus and Cassius."
+  },
+  {
+    "id": "ak-hi-122",
+    "question": "The Protestant Reformation was initiated by which German monk?",
+    "answers": [
+      "Martin Luther",
+      "John Calvin",
+      "Ulrich Zwingli",
+      "Jan Hus"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "He famously posted his 'Ninety-five Theses' in 1517, challenging the practices of the Catholic Church."
+  },
+  {
+    "id": "ak-hi-123",
+    "question": "Which war is known as the 'Great War'?",
+    "answers": [
+      "World War I",
+      "World War II",
+      "American Civil War",
+      "Seven Years' War"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Before World War II, it was commonly referred to as the 'Great War' due to its global scale and devastating impact."
+  },
+  {
+    "id": "ak-hi-124",
+    "question": "The Byzantine Empire primarily spoke which language?",
+    "answers": [
+      "Greek",
+      "Latin",
+      "Aramaic",
+      "Coptic"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "While initially Latin was used, Greek became the dominant language, especially after the 7th century."
+  },
+  {
+    "id": "ak-hi-125",
+    "question": "The Russian Revolution of 1917 resulted in the overthrow of which dynasty?",
+    "answers": [
+      "Romanov dynasty",
+      "Habsburg dynasty",
+      "Bourbon dynasty",
+      "Hohenzollern dynasty"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The revolution led to the end of imperial rule in Russia and the establishment of the Soviet Union."
+  },
+  {
+    "id": "ak-hi-126",
+    "question": "Which ancient civilization developed hieroglyphic writing?",
+    "answers": [
+      "Ancient Egyptians",
+      "Mesopotamians",
+      "Romans",
+      "Greeks"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Hieroglyphs were a formal writing system used by the ancient Egyptians that combined logographic and alphabetic elements."
+  },
+  {
+    "id": "ak-hi-127",
+    "question": "The Cuban Missile Crisis occurred in which year?",
+    "answers": [
+      "1962",
+      "1959",
+      "1968",
+      "1973"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "This was a 13-day confrontation between the United States and the Soviet Union concerning Soviet ballistic missile deployment in Cuba."
+  },
+  {
+    "id": "ak-hi-128",
+    "question": "Who authored 'The Prince', a 16th-century political treatise?",
+    "answers": [
+      "Niccolò Machiavelli",
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Dante Alighieri"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "This influential work discusses how rulers can acquire and maintain political power."
+  },
+  {
+    "id": "ak-hi-129",
+    "question": "The fall of the Berlin Wall, symbolizing the end of the Cold War, happened in which year?",
+    "answers": [
+      "1989",
+      "1991",
+      "1985",
+      "1979"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "On November 9, 1989, the East German government announced that citizens could visit West Germany and West Berlin, leading to the wall's demolition."
+  },
+  {
+    "id": "ak-hi-130",
+    "question": "Which ancient Greek city-state was known for its military prowess and strict social structure?",
+    "answers": [
+      "Sparta",
+      "Athens",
+      "Corinth",
+      "Thebes"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Spartan society was highly militarized, with a strong emphasis on discipline, training, and loyalty to the state."
+  },
+  {
+    "id": "ak-hi-131",
+    "question": "Who was the primary author of the American Declaration of Independence?",
+    "answers": [
+      "Thomas Jefferson",
+      "George Washington",
+      "Benjamin Franklin",
+      "John Adams"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Jefferson was the principal author of the document, which was adopted by the Second Continental Congress on July 4, 1776."
+  },
+  {
+    "id": "ak-hi-132",
+    "question": "The Opium Wars were fought between which two powers in the mid-19th century?",
+    "answers": [
+      "Britain and China",
+      "France and China",
+      "United States and China",
+      "Russia and China"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "These conflicts, primarily in 1839-1842 and 1856-1860, arose from China's attempts to suppress the illegal opium trade conducted by the British."
+  },
+  {
+    "id": "ak-hi-133",
+    "question": "Which Roman emperor made Christianity the state religion?",
+    "answers": [
+      "Theodosius I",
+      "Constantine the Great",
+      "Diocletian",
+      "Nero"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "He issued the Edict of Thessalonica in 380 CE, making Nicene Christianity the official state church of the Roman Empire."
+  },
+  {
+    "id": "ak-hi-134",
+    "question": "The Industrial Revolution began in which country?",
+    "answers": [
+      "Great Britain",
+      "United States",
+      "Germany",
+      "France"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "It started in Great Britain in the late 18th century, characterized by new manufacturing processes and the shift from agrarian to urban economies."
+  },
+  {
+    "id": "ak-hi-135",
+    "question": "The Treaty of Westphalia, signed in 1648, is often considered to have established the concept of state sovereignty. Which major war did it end?",
+    "answers": [
+      "Thirty Years' War",
+      "Eighty Years' War",
+      "Dutch War of Independence",
+      "War of the Spanish Succession"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Treaty of Westphalia ended both the Thirty Years' War in the Holy Roman Empire and the Eighty Years' War between Spain and the Dutch Republic, fundamentally reshaping the political map of Europe."
+  },
+  {
+    "id": "ak-hi-136",
+    "question": "Which empire, ruling from the 13th to the 16th century, was the largest contiguous land empire in history?",
+    "answers": [
+      "Mongol Empire",
+      "British Empire",
+      "Roman Empire",
+      "Ottoman Empire"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Mongol Empire, founded by Genghis Khan, covered a vast territory from Eastern Europe to East Asia, spanning over 24 million square kilometers at its peak."
+  },
+  {
+    "id": "ak-hi-137",
+    "question": "Who was the last pharaoh of ancient Egypt, ruling prior to its annexation by the Roman Empire?",
+    "answers": [
+      "Cleopatra VII",
+      "Hatshepsut",
+      "Nefertiti",
+      "Twosret"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Cleopatra VII's reign ended with her death in 30 BCE, after which Egypt became a Roman province."
+  },
+  {
+    "id": "ak-hi-138",
+    "question": "The 'Glorious Revolution' of 1688 established a constitutional monarchy in England and significantly limited the power of the monarch. Which monarch was deposed during this event?",
+    "answers": [
+      "James II",
+      "Charles I",
+      "William III",
+      "George I"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "James II was deposed, and his Protestant daughter Mary II and her Dutch husband, William of Orange, were invited to take the throne."
+  },
+  {
+    "id": "ak-hi-139",
+    "question": "Which ancient Mesoamerican civilization is renowned for its advanced astronomical observations, complex calendar systems, and intricate hieroglyphic writing?",
+    "answers": [
+      "Maya Civilization",
+      "Aztec Empire",
+      "Olmec Civilization",
+      "Inca Empire"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Maya civilization, flourishing in present-day southeastern Mexico, the entirety of Guatemala and Belize, and parts of Honduras and El Salvador, developed these sophisticated systems."
+  },
+  {
+    "id": "ak-hi-140",
+    "question": "The Opium Wars in the mid-19th century were primarily fought between which two powers?",
+    "answers": [
+      "Britain and China",
+      "France and China",
+      "United States and China",
+      "Russia and China"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Opium Wars (1839-1842 and 1856-1860) were a series of conflicts between Britain and China over British trade of opium in China."
+  },
+  {
+    "id": "ak-hi-141",
+    "question": "Which Greek historian is often referred to as the 'Father of History'?",
+    "answers": [
+      "Herodotus",
+      "Thucydides",
+      "Xenophon",
+      "Polybius"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Herodotus, known for his work 'The Histories,' systematically collected and arranged historical material, laying the groundwork for historical writing."
+  },
+  {
+    "id": "ak-hi-142",
+    "question": "The Taiping Rebellion, one of the deadliest conflicts in human history, occurred in which country during the mid-19th century?",
+    "answers": [
+      "China",
+      "India",
+      "Japan",
+      "Russia"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Taiping Rebellion (1850-1864) was a massive civil war in southern China against the ruling Qing dynasty, resulting in an estimated 20 to 30 million deaths."
+  },
+  {
+    "id": "ak-hi-143",
+    "question": "The Edict of Nantes, issued in 1598, granted substantial rights to Protestants in predominantly Catholic France. Who issued this edict?",
+    "answers": [
+      "Henry IV",
+      "Louis XIV",
+      "Francis I",
+      "Louis XIII"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Henry IV issued the Edict of Nantes to promote civil unity and religious tolerance after the tumultuous French Wars of Religion."
+  },
+  {
+    "id": "ak-hi-144",
+    "question": "Which ancient city was famously besieged for ten years in Greek mythology, a conflict detailed in Homer's 'Iliad'?",
+    "answers": [
+      "Troy",
+      "Athens",
+      "Sparta",
+      "Mycenae"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Trojan War, culminating in the destruction of Troy, is one of the most famous legends in ancient Greek history and literature."
+  },
+  {
+    "id": "ak-hi-145",
+    "question": "The Meiji Restoration in 1868 refers to a series of events that restored imperial rule to Japan, leading to rapid modernization and industrialization. Who was the emperor during this period?",
+    "answers": [
+      "Emperor Meiji",
+      "Emperor Hirohito",
+      "Emperor Taishō",
+      "Emperor Kōmei"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Meiji Restoration marked the end of the Tokugawa shogunate and the beginning of the Meiji era, under Emperor Meiji (Mutsuhito)."
+  },
+  {
+    "id": "ak-hi-146",
+    "question": "Which conflict, spanning from 1756 to 1763, was a global war that involved most of the great powers of the time and was fought in Europe, North America, Central America, the West African coast, and India?",
+    "answers": [
+      "Seven Years' War",
+      "War of the Austrian Succession",
+      "French and Indian War",
+      "Napoleonic Wars"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Seven Years' War is often considered the first true 'world war,' with significant implications for colonial empires."
+  },
+  {
+    "id": "ak-hi-147",
+    "question": "The 'Crisis of the Third Century' (c. 235-284 CE) was a period of severe challenges for which empire?",
+    "answers": [
+      "Roman Empire",
+      "Persian Empire",
+      "Han Dynasty",
+      "Gupta Empire"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Roman Empire faced civil war, economic collapse, and external invasions, nearly leading to its collapse during this period."
+  },
+  {
+    "id": "ak-hi-148",
+    "question": "Which explorer's expedition was the first to circumnavigate the Earth, although he himself died during the journey?",
+    "answers": [
+      "Ferdinand Magellan",
+      "Christopher Columbus",
+      "Vasco da Gama",
+      "Francis Drake"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Magellan was killed in the Philippines in 1521, but his expedition, completed by Juan Sebastián Elcano, returned to Spain in 1522."
+  },
+  {
+    "id": "ak-hi-149",
+    "question": "The 'Code of Hammurabi', one of the oldest deciphered writings of significant length, originated in which ancient civilization?",
+    "answers": [
+      "Babylonian Empire",
+      "Assyrian Empire",
+      "Akkadian Empire",
+      "Sumerian City-States"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Hammurabi was the sixth king of the First Babylonian Dynasty, ruling in Mesopotamia from 1792 to 1750 BC."
+  },
+  {
+    "id": "ak-hi-150",
+    "question": "Which year did India gain independence from British rule?",
+    "answers": [
+      "1947",
+      "1905",
+      "1919",
+      "1935"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "India achieved independence from the British Raj on August 15, 1947, simultaneously with the partition of British India into India and Pakistan."
+  },
+  {
+    "id": "ak-hi-151",
+    "question": "The Punic Wars were a series of three major conflicts primarily fought between which two ancient powers?",
+    "answers": [
+      "Rome and Carthage",
+      "Greece and Persia",
+      "Egypt and Assyria",
+      "Sparta and Athens"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "These wars (264–146 BC) were fought for control of the western Mediterranean and ultimately led to Rome's dominance."
+  },
+  {
+    "id": "ak-hi-152",
+    "question": "Which global pandemic, beginning in 1346, devastated Eurasia and North Africa, killing an estimated 75 to 200 million people?",
+    "answers": [
+      "Black Death",
+      "Spanish Flu",
+      "Antonine Plague",
+      "Plague of Justinian"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Black Death was one of the most devastating pandemics in human history, occurring during the Middle Ages."
+  },
+  {
+    "id": "ak-hi-153",
+    "question": "The 'Long March' (1934-1935) was a military retreat undertaken by which political entity in China?",
+    "answers": [
+      "Red Army of the Communist Party of China",
+      "Kuomintang (Nationalist Party)",
+      "Imperial Japanese Army",
+      "Warlord factions"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Long March was a pivotal moment in the Chinese Civil War, cementing Mao Zedong's leadership."
+  },
+  {
+    "id": "ak-hi-154",
+    "question": "Which ancient wonder of the world, located in Babylon, is largely considered to be legendary, with no definitive archaeological evidence of its existence?",
+    "answers": [
+      "Hanging Gardens of Babylon",
+      "Lighthouse of Alexandria",
+      "Colossus of Rhodes",
+      "Statue of Zeus at Olympia"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "While often depicted, the Hanging Gardens remain the only one of the original Seven Wonders of the Ancient World for which archaeological proof is lacking."
+  },
+  {
+    "id": "ak-hi-155",
+    "question": "The Peterloo Massacre, a violent suppression of a pro-democracy rally, occurred in which British city in 1819?",
+    "answers": [
+      "Manchester",
+      "London",
+      "Liverpool",
+      "Birmingham"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The cavalry charged into a crowd of 60,000–80,000 unarmed people who had gathered to demand parliamentary reform."
+  },
+  {
+    "id": "ak-hi-156",
+    "question": "Which African empire, centered in present-day Mali, was renowned for its wealth, particularly in gold, and its capital Timbuktu became a major center of learning and trade?",
+    "answers": [
+      "Mali Empire",
+      "Songhai Empire",
+      "Ghana Empire",
+      "Ethiopian Empire"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Mali Empire flourished from the 13th to the 17th century and is famous for rulers like Mansa Musa."
+  },
+  {
+    "id": "ak-hi-157",
+    "question": "The Great Schism of 1054 formally divided which two major branches of Christianity?",
+    "answers": [
+      "Roman Catholicism and Eastern Orthodoxy",
+      "Catholicism and Protestantism",
+      "Nestorianism and Chalcedonian Christianity",
+      "Arianism and Nicene Christianity"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "This event marked the culmination of theological and political differences between the Greek East and Latin West."
+  },
+  {
+    "id": "ak-hi-158",
+    "question": "Which 20th-century geopolitical event led to the division of Germany into East and West, and the construction of the Berlin Wall?",
+    "answers": [
+      "Potsdam Conference",
+      "Yalta Conference",
+      "Paris Peace Treaties",
+      "Versailles Treaty"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Potsdam Conference (1945) established the zones of occupation, setting the stage for division, while the Berlin Wall was built in 1961."
+  },
+  {
+    "id": "ak-hi-159",
+    "question": "The 'Edict of Milan' in 313 CE granted religious tolerance throughout the Roman Empire. Who were the two emperors responsible for issuing it?",
+    "answers": [
+      "Constantine I and Licinius",
+      "Diocletian and Maximian",
+      "Theodosius I and Gratian",
+      "Augustus and Tiberius"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Edict of Milan was a proclamation that permanently established religious toleration for Christianity within the Roman Empire."
+  },
+  {
+    "id": "ak-hi-160",
+    "question": "Which dynasty ruled China for nearly three centuries (960-1279 CE) and is often considered a golden age of Chinese culture, technological innovation, and economic prosperity?",
+    "answers": [
+      "Song Dynasty",
+      "Tang Dynasty",
+      "Ming Dynasty",
+      "Qing Dynasty"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Song Dynasty saw significant advancements in printing, gunpowder, and navigation, and a flourishing of arts and philosophy."
+  },
+  {
+    "id": "ak-hi-161",
+    "question": "The 'Concert of Europe' was a system of dispute resolution adopted by major European powers following which major conflict?",
+    "answers": [
+      "Napoleonic Wars",
+      "Thirty Years' War",
+      "Seven Years' War",
+      "Crimean War"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Established by the Congress of Vienna in 1815, it aimed to maintain peace and stability in Europe through diplomacy and cooperation."
   }
 ]

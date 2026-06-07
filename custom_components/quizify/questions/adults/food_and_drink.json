@@ -1090,5 +1090,733 @@
     "correct": 0,
     "difficulty": "easy",
     "explanation": "Often called rice wine, though technically it's brewed like beer."
+  },
+  {
+    "id": "ak-fd-085",
+    "question": "Which large country is famous for dishes like Peking Duck and Dim Sum?",
+    "answers": [
+      "China",
+      "Japan",
+      "South Korea",
+      "Vietnam"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Peking Duck is a famous roasted duck dish, and Dim Sum refers to a style of Cantonese cuisine with small bite-sized portions."
+  },
+  {
+    "id": "ak-fd-086",
+    "question": "What is the primary ingredient in guacamole?",
+    "answers": [
+      "Avocado",
+      "Tomato",
+      "Onion",
+      "Lime"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Guacamole is an avocado-based dip originating from Mexico."
+  },
+  {
+    "id": "ak-fd-087",
+    "question": "Which popular Italian dish consists of pasta layered with sauce, cheese, and meat or vegetables?",
+    "answers": [
+      "Lasagna",
+      "Spaghetti",
+      "Ravioli",
+      "Fettuccine"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Lasagna is a wide, flat pasta, and also a dish made with stacked layers."
+  },
+  {
+    "id": "ak-fd-088",
+    "question": "What is the main ingredient in French fries?",
+    "answers": [
+      "Potatoes",
+      "Carrots",
+      "Zucchini",
+      "Sweet Potatoes"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "French fries are deep-fried potato strips, often served as a side dish."
+  },
+  {
+    "id": "ak-fd-089",
+    "question": "Which common grain is used to make bread, pasta, and many cereals?",
+    "answers": [
+      "Wheat",
+      "Rice",
+      "Corn",
+      "Oats"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Wheat is a widely cultivated grass whose seed is a staple food worldwide."
+  },
+  {
+    "id": "ak-fd-090",
+    "question": "What is the primary ingredient in traditional hummus?",
+    "answers": [
+      "Chickpeas",
+      "Lentils",
+      "Fava beans",
+      "Black beans"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Hummus is a Middle Eastern dip or spread made from cooked, mashed chickpeas blended with tahini, lemon juice, and garlic."
+  },
+  {
+    "id": "ak-fd-091",
+    "question": "Which country is famous for its curry dishes, often served with rice or naan bread?",
+    "answers": [
+      "India",
+      "Thailand",
+      "Japan",
+      "Mexico"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Indian cuisine is renowned for its diverse range of aromatic and flavorful curries."
+  },
+  {
+    "id": "ak-fd-092",
+    "question": "What is the main ingredient in a traditional Margherita pizza?",
+    "answers": [
+      "Tomato, mozzarella, basil",
+      "Pepperoni, cheese, tomato",
+      "Ham, pineapple, cheese",
+      "Spinach, feta, olives"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Margherita pizza is a classic Neapolitan pizza, representing the colors of the Italian flag."
+  },
+  {
+    "id": "ak-fd-093",
+    "question": "Which type of fruit is often dried and used to make raisins?",
+    "answers": [
+      "Grapes",
+      "Apricots",
+      "Plums",
+      "Figs"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Raisins are dried grapes, produced in many parts of the world."
+  },
+  {
+    "id": "ak-fd-094",
+    "question": "What is the common name for the sweetened carbonated beverage often called 'soda' or 'pop'?",
+    "answers": [
+      "Soft drink",
+      "Juice",
+      "Milkshake",
+      "Coffee"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Soft drinks are non-alcoholic beverages, often carbonated and sweetened."
+  },
+  {
+    "id": "ak-fd-095",
+    "question": "Which breakfast food is usually made from eggs scrambled or fried?",
+    "answers": [
+      "Omelette",
+      "Pancake",
+      "Waffle",
+      "Cereal"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "An omelette is a dish made from beaten eggs fried with butter or oil until set."
+  },
+  {
+    "id": "ak-fd-096",
+    "question": "Which root vegetable is typically orange and known for being good for eyesight?",
+    "answers": [
+      "Carrot",
+      "Radish",
+      "Beet",
+      "Turnip"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Carrots are rich in beta-carotene, which the body converts to vitamin A, essential for good vision."
+  },
+  {
+    "id": "ak-fd-097",
+    "question": "What is the main ingredient in chocolate?",
+    "answers": [
+      "Cacao beans",
+      "Coffee beans",
+      "Vanilla beans",
+      "Sugar cane"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Chocolate is made from the seeds of the cacao tree, which are processed and combined with other ingredients."
+  },
+  {
+    "id": "ak-fd-098",
+    "question": "Which type of seafood is commonly used to make sushi?",
+    "answers": [
+      "Fish",
+      "Chicken",
+      "Beef",
+      "Pork"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Sushi often features raw or cooked fish and other seafood, along with vinegared rice."
+  },
+  {
+    "id": "ak-fd-099",
+    "question": "What is the name of the sweet spread made from fruit and sugar, often eaten with toast?",
+    "answers": [
+      "Jam",
+      "Honey",
+      "Peanut Butter",
+      "Nutella"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Jam is a preserve made from fruit pulp or whole fruit, prepared with sugar and pectin."
+  },
+  {
+    "id": "ak-fd-100",
+    "question": "Which continent is home to the culinary tradition of using chopsticks?",
+    "answers": [
+      "Asia",
+      "Europe",
+      "Africa",
+      "North America"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Chopsticks are a pair of small, thin sticks used as eating utensils, originating in ancient China and common across East and Southeast Asia."
+  },
+  {
+    "id": "ak-fd-101",
+    "question": "What is the primary ingredient in traditional French bread like a baguette?",
+    "answers": [
+      "Wheat flour",
+      "Corn flour",
+      "Rice flour",
+      "Rye flour"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Baguettes are long, thin loaves of French bread made from basic lean dough."
+  },
+  {
+    "id": "ak-fd-102",
+    "question": "Which type of fruit is known for its yellow color and curved shape?",
+    "answers": [
+      "Banana",
+      "Apple",
+      "Orange",
+      "Grape"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Bananas are elongated, edible fruits produced by several kinds of large herbaceous flowering plants."
+  },
+  {
+    "id": "ak-fd-103",
+    "question": "What is the name of the popular hot beverage made from roasted and ground coffee beans?",
+    "answers": [
+      "Coffee",
+      "Tea",
+      "Hot Chocolate",
+      "Cider"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Coffee is prepared from roasted coffee beans, the seeds of berries from the Coffea plant."
+  },
+  {
+    "id": "ak-fd-104",
+    "question": "Which vegetable is often used to make pickles?",
+    "answers": [
+      "Cucumber",
+      "Tomato",
+      "Onion",
+      "Cabbage"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Pickles are cucumbers that have been pickled in brine, vinegar, or some other solution."
+  },
+  {
+    "id": "ak-fd-105",
+    "question": "What is the primary flavor of a lemon?",
+    "answers": [
+      "Sour",
+      "Sweet",
+      "Bitter",
+      "Salty"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Lemons are known for their distinctly sour taste due to their high citric acid content."
+  },
+  {
+    "id": "ak-fd-106",
+    "question": "Which leafy green is commonly used in salads, often paired with Caesar dressing?",
+    "answers": [
+      "Romaine lettuce",
+      "Spinach",
+      "Kale",
+      "Arugula"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Romaine lettuce is a staple in Caesar salads, offering a crisp texture."
+  },
+  {
+    "id": "ak-fd-107",
+    "question": "What is the main ingredient in tortillas found in Mexican cuisine?",
+    "answers": [
+      "Corn or wheat flour",
+      "Potato flour",
+      "Rice flour",
+      "Almond flour"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Tortillas are a thin, flatbread made from either corn masa or wheat flour, essential in Mexican cooking."
+  },
+  {
+    "id": "ak-fd-108",
+    "question": "What beverage is commonly called 'builder's tea' in the UK?",
+    "answers": [
+      "Strong black tea with milk",
+      "Herbal tea",
+      "Green tea",
+      "Iced tea"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Builder's tea is a strong cup of black tea, typically served with milk and sometimes sugar, popular among manual laborers in the UK."
+  },
+  {
+    "id": "ak-fd-109",
+    "question": "Which dairy product is made by churning cream and is often spread on toast?",
+    "answers": [
+      "Butter",
+      "Cheese",
+      "Yogurt",
+      "Milk"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Butter is a dairy product made from the fat and protein components of milk or cream."
+  },
+  {
+    "id": "ak-fd-110",
+    "question": "What type of meat is commonly used to make hamburgers?",
+    "answers": [
+      "Ground beef",
+      "Chicken",
+      "Pork",
+      "Lamb"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A hamburger typically consists of a cooked patty of ground meat, usually beef, placed inside a sliced bun."
+  },
+  {
+    "id": "ak-fd-111",
+    "question": "Which herb is often associated with Italian cooking and has a strong, sweet, pungent aroma?",
+    "answers": [
+      "Basil",
+      "Parsley",
+      "Cilantro",
+      "Dill"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Basil is a key ingredient in many Italian dishes, including pesto and Margherita pizza."
+  },
+  {
+    "id": "ak-fd-112",
+    "question": "What is the process of cooking food in hot oil or fat called?",
+    "answers": [
+      "Frying",
+      "Baking",
+      "Boiling",
+      "Grilling"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Frying is a method of cooking food in hot fat or oil, typically in a shallow pan."
+  },
+  {
+    "id": "ak-fd-113",
+    "question": "Which type of vinegar is traditionally aged in wooden barrels for many years?",
+    "answers": [
+      "Balsamic vinegar",
+      "Red wine vinegar",
+      "Apple cider vinegar",
+      "White vinegar"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Traditional balsamic vinegar from Modena or Reggio Emilia undergoes a lengthy aging process in a series of different wooden barrels."
+  },
+  {
+    "id": "ak-fd-114",
+    "question": "What is the primary ingredient in the Japanese soup base known as Dashi?",
+    "answers": [
+      "Kombu (dried kelp) and Katsuobushi (dried bonito flakes)",
+      "Miso paste",
+      "Soy sauce",
+      "Shiitake mushrooms"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Dashi is a fundamental stock in Japanese cuisine, typically made by infusing kombu and katsuobushi in hot water."
+  },
+  {
+    "id": "ak-fd-115",
+    "question": "Which culinary term refers to the process of quickly frying food in a small amount of oil over high heat?",
+    "answers": [
+      "Sautéing",
+      "Braising",
+      "Poaching",
+      "Stewing"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Sautéing is a French cooking method that literally means 'to jump', referring to the quick movement of food in a hot pan."
+  },
+  {
+    "id": "ak-fd-116",
+    "question": "The potent alcoholic beverage Mezcal is primarily made from which plant?",
+    "answers": [
+      "Agave",
+      "Sugarcane",
+      "Grape",
+      "Potato"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Mezcal is a distilled alcoholic beverage made from any type of agave plant, primarily in Oaxaca, Mexico. Tequila is a type of Mezcal."
+  },
+  {
+    "id": "ak-fd-117",
+    "question": "What is the main ingredient in the traditional Spanish dish Paella?",
+    "answers": [
+      "Rice",
+      "Pasta",
+      "Potatoes",
+      "Bread"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Paella is a rice dish originally from Valencia, Spain, cooked in a wide, shallow pan with various ingredients."
+  },
+  {
+    "id": "ak-fd-118",
+    "question": "Which ancient civilization is credited with inventing beer?",
+    "answers": [
+      "Sumerians",
+      "Egyptians",
+      "Romans",
+      "Greeks"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Archaeological evidence suggests the Sumerians were brewing beer as early as 4000 BCE in Mesopotamia."
+  },
+  {
+    "id": "ak-fd-119",
+    "question": "What is the process of fermenting cabbage to create sauerkraut called?",
+    "answers": [
+      "Lacto-fermentation",
+      "Acetic fermentation",
+      "Alcoholic fermentation",
+      "Malolactic fermentation"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Lacto-fermentation uses beneficial bacteria, lactic acid bacteria, to convert sugars in the food into lactic acid, preserving it."
+  },
+  {
+    "id": "ak-fd-120",
+    "question": "Which country is famous for its 'fish and chips' as a national dish?",
+    "answers": [
+      "United Kingdom",
+      "Ireland",
+      "Australia",
+      "Canada"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Fish and chips is a popular takeaway dish consisting of battered fish and deep-fried chips, originating in England."
+  },
+  {
+    "id": "ak-fd-121",
+    "question": "What is the primary leavening agent in sourdough bread?",
+    "answers": [
+      "Wild yeast and lactic acid bacteria",
+      "Commercial baker's yeast",
+      "Baking soda",
+      "Baking powder"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Sourdough bread relies on a 'starter' which is a fermented mixture of flour and water containing wild yeast and lactic acid bacteria."
+  },
+  {
+    "id": "ak-fd-122",
+    "question": "Which type of mushroom is highly prized for its earthy aroma and often used in French and Italian cuisine?",
+    "answers": [
+      "Truffle",
+      "Portobello",
+      "Shiitake",
+      "Cremini"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Truffles are subterranean fungi that are highly sought after for their intense flavor and aroma."
+  },
+  {
+    "id": "ak-fd-123",
+    "question": "What is the main ingredient in the refreshing Middle Eastern drink 'Ayran'?",
+    "answers": [
+      "Yogurt",
+      "Milk",
+      "Buttermilk",
+      "Kefir"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Ayran is a cold savory yogurt-based beverage popular in the Middle East and Central Asia, made by mixing yogurt with water and salt."
+  },
+  {
+    "id": "ak-fd-124",
+    "question": "The culinary term 'al dente' primarily refers to the ideal cooking texture of which food?",
+    "answers": [
+      "Pasta",
+      "Rice",
+      "Vegetables",
+      "Meat"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Al dente, Italian for 'to the tooth', describes pasta cooked to be firm yet tender to the bite."
+  },
+  {
+    "id": "ak-fd-125",
+    "question": "Which spice is derived from the dried stigma of a crocus flower?",
+    "answers": [
+      "Saffron",
+      "Turmeric",
+      "Cumin",
+      "Cardamom"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Saffron is one of the world's most expensive spices by weight, harvested from the Crocus sativus flower."
+  },
+  {
+    "id": "ak-fd-126",
+    "question": "What is the primary cooking method for making 'confit'?",
+    "answers": [
+      "Slow cooking in its own fat",
+      "Deep frying",
+      "Grilling",
+      "Steaming"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Confit is a classic French cooking technique where food, typically duck or goose, is slowly cooked and preserved in its own fat."
+  },
+  {
+    "id": "ak-fd-127",
+    "question": "Which continent is cacao, the source of chocolate, native to?",
+    "answers": [
+      "South America",
+      "Africa",
+      "Asia",
+      "Europe"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Cacao trees are native to the tropical regions of Mesoamerica and South America, where they have been cultivated for thousands of years."
+  },
+  {
+    "id": "ak-fd-128",
+    "question": "What is the distinguishing feature of 'dry-aged' beef?",
+    "answers": [
+      "It is aged uncovered in a controlled environment to tenderize and concentrate flavor",
+      "It is aged in a vacuum-sealed bag",
+      "It is aged with salt and herbs",
+      "It is aged submerged in oil"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Dry aging involves hanging cuts of beef in a climate-controlled room for several weeks, allowing enzymes to break down muscle tissue and moisture to evaporate, intensifying flavor."
+  },
+  {
+    "id": "ak-fd-129",
+    "question": "Which type of Italian pasta is typically shaped like small grains of rice?",
+    "answers": [
+      "Orzo",
+      "Fettuccine",
+      "Penne",
+      "Spaghetti"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Orzo is a small, rice-shaped pasta that is often used in soups, salads, and casseroles."
+  },
+  {
+    "id": "ak-fd-130",
+    "question": "What is the primary ingredient in the traditional French soup 'Vichyssoise'?",
+    "answers": [
+      "Potatoes and leeks",
+      "Onions and beef broth",
+      "Tomatoes and basil",
+      "Mushrooms and cream"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Vichyssoise is a thick soup made of puréed leeks, onions, potatoes, cream, and chicken stock, and is traditionally served cold."
+  },
+  {
+    "id": "ak-fd-131",
+    "question": "Which country is renowned for its specific process of making 'Parmigiano-Reggiano' cheese?",
+    "answers": [
+      "Italy",
+      "France",
+      "Switzerland",
+      "Netherlands"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Parmigiano-Reggiano is a hard, granular cheese produced in the provinces of Parma, Reggio Emilia, Modena, Bologna, and Mantua in Italy."
+  },
+  {
+    "id": "ak-fd-132",
+    "question": "What is the name of the cooking technique where food is cooked in a sealed bag in a water bath at a precise temperature?",
+    "answers": [
+      "Sous vide",
+      "Bain-marie",
+      "Poaching",
+      "Braising"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Sous vide, French for 'under vacuum', ensures even cooking and precise control over the food's doneness."
+  },
+  {
+    "id": "ak-fd-133",
+    "question": "Which type of berry is essential for making traditional cranberry sauce?",
+    "answers": [
+      "Cranberry",
+      "Raspberry",
+      "Blueberry",
+      "Strawberry"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Cranberry sauce, often a staple during Thanksgiving and Christmas, is made from cranberries, sugar, and water."
+  },
+  {
+    "id": "ak-fd-134",
+    "question": "What is the main characteristic of 'umami', the fifth basic taste?",
+    "answers": [
+      "Savory or 'meaty'",
+      "Sweet",
+      "Sour",
+      "Bitter"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Umami was identified by Japanese scientist Kikunae Ikeda, describing a pleasant savory taste often found in rich foods like mushrooms, aged cheese, and meat."
+  },
+  {
+    "id": "ak-fd-135",
+    "question": "Which cooking fat is traditionally used to make authentic French croissants?",
+    "answers": [
+      "Butter",
+      "Margarine",
+      "Vegetable oil",
+      "Lard"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The flaky layers of a croissant are created by folding a dough with a generous amount of butter, a process called laminating."
+  },
+  {
+    "id": "ak-fd-136",
+    "question": "Which region is famously associated with the production of Champagne?",
+    "answers": [
+      "Champagne, France",
+      "Tuscany, Italy",
+      "Napa Valley, USA",
+      "Bordeaux, France"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "True Champagne can only come from the Champagne region of France, due to strict appellation d'origine contrôlée (AOC) regulations."
+  },
+  {
+    "id": "ak-fd-137",
+    "question": "What is the name of the traditional Japanese cooking method involving grilling over hot charcoal?",
+    "answers": [
+      "Robatayaki",
+      "Tempura",
+      "Sushi",
+      "Sashimi"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Robatayaki, or robata, literally 'fireside cooking', involves grilling seafood, vegetables, and meat over hot coals."
+  },
+  {
+    "id": "ak-fd-138",
+    "question": "The term 'Mirepoix' in French cooking refers to a combination of which aromatic vegetables?",
+    "answers": [
+      "Onions, carrots, and celery",
+      "Garlic, ginger, and chilies",
+      "Bell peppers, onions, and tomatoes",
+      "Leeks, potatoes, and parsley"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Mirepoix is a fundamental flavor base in many cuisines, typically sautéed in butter or oil to add depth to stocks, sauces, and soups."
+  },
+  {
+    "id": "ak-fd-139",
+    "question": "Which ancient grain is known for its complete protein and often used as a rice substitute?",
+    "answers": [
+      "Quinoa",
+      "Barley",
+      "Oats",
+      "Millet"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Quinoa, native to the Andes, is a pseudo-cereal often referred to as a superfood due to its high nutritional content, including all nine essential amino acids."
+  },
+  {
+    "id": "ak-fd-140",
+    "question": "What is the primary fruit used to make the spirit 'Calvados'?",
+    "answers": [
+      "Apples",
+      "Pears",
+      "Grapes",
+      "Plums"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Calvados is an apple brandy from the Normandy region of France, made by distilling cider."
   }
 ]

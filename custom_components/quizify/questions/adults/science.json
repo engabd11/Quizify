@@ -1090,5 +1090,1071 @@
     "correct": 0,
     "difficulty": "hard",
     "explanation": "Lithium has a density of just 0.534 g/cm³ — it floats on water (and reacts with it)."
+  },
+  {
+    "id": "ak-sc-085",
+    "question": "What is the chemical symbol for water?",
+    "answers": [
+      "H2O",
+      "CO2",
+      "O2",
+      "NaCl"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Water is composed of two hydrogen atoms and one oxygen atom."
+  },
+  {
+    "id": "ak-sc-086",
+    "question": "What force pulls objects towards the center of the Earth?",
+    "answers": [
+      "Gravity",
+      "Magnetism",
+      "Friction",
+      "Tension"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Gravity is the natural phenomenon by which all things with mass are brought toward one another."
+  },
+  {
+    "id": "ak-sc-087",
+    "question": "Which gas do plants absorb from the atmosphere for photosynthesis?",
+    "answers": [
+      "Carbon Dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Photosynthesis is the process by which green plants use sunlight to synthesize foods from carbon dioxide and water."
+  },
+  {
+    "id": "ak-sc-088",
+    "question": "What is the closest planet to the Sun?",
+    "answers": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Mercury is the smallest planet in our solar system and orbits closest to the Sun."
+  },
+  {
+    "id": "ak-sc-089",
+    "question": "Which layer of the Earth is molten and surrounds the core?",
+    "answers": [
+      "Mantle",
+      "Crust",
+      "Outer Core",
+      "Inner Core"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The mantle is primarily solid, but it behaves as a viscous fluid over geological time. The outer core is the molten layer."
+  },
+  {
+    "id": "ak-sc-090",
+    "question": "What is the primary function of red blood cells?",
+    "answers": [
+      "Transport oxygen",
+      "Fight infection",
+      "Clot blood",
+      "Produce hormones"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Red blood cells contain hemoglobin, a protein that binds to oxygen and carries it throughout the body."
+  },
+  {
+    "id": "ak-sc-091",
+    "question": "What common chemical element is found in pencils?",
+    "answers": [
+      "Carbon",
+      "Lead",
+      "Iron",
+      "Copper"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Pencil 'lead' is actually graphite, a form of carbon, mixed with clay."
+  },
+  {
+    "id": "ak-sc-092",
+    "question": "What do we call the process where liquid turns into gas?",
+    "answers": [
+      "Evaporation",
+      "Condensation",
+      "Melting",
+      "Freezing"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Evaporation is a type of vaporization that occurs on the surface of a liquid as it changes into the gas phase."
+  },
+  {
+    "id": "ak-sc-093",
+    "question": "Which part of a plant absorbs water and nutrients from the soil?",
+    "answers": [
+      "Roots",
+      "Leaves",
+      "Stem",
+      "Flowers"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Roots anchor the plant and are crucial for absorbing water and dissolved minerals."
+  },
+  {
+    "id": "ak-sc-094",
+    "question": "What is the name of our galaxy?",
+    "answers": [
+      "Milky Way",
+      "Andromeda",
+      "Triangulum",
+      "Sombrero"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Milky Way is a barred spiral galaxy that is home to our solar system."
+  },
+  {
+    "id": "ak-sc-095",
+    "question": "What is the longest river in the world?",
+    "answers": [
+      "Nile River",
+      "Amazon River",
+      "Yangtze River",
+      "Mississippi River"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Nile River flows through northeastern Africa and is generally considered the longest river."
+  },
+  {
+    "id": "ak-sc-096",
+    "question": "What is the main component of Earth's atmosphere?",
+    "answers": [
+      "Nitrogen",
+      "Oxygen",
+      "Argon",
+      "Carbon Dioxide"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Nitrogen makes up about 78% of the Earth's atmosphere."
+  },
+  {
+    "id": "ak-sc-097",
+    "question": "What is the process by which plants make their own food?",
+    "answers": [
+      "Photosynthesis",
+      "Respiration",
+      "Transpiration",
+      "Fermentation"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Photosynthesis uses light energy to convert carbon dioxide and water into glucose and oxygen."
+  },
+  {
+    "id": "ak-sc-098",
+    "question": "Which state of matter has a definite shape and a definite volume?",
+    "answers": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "Plasma"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "In a solid, particles are closely packed and vibrate in fixed positions, giving it a definite shape and volume."
+  },
+  {
+    "id": "ak-sc-099",
+    "question": "What is the unit of electric current?",
+    "answers": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The ampere is the SI unit of electric current, defined by the flow of one coulomb per second."
+  },
+  {
+    "id": "ak-sc-100",
+    "question": "What causes the Earth's seasons?",
+    "answers": [
+      "The tilt of Earth's axis",
+      "The Earth's distance from the Sun",
+      "The Earth's rotation speed",
+      "The Moon's gravitational pull"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The tilt of Earth's axis as it orbits the Sun causes different parts of the Earth to receive more direct sunlight at different times of the year."
+  },
+  {
+    "id": "ak-sc-101",
+    "question": "Which organ pumps blood throughout the body?",
+    "answers": [
+      "Heart",
+      "Lungs",
+      "Kidneys",
+      "Liver"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The heart is a muscular organ that pumps blood through the circulatory system."
+  },
+  {
+    "id": "ak-sc-102",
+    "question": "What is the chemical symbol for gold?",
+    "answers": [
+      "Au",
+      "Ag",
+      "Fe",
+      "Pb"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The symbol 'Au' comes from the Latin word 'aurum' for gold."
+  },
+  {
+    "id": "ak-sc-103",
+    "question": "What is the normal body temperature of a human in Celsius?",
+    "answers": [
+      "37°C",
+      "98.6°C",
+      "0°C",
+      "100°C"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Normal human body temperature is typically cited as 37 degrees Celsius (98.6 degrees Fahrenheit)."
+  },
+  {
+    "id": "ak-sc-104",
+    "question": "What is the biggest planet in our solar system?",
+    "answers": [
+      "Jupiter",
+      "Saturn",
+      "Neptune",
+      "Uranus"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Jupiter is the largest planet, with a diameter of about 140,000 km, over 11 times that of Earth."
+  },
+  {
+    "id": "ak-sc-105",
+    "question": "Which type of rock is formed from cooled magma or lava?",
+    "answers": [
+      "Igneous",
+      "Sedimentary",
+      "Metamorphic",
+      "Volcanic"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Igneous rocks are formed when molten rock (magma or lava) cools and solidifies."
+  },
+  {
+    "id": "ak-sc-106",
+    "question": "What gas do humans exhale when they breathe?",
+    "answers": [
+      "Carbon Dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Hydrogen"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "During respiration, humans take in oxygen and release carbon dioxide as a waste product."
+  },
+  {
+    "id": "ak-sc-107",
+    "question": "What is the process of sound waves bouncing off a surface?",
+    "answers": [
+      "Echo",
+      "Refraction",
+      "Diffraction",
+      "Absorption"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "An echo is a reflection of sound that arrives at the listener with a delay after the direct sound."
+  },
+  {
+    "id": "ak-sc-108",
+    "question": "Which part of the cell is responsible for generating energy through cellular respiration?",
+    "answers": [
+      "Mitochondria",
+      "Nucleus",
+      "Ribosome",
+      "Endoplasmic Reticulum"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Mitochondria are often called the 'powerhouses' of the cell because they produce most of the cell's supply of ATP."
+  },
+  {
+    "id": "ak-sc-109",
+    "question": "What is the process of a solid turning directly into a gas called?",
+    "answers": [
+      "Sublimation",
+      "Deposition",
+      "Evaporation",
+      "Melting"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Sublimation is the transition of a substance directly from the solid to the gas state without passing through the liquid state."
+  },
+  {
+    "id": "ak-sc-110",
+    "question": "What is the common name for the phenomenon where light bends as it passes through a different medium?",
+    "answers": [
+      "Refraction",
+      "Reflection",
+      "Diffraction",
+      "Dispersion"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Refraction is the change in direction of a wave passing from one medium to another or from a gradual change in the medium."
+  },
+  {
+    "id": "ak-sc-111",
+    "question": "What is the name of the protective layer around the Earth that absorbs most of the Sun's ultraviolet radiation?",
+    "answers": [
+      "Ozone Layer",
+      "Troposphere",
+      "Stratosphere",
+      "Ionosphere"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The ozone layer is a region in Earth's stratosphere that absorbs most of the Sun's ultraviolet radiation."
+  },
+  {
+    "id": "ak-sc-112",
+    "question": "Which famous scientist developed the theory of relativity?",
+    "answers": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Galileo Galilei",
+      "Stephen Hawking"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Albert Einstein developed the theories of special and general relativity, revolutionizing our understanding of space, time, gravity, and the universe."
+  },
+  {
+    "id": "ak-sc-113",
+    "question": "What is the primary function of the mitochondria in a cell?",
+    "answers": [
+      "Produce energy (ATP)",
+      "Synthesize proteins",
+      "Store genetic material",
+      "Digest waste products"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Mitochondria are often called the 'powerhouses' of the cell because they generate most of the supply of adenosine triphosphate (ATP), used as a source of chemical energy."
+  },
+  {
+    "id": "ak-sc-114",
+    "question": "Which of the following describes the process of a liquid turning into a gas?",
+    "answers": [
+      "Evaporation",
+      "Condensation",
+      "Sublimation",
+      "Melting"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Evaporation is the process by which atoms or molecules escape from a liquid and turn into a gas."
+  },
+  {
+    "id": "ak-sc-115",
+    "question": "What is the name of the force that opposes motion between two surfaces in contact?",
+    "answers": [
+      "Friction",
+      "Gravity",
+      "Tension",
+      "Normal force"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Friction is a force that resists the relative motion or tendency to such motion of two surfaces in contact."
+  },
+  {
+    "id": "ak-sc-116",
+    "question": "Which planet is known as the 'Red Planet'?",
+    "answers": [
+      "Mars",
+      "Jupiter",
+      "Venus",
+      "Saturn"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Mars is known as the 'Red Planet' due to the presence of iron oxide on its surface, giving it a reddish hue."
+  },
+  {
+    "id": "ak-sc-117",
+    "question": "What is the name of the supercontinent that existed approximately 335 million years ago?",
+    "answers": [
+      "Pangea",
+      "Gondwana",
+      "Laurasia",
+      "Rodinia"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Pangea was a supercontinent that assembled from earlier continental units approximately 335 million years ago, and began to break apart about 175 million years ago."
+  },
+  {
+    "id": "ak-sc-118",
+    "question": "What type of rock is formed from the cooling and solidification of molten magma or lava?",
+    "answers": [
+      "Igneous",
+      "Sedimentary",
+      "Metamorphic",
+      "Volcanic"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Igneous rocks are formed from the cooling and solidification of molten rock (magma or lava)."
+  },
+  {
+    "id": "ak-sc-119",
+    "question": "Which component of blood is responsible for carrying oxygen?",
+    "answers": [
+      "Red blood cells",
+      "White blood cells",
+      "Platelets",
+      "Plasma"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Red blood cells contain hemoglobin, a protein that binds to oxygen in the lungs and releases it in the tissues."
+  },
+  {
+    "id": "ak-sc-120",
+    "question": "What is the pH value of a neutral solution?",
+    "answers": [
+      "7",
+      "0",
+      "14",
+      "3"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A pH of 7 indicates a neutral solution, meaning it is neither acidic nor alkaline."
+  },
+  {
+    "id": "ak-sc-121",
+    "question": "What is the SI unit of electric current?",
+    "answers": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The ampere (A) is the SI base unit of electric current, named after André-Marie Ampère."
+  },
+  {
+    "id": "ak-sc-122",
+    "question": "Which astronomical object is characterized by a strong gravitational pull that even light cannot escape?",
+    "answers": [
+      "Black hole",
+      "Neutron star",
+      "White dwarf",
+      "Quasar"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A black hole is a region of spacetime where gravity is so strong that nothing, including light or other electromagnetic waves, has enough energy to escape it."
+  },
+  {
+    "id": "ak-sc-123",
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "answers": [
+      "Nitrogen",
+      "Oxygen",
+      "Argon",
+      "Carbon dioxide"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Nitrogen makes up approximately 78% of Earth's atmosphere."
+  },
+  {
+    "id": "ak-sc-124",
+    "question": "Which layer of the Earth is semi-molten and allows for the movement of tectonic plates?",
+    "answers": [
+      "Asthenosphere",
+      "Lithosphere",
+      "Mesosphere",
+      "Outer core"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The asthenosphere is the highly viscous, mechanically weak, and ductile region of the upper mantle, where convection currents drive plate tectonics."
+  },
+  {
+    "id": "ak-sc-125",
+    "question": "What is the process by which plants convert light energy into chemical energy?",
+    "answers": [
+      "Photosynthesis",
+      "Respiration",
+      "Transpiration",
+      "Fermentation"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Photosynthesis is the process used by plants, algae, and certain bacteria to harness energy from sunlight and turn it into chemical energy."
+  },
+  {
+    "id": "ak-sc-126",
+    "question": "Which of Newton's Laws states that for every action, there is an equal and opposite reaction?",
+    "answers": [
+      "Third Law of Motion",
+      "First Law of Motion",
+      "Second Law of Motion",
+      "Law of Universal Gravitation"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Newton's Third Law of Motion describes how forces always occur in pairs, with each force acting on a different object."
+  },
+  {
+    "id": "ak-sc-127",
+    "question": "What natural phenomenon is caused by the sudden shifting of tectonic plates?",
+    "answers": [
+      "Earthquake",
+      "Volcanic eruption",
+      "Tsunami",
+      "Hurricane"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Earthquakes are caused by the sudden release of energy in the Earth's crust that creates seismic waves, typically when tectonic plates shift."
+  },
+  {
+    "id": "ak-sc-128",
+    "question": "Which of the following is the largest organ in the human body?",
+    "answers": [
+      "Skin",
+      "Liver",
+      "Brain",
+      "Lungs"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The skin is the largest organ of the human body, covering an area of about 1.5 to 2 square meters in adults."
+  },
+  {
+    "id": "ak-sc-129",
+    "question": "What is the process of a solid changing directly into a gas without passing through a liquid phase?",
+    "answers": [
+      "Sublimation",
+      "Deposition",
+      "Evaporation",
+      "Melting"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Sublimation is a phase transition where a substance changes from a solid to a gas without ever passing through a liquid phase."
+  },
+  {
+    "id": "ak-sc-130",
+    "question": "What is the unit of measurement for frequency?",
+    "answers": [
+      "Hertz",
+      "Decibel",
+      "Newton",
+      "Joule"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Hertz (Hz) is the SI unit of frequency, defined as one cycle per second."
+  },
+  {
+    "id": "ak-sc-131",
+    "question": "Which gas is primarily responsible for the greenhouse effect on Earth?",
+    "answers": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Methane"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Carbon dioxide is the most significant anthropogenic greenhouse gas, playing a crucial role in trapping heat in Earth's atmosphere."
+  },
+  {
+    "id": "ak-sc-132",
+    "question": "What type of astronomical object is at the center of our solar system?",
+    "answers": [
+      "Star",
+      "Planet",
+      "Asteroid",
+      "Comet"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The Sun is a star, and it is at the center of our solar system, providing light and heat to Earth."
+  },
+  {
+    "id": "ak-sc-133",
+    "question": "Which type of chemical bond involves the sharing of electron pairs between atoms?",
+    "answers": [
+      "Covalent bond",
+      "Ionic bond",
+      "Metallic bond",
+      "Hydrogen bond"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A covalent bond is a chemical bond that involves the sharing of electron pairs between atoms."
+  },
+  {
+    "id": "ak-sc-134",
+    "question": "What is the main function of chlorophyll in plants?",
+    "answers": [
+      "Absorb sunlight for photosynthesis",
+      "Transport water and nutrients",
+      "Provide structural support",
+      "Produce plant hormones"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Chlorophyll is the green pigment found in plants that is essential for absorbing light energy during photosynthesis."
+  },
+  {
+    "id": "ak-sc-135",
+    "question": "What is the outermost layer of the Earth's atmosphere?",
+    "answers": [
+      "Exosphere",
+      "Thermosphere",
+      "Mesosphere",
+      "Stratosphere"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The exosphere is the outermost layer of the Earth's atmosphere, extending from the thermopause up to 10,000 km above the Earth's surface."
+  },
+  {
+    "id": "ak-sc-136",
+    "question": "What is the primary characteristic that distinguishes a prokaryotic cell from a eukaryotic cell?",
+    "answers": [
+      "Lack of a nucleus",
+      "Presence of a cell wall",
+      "Ability to photosynthesize",
+      "Smaller size"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Prokaryotic cells lack a membrane-bound nucleus and other membrane-bound organelles, unlike eukaryotic cells."
+  },
+  {
+    "id": "ak-sc-137",
+    "question": "Which principle states that an object immersed in a fluid experiences an upward buoyant force equal to the weight of the fluid displaced by the object?",
+    "answers": [
+      "Archimedes' Principle",
+      "Pascal's Principle",
+      "Bernoulli's Principle",
+      "Newton's Law of Universal Gravitation"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Archimedes' Principle explains buoyancy, stating that the upward buoyant force on an object is equal to the weight of the fluid that the object displaces."
+  },
+  {
+    "id": "ak-sc-138",
+    "question": "What is the term for the process where water vapor in the air changes into liquid water droplets, forming clouds?",
+    "answers": [
+      "Condensation",
+      "Evaporation",
+      "Precipitation",
+      "Transpiration"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Condensation is the process by which water vapor in the air is changed into liquid water, forming clouds or dew."
+  },
+  {
+    "id": "ak-sc-139",
+    "question": "What fundamental principle states that it's impossible to simultaneously know precisely both the position and momentum of a quantum particle?",
+    "answers": [
+      "Heisenberg's Uncertainty Principle",
+      "Pauli Exclusion Principle",
+      "Schrödinger Equation",
+      "De Broglie Hypothesis"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "This principle is a cornerstone of quantum mechanics, highlighting the inherent limitations in measuring certain pairs of physical properties."
+  },
+  {
+    "id": "ak-sc-140",
+    "question": "Which type of chemical bond involves the sharing of electrons between atoms, resulting in a stable electron configuration?",
+    "answers": [
+      "Covalent bond",
+      "Ionic bond",
+      "Metallic bond",
+      "Hydrogen bond"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Covalent bonds are typical in organic molecules and non-metal compounds, where atoms achieve stability by sharing electron pairs."
+  },
+  {
+    "id": "ak-sc-141",
+    "question": "What is the process by which plants convert light energy into chemical energy, specifically glucose?",
+    "answers": [
+      "Photosynthesis",
+      "Cellular respiration",
+      "Chemosynthesis",
+      "Glycolysis"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Photosynthesis is crucial for life on Earth, producing the oxygen we breathe and the organic compounds that form the base of most food chains."
+  },
+  {
+    "id": "ak-sc-142",
+    "question": "What celestial phenomenon occurs when a star exhausts its nuclear fuel and undergoes a catastrophic explosion, leaving behind a neutron star or a black hole?",
+    "answers": [
+      "Supernova",
+      "Nova",
+      "Red giant",
+      "White dwarf"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Supernovae are incredibly powerful events that play a vital role in the creation and distribution of heavy elements throughout the universe."
+  },
+  {
+    "id": "ak-sc-143",
+    "question": "Which layer of Earth's atmosphere contains the ozone layer, which protects life from harmful ultraviolet radiation?",
+    "answers": [
+      "Stratosphere",
+      "Troposphere",
+      "Mesosphere",
+      "Thermosphere"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The ozone layer is a vital shield, absorbing most of the Sun's damaging UV-B and UV-C radiation before it reaches the Earth's surface."
+  },
+  {
+    "id": "ak-sc-144",
+    "question": "What is the term for the spontaneous emission of radiation from unstable atomic nuclei?",
+    "answers": [
+      "Radioactivity",
+      "Fission",
+      "Fusion",
+      "Ionization"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Radioactivity results from elements striving for a more stable atomic configuration, releasing energy and particles in the process."
+  },
+  {
+    "id": "ak-sc-145",
+    "question": "In chemistry, what is the term for a substance that speeds up a chemical reaction without being consumed in the process?",
+    "answers": [
+      "Catalyst",
+      "Inhibitor",
+      "Reactant",
+      "Product"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Catalysts are widely used in industrial processes to increase reaction rates, often by lowering the activation energy."
+  },
+  {
+    "id": "ak-sc-146",
+    "question": "What is the primary function of ribosomes in a living cell?",
+    "answers": [
+      "Protein synthesis",
+      "Energy production",
+      "Waste removal",
+      "DNA replication"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Ribosomes are essential cellular organelles responsible for translating messenger RNA into polypeptide chains, which fold into functional proteins."
+  },
+  {
+    "id": "ak-sc-147",
+    "question": "What is the name of the phenomenon where light bends as it passes from one medium to another, like from air to water?",
+    "answers": [
+      "Refraction",
+      "Reflection",
+      "Diffraction",
+      "Interference"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Refraction is responsible for various phenomena, such as how lenses focus light and how objects appear distorted when viewed through water."
+  },
+  {
+    "id": "ak-sc-148",
+    "question": "Which type of rock is formed from the cooling and solidification of molten magma or lava?",
+    "answers": [
+      "Igneous rock",
+      "Sedimentary rock",
+      "Metamorphic rock",
+      "Fossilized rock"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Igneous rocks, like granite and basalt, are fundamental components of Earth's crust and represent the earliest stages of rock formation."
+  },
+  {
+    "id": "ak-sc-149",
+    "question": "What is the name of the particle that mediates the electromagnetic force?",
+    "answers": [
+      "Photon",
+      "Gluon",
+      "W boson",
+      "Graviton"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Photons are the quantum of light and are responsible for all electromagnetic phenomena, from radio waves to gamma rays."
+  },
+  {
+    "id": "ak-sc-150",
+    "question": "What is the process called when a solid turns directly into a gas without passing through a liquid phase?",
+    "answers": [
+      "Sublimation",
+      "Evaporation",
+      "Melting",
+      "Condensation"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Dry ice (solid carbon dioxide) is a common example of a substance that undergoes sublimation at room temperature and pressure."
+  },
+  {
+    "id": "ak-sc-151",
+    "question": "What is the name of the theory that describes the origin of eukaryotic cells from prokaryotic organisms?",
+    "answers": [
+      "Endosymbiotic theory",
+      "Cell theory",
+      "Germ theory",
+      "Evolutionary theory"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The endosymbiotic theory proposes that mitochondria and chloroplasts originated as free-living prokaryotes that were engulfed by ancestral eukaryotic cells."
+  },
+  {
+    "id": "ak-sc-152",
+    "question": "What is the term for a region of spacetime where gravity is so strong that nothing, not even light, can escape?",
+    "answers": [
+      "Black hole",
+      "Neutron star",
+      "Quasar",
+      "Pulsar"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Black holes are predictions of general relativity and are formed from the gravitational collapse of massive stars."
+  },
+  {
+    "id": "ak-sc-153",
+    "question": "What is the name for the large-scale circulation of ocean currents, driven by differences in water temperature and salinity, that plays a major role in global climate?",
+    "answers": [
+      "Thermohaliine circulation",
+      "El Niño-Southern Oscillation",
+      "Monsoon system",
+      "Trade winds"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The thermohaline circulation, often called the 'ocean's conveyor belt,' distributes heat and nutrients across the globe."
+  },
+  {
+    "id": "ak-sc-154",
+    "question": "In quantum mechanics, what is the term for a discrete quantity of energy that an atom or particle can absorb or emit?",
+    "answers": [
+      "Quantum",
+      "Photon",
+      "Electron",
+      "Neutron"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The concept of quanta, introduced by Max Planck, revolutionized physics and laid the foundation for quantum theory."
+  },
+  {
+    "id": "ak-sc-155",
+    "question": "What is the general formula for an alkane, a saturated hydrocarbon?",
+    "answers": [
+      "CnH2n+2",
+      "CnH2n",
+      "CnH2n-2",
+      "CnHn"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Alkanes are the simplest class of hydrocarbons, consisting only of single carbon-carbon and carbon-hydrogen bonds."
+  },
+  {
+    "id": "ak-sc-156",
+    "question": "What is the term for the process by which genetic information from DNA is copied into messenger RNA (mRNA)?",
+    "answers": [
+      "Transcription",
+      "Translation",
+      "Replication",
+      "Mutation"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Transcription is the first step in gene expression, where the genetic code is transferred from DNA to an RNA molecule."
+  },
+  {
+    "id": "ak-sc-157",
+    "question": "What is the theoretical maximum efficiency of a heat engine operating between two temperatures, as described by the Carnot cycle?",
+    "answers": [
+      "Carnot efficiency",
+      "Thermal efficiency",
+      "Coefficient of performance",
+      "Mechanical efficiency"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Carnot efficiency provides an upper limit for the conversion of heat into work, dependent only on the absolute temperatures of the hot and cold reservoirs."
+  },
+  {
+    "id": "ak-sc-158",
+    "question": "What is the geological process where pieces of Earth's crust and uppermost mantle move and interact, causing earthquakes and volcanic activity?",
+    "answers": [
+      "Plate tectonics",
+      "Weathering",
+      "Erosion",
+      "Glaciation"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Plate tectonics is a unifying theory in earth science, explaining the distribution of continents, mountain ranges, and geological hazards."
+  },
+  {
+    "id": "ak-sc-159",
+    "question": "What is the name of the effect where an object moving in a rotating frame of reference experiences a force perpendicular to its direction of motion?",
+    "answers": [
+      "Coriolis effect",
+      "Magnus effect",
+      "Doppler effect",
+      "Hall effect"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The Coriolis effect is crucial for understanding large-scale atmospheric and oceanic circulation patterns, like the formation of hurricanes."
+  },
+  {
+    "id": "ak-sc-160",
+    "question": "In organic chemistry, what is an isomer?",
+    "answers": [
+      "Molecules with the same molecular formula but different structural arrangements of atoms",
+      "Molecules with different molecular formulas but similar chemical properties",
+      "Molecules that can exist in both solid and liquid states",
+      "Molecules that are mirror images of each other"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Isomers can have significantly different physical and chemical properties despite sharing the same basic atomic composition."
+  },
+  {
+    "id": "ak-sc-161",
+    "question": "Which part of the human brain is primarily responsible for coordinating voluntary movements, balance, and posture?",
+    "answers": [
+      "Cerebellum",
+      "Cerebrum",
+      "Brainstem",
+      "Thalamus"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "The cerebellum plays a critical role in motor control, allowing for smooth, coordinated movements and learning new motor skills."
+  },
+  {
+    "id": "ak-sc-162",
+    "question": "What is the most abundant element in the Earth's crust?",
+    "answers": [
+      "Oxygen",
+      "Silicon",
+      "Aluminum",
+      "Iron"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Oxygen makes up about 46% of the Earth's crust by mass, primarily in the form of silicate minerals."
+  },
+  {
+    "id": "ak-sc-163",
+    "question": "What is the name of the theoretical quantum particle that is believed to mediate the gravitational force?",
+    "answers": [
+      "Graviton",
+      "Photon",
+      "Gluon",
+      "Higgs boson"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "While the graviton has not yet been directly observed, it is a key component of quantum gravity theories attempting to unify general relativity with quantum mechanics."
+  },
+  {
+    "id": "ak-sc-164",
+    "question": "What is the primary function of DNA ligase in molecular biology?",
+    "answers": [
+      "Joining DNA fragments",
+      "Unwinding DNA strands",
+      "Synthesizing new DNA strands",
+      "Cutting DNA at specific sites"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "DNA ligase is essential for DNA replication, repair, and recombination, as it forms phosphodiester bonds between adjacent nucleotides."
+  },
+  {
+    "id": "ak-sc-165",
+    "question": "Which type of electromagnetic radiation has the longest wavelength?",
+    "answers": [
+      "Radio waves",
+      "Microwaves",
+      "Infrared light",
+      "Visible light"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Radio waves have wavelengths ranging from millimeters to hundreds of kilometers, making them the longest in the electromagnetic spectrum."
+  },
+  {
+    "id": "ak-sc-166",
+    "question": "What is the name of the process by which a star generates energy by fusing lighter atomic nuclei into heavier ones in its core?",
+    "answers": [
+      "Nuclear fusion",
+      "Nuclear fission",
+      "Radioactive decay",
+      "Gravitational collapse"
+    ],
+    "correct": 0,
+    "difficulty": "hard",
+    "explanation": "Nuclear fusion, primarily the conversion of hydrogen to helium, is the engine that powers stars and provides the energy for all life on Earth."
   }
 ]

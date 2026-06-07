@@ -1090,5 +1090,694 @@
     "correct": 0,
     "difficulty": "medium",
     "explanation": "Catalan is co-official with Spanish in Catalonia."
+  },
+  {
+    "id": "ak-la-085",
+    "question": "What is the common term for a word that sounds like what it means, like 'buzz' or 'hiss'?",
+    "answers": [
+      "Onomatopoeia",
+      "Alliteration",
+      "Hyperbole",
+      "Metaphor"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Onomatopoeia refers to words whose pronunciation suggests their meaning."
+  },
+  {
+    "id": "ak-la-086",
+    "question": "Which punctuation mark is used to indicate a question?",
+    "answers": [
+      "Question mark",
+      "Exclamation mark",
+      "Period",
+      "Comma"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The question mark (?) is used at the end of an interrogative sentence."
+  },
+  {
+    "id": "ak-la-087",
+    "question": "What is the name for the basic units of sound in a language?",
+    "answers": [
+      "Phonemes",
+      "Morphemes",
+      "Syntax",
+      "Semantics"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Phonemes are the smallest units of sound that can distinguish one word from another in a particular language."
+  },
+  {
+    "id": "ak-la-088",
+    "question": "What does the Latin prefix 'pre-' mean?",
+    "answers": [
+      "Before",
+      "After",
+      "During",
+      "Above"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The prefix 'pre-' means 'before' or 'earlier than', as in 'pre-order' or 'preview'."
+  },
+  {
+    "id": "ak-la-089",
+    "question": "Which part of speech describes an action or state of being?",
+    "answers": [
+      "Verb",
+      "Noun",
+      "Adjective",
+      "Adverb"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A verb is a word that describes an action, state, or occurrence, forming the main part of the predicate of a sentence."
+  },
+  {
+    "id": "ak-la-090",
+    "question": "What is the primary language spoken in China?",
+    "answers": [
+      "Mandarin",
+      "Cantonese",
+      "Korean",
+      "Japanese"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Mandarin Chinese is the official language of the People's Republic of China and is the most widely spoken language in the world by native speakers."
+  },
+  {
+    "id": "ak-la-091",
+    "question": "What is a 'synonym'?",
+    "answers": [
+      "A word with the same meaning as another word",
+      "A word with the opposite meaning of another word",
+      "A word that sounds like another word",
+      "A word used only in formal writing"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Synonyms are words that have the same or nearly the same meaning as another word."
+  },
+  {
+    "id": "ak-la-092",
+    "question": "Which language uses Cyrillic script?",
+    "answers": [
+      "Russian",
+      "German",
+      "French",
+      "Spanish"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Cyrillic script is a writing system used for various alphabets across Eurasia, most notably for the Russian language."
+  },
+  {
+    "id": "ak-la-093",
+    "question": "In English grammar, what is a word that replaces a noun?",
+    "answers": [
+      "Pronoun",
+      "Adverb",
+      "Conjunction",
+      "Preposition"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A pronoun is a word that takes the place of a noun or noun phrase, such as 'he', 'she', 'it', 'they'."
+  },
+  {
+    "id": "ak-la-094",
+    "question": "What does 'ciao' mean in Italian, both as a greeting and a farewell?",
+    "answers": [
+      "Hello/Goodbye",
+      "Thank you/Please",
+      "Good morning/Good evening",
+      "Yes/No"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "'Ciao' is a versatile Italian informal salutation, meaning both 'hello' and 'goodbye'."
+  },
+  {
+    "id": "ak-la-095",
+    "question": "What is the study of word origins and how their meanings have changed over time called?",
+    "answers": [
+      "Etymology",
+      "Phonology",
+      "Morphology",
+      "Semantics"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Etymology is the study of the origin of words and the way in which their meanings have changed throughout history."
+  },
+  {
+    "id": "ak-la-096",
+    "question": "Which number system is represented by Roman numerals (e.g., I, V, X, L, C, D, M)?",
+    "answers": [
+      "Roman",
+      "Arabic",
+      "Greek",
+      "Egyptian"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Roman numerals are a numeral system that originated in ancient Rome and remained the usual way of writing numbers throughout Europe well into the Late Middle Ages."
+  },
+  {
+    "id": "ak-la-097",
+    "question": "What is the term for the set of rules governing the structure of sentences in a language?",
+    "answers": [
+      "Syntax",
+      "Lexicon",
+      "Phonetics",
+      "Pragmatics"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Syntax refers to the arrangement of words and phrases to create well-formed sentences in a language."
+  },
+  {
+    "id": "ak-la-098",
+    "question": "What does the word 'déjà vu' literally mean in French?",
+    "answers": [
+      "Already seen",
+      "Never seen",
+      "See later",
+      "Seeing now"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Déjà vu is a French phrase meaning 'already seen', describing the feeling of having experienced something before."
+  },
+  {
+    "id": "ak-la-099",
+    "question": "Which continent is home to the most diverse range of languages?",
+    "answers": [
+      "Africa",
+      "Asia",
+      "Europe",
+      "South America"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Africa is considered the most linguistically diverse continent, with over 2,000 distinct languages spoken."
+  },
+  {
+    "id": "ak-la-100",
+    "question": "What is the name for a word that has multiple meanings?",
+    "answers": [
+      "Homonym",
+      "Antonym",
+      "Synonym",
+      "Acronym"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A homonym is a word that is spelled and pronounced the same as another word but has a different meaning (e.g., 'bat' the animal and 'bat' the sports equipment)."
+  },
+  {
+    "id": "ak-la-101",
+    "question": "What does the Latin root 'aqua' mean?",
+    "answers": [
+      "Water",
+      "Fire",
+      "Earth",
+      "Air"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Latin root 'aqua' means 'water', found in words like 'aquarium' and 'aquatic'."
+  },
+  {
+    "id": "ak-la-102",
+    "question": "Which writing system uses symbols to represent entire words or concepts, like ancient Egyptian hieroglyphs?",
+    "answers": [
+      "Logographic",
+      "Alphabetic",
+      "Syllabic",
+      "Abjad"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A logographic system, or logography, is a writing system that uses logograms (symbols) to represent words or morphemes."
+  },
+  {
+    "id": "ak-la-103",
+    "question": "What is the common term for a word that expresses strong emotion and often stands alone, like 'Ouch!' or 'Wow!'?",
+    "answers": [
+      "Interjection",
+      "Adverb",
+      "Conjunction",
+      "Determiner"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "An interjection is a word or phrase that expresses an exclamation or strong emotion, often grammatically independent from the rest of the sentence."
+  },
+  {
+    "id": "ak-la-104",
+    "question": "What does 'arigato' mean in Japanese?",
+    "answers": [
+      "Thank you",
+      "Hello",
+      "Goodbye",
+      "Please"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "'Arigato' is the Japanese word for 'thank you'."
+  },
+  {
+    "id": "ak-la-105",
+    "question": "Which language uses kanji, hiragana, and katakana in its writing system?",
+    "answers": [
+      "Japanese",
+      "Korean",
+      "Chinese",
+      "Thai"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Japanese employs a complex writing system that combines logographic kanji with syllabic hiragana and katakana."
+  },
+  {
+    "id": "ak-la-106",
+    "question": "What is the grammatical case that usually indicates the subject of a sentence?",
+    "answers": [
+      "Nominative",
+      "Accusative",
+      "Dative",
+      "Genitive"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The nominative case is used for the subject of a verb and for a noun or pronoun that renames the subject."
+  },
+  {
+    "id": "ak-la-107",
+    "question": "Which language is the root for many English scientific and medical terms?",
+    "answers": [
+      "Latin",
+      "French",
+      "German",
+      "Old English"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Latin has profoundly influenced English, particularly in scientific, medical, and legal terminology."
+  },
+  {
+    "id": "ak-la-108",
+    "question": "What is the name for a group of words that functions as a single part of speech but does not contain a subject and a verb?",
+    "answers": [
+      "Phrase",
+      "Clause",
+      "Sentence",
+      "Paragraph"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "A phrase is a group of words that expresses a concept and is used as a single part of speech, without containing a subject and verb."
+  },
+  {
+    "id": "ak-la-109",
+    "question": "Which alphabet is the most widely used writing system in the world?",
+    "answers": [
+      "Latin alphabet",
+      "Cyrillic alphabet",
+      "Arabic alphabet",
+      "Devanagari alphabet"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The Latin alphabet, derived from the Greek alphabet, is used for English and many other languages worldwide."
+  },
+  {
+    "id": "ak-la-110",
+    "question": "What is the term for the study of the meaning of words and sentences?",
+    "answers": [
+      "Semantics",
+      "Syntax",
+      "Phonology",
+      "Morphology"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "Semantics is the branch of linguistics and logic concerned with meaning."
+  },
+  {
+    "id": "ak-la-111",
+    "question": "What does the Latin prefix 'un-' typically mean in English words (e.g., 'undo', 'unhappy')?",
+    "answers": [
+      "Not",
+      "Again",
+      "Under",
+      "Between"
+    ],
+    "correct": 0,
+    "difficulty": "easy",
+    "explanation": "The prefix 'un-' indicates negation, reversal, or the opposite of an action or state."
+  },
+  {
+    "id": "ak-la-112",
+    "question": "What is the study of the origin and historical development of words called?",
+    "answers": [
+      "Etymology",
+      "Philology",
+      "Morphology",
+      "Semantics"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Etymology traces the history of words, their forms, and meanings."
+  },
+  {
+    "id": "ak-la-113",
+    "question": "Which language uses a writing system called 'Hangul'?",
+    "answers": [
+      "Korean",
+      "Japanese",
+      "Chinese",
+      "Vietnamese"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Hangul was created in the 15th century and is celebrated for its scientific design."
+  },
+  {
+    "id": "ak-la-114",
+    "question": "What is a 'cognate' in linguistics?",
+    "answers": [
+      "Words with a common etymological origin",
+      "Words that sound alike but have different meanings",
+      "Words with opposite meanings",
+      "Words borrowed from another language"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Cognates often look and sound similar across related languages, like 'night' (English) and 'Nacht' (German)."
+  },
+  {
+    "id": "ak-la-115",
+    "question": "Which verb tense refers to an action that will be completed before another future action?",
+    "answers": [
+      "Future Perfect",
+      "Future Simple",
+      "Future Continuous",
+      "Present Perfect"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The future perfect tense is typically formed with 'will have' + past participle, e.g., 'By next year, I will have finished my degree'."
+  },
+  {
+    "id": "ak-la-116",
+    "question": "What is the term for a regional variation of a language that is distinct in vocabulary, grammar, and pronunciation?",
+    "answers": [
+      "Dialect",
+      "Pidgin",
+      "Creole",
+      "Jargon"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A dialect is a variety of a language unique to a particular area or group. All languages have dialects."
+  },
+  {
+    "id": "ak-la-117",
+    "question": "Which ancient writing system used wedge-shaped marks on clay tablets?",
+    "answers": [
+      "Cuneiform",
+      "Hieroglyphs",
+      "Linear B",
+      "Demotic"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Cuneiform was one of the earliest systems of writing, developed by the Sumerians of Mesopotamia."
+  },
+  {
+    "id": "ak-la-118",
+    "question": "What is the common term for the smallest meaningful unit of language?",
+    "answers": [
+      "Morpheme",
+      "Phoneme",
+      "Grapheme",
+      "Lexeme"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "A morpheme can be a word itself or a meaningful part of a word, like prefixes or suffixes."
+  },
+  {
+    "id": "ak-la-119",
+    "question": "Which language family does Hindi belong to?",
+    "answers": [
+      "Indo-Aryan",
+      "Dravidian",
+      "Sino-Tibetan",
+      "Austroasiatic"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Hindi is part of the Indo-Aryan branch of the Indo-European language family."
+  },
+  {
+    "id": "ak-la-120",
+    "question": "Which language is the root of most scientific and medical terminology?",
+    "answers": [
+      "Latin",
+      "Greek",
+      "German",
+      "French"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "While Greek also contributes significantly, Latin has historically provided the bulk of scientific and medical terms."
+  },
+  {
+    "id": "ak-la-121",
+    "question": "What is the linguistic phenomenon where an existing word or phrase is shortened?",
+    "answers": [
+      "Clipping",
+      "Blend",
+      "Acronym",
+      "Back-formation"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Examples of clipping include 'ad' from 'advertisement' and 'flu' from 'influenza'."
+  },
+  {
+    "id": "ak-la-122",
+    "question": "What is the term for the grammatical case that indicates possession?",
+    "answers": [
+      "Genitive",
+      "Nominative",
+      "Accusative",
+      "Dative"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "In English, the genitive case is often shown with an apostrophe 's' (e.g., 'John's book')."
+  },
+  {
+    "id": "ak-la-123",
+    "question": "Which language uses a system of tones to distinguish word meanings?",
+    "answers": [
+      "Mandarin Chinese",
+      "Japanese",
+      "Korean",
+      "Arabic"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Mandarin Chinese has four main tones, and the meaning of a syllable changes depending on the tone used."
+  },
+  {
+    "id": "ak-la-124",
+    "question": "What is the name for a word whose spelling and pronunciation are the same as another word, but with a different meaning?",
+    "answers": [
+      "Homonym",
+      "Homophone",
+      "Homograph",
+      "Antonym"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "For example, 'bat' (the animal) and 'bat' (the equipment)."
+  },
+  {
+    "id": "ak-la-125",
+    "question": "What is the grammatical term for a word that connects words, phrases, or clauses?",
+    "answers": [
+      "Conjunction",
+      "Preposition",
+      "Interjection",
+      "Adverb"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Common conjunctions include 'and', 'but', 'or', 'because'."
+  },
+  {
+    "id": "ak-la-126",
+    "question": "Which language is known for its agglutinative morphology, where words are formed by joining many morphemes together?",
+    "answers": [
+      "Turkish",
+      "French",
+      "English",
+      "Arabic"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Turkish words can be very long as suffixes are added for tense, number, case, and possession."
+  },
+  {
+    "id": "ak-la-127",
+    "question": "What is the process of creating new words by combining parts of two existing words?",
+    "answers": [
+      "Blend (Portmanteau)",
+      "Clipping",
+      "Compounding",
+      "Derivation"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Examples include 'smog' (smoke + fog) and 'brunch' (breakfast + lunch)."
+  },
+  {
+    "id": "ak-la-128",
+    "question": "Which language uses a writing system that combines logograms and syllabaries?",
+    "answers": [
+      "Japanese",
+      "Korean",
+      "Chinese",
+      "Thai"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Japanese uses three main scripts: Kanji (logograms), Hiragana (syllabary), and Katakana (syllabary)."
+  },
+  {
+    "id": "ak-la-129",
+    "question": "What is a 'false cognate'?",
+    "answers": [
+      "Words from different languages that look or sound similar but have different meanings and origins",
+      "Words that have evolved to mean the opposite of their original meaning",
+      "Words that are spelled the same but pronounced differently",
+      "Words that are rarely used in modern language"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "For example, 'embarazada' (Spanish for 'pregnant') and 'embarrassed' (English) are false cognates."
+  },
+  {
+    "id": "ak-la-130",
+    "question": "Which grammatical mood expresses possibility, desire, or a hypothetical situation?",
+    "answers": [
+      "Subjunctive",
+      "Indicative",
+      "Imperative",
+      "Interrogative"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The subjunctive mood is often used in clauses beginning with 'if' or expressing a wish, e.g., 'If I were a bird...'"
+  },
+  {
+    "id": "ak-la-131",
+    "question": "What is the study of speech sounds and their production, auditory perception, and acoustic properties?",
+    "answers": [
+      "Phonetics",
+      "Phonology",
+      "Morphology",
+      "Syntax"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Phonetics deals with the physical sounds of language, while phonology deals with how sounds function in a language system."
+  },
+  {
+    "id": "ak-la-132",
+    "question": "Which language family includes languages like Hebrew and Arabic?",
+    "answers": [
+      "Semitic",
+      "Hamitic",
+      "Indo-European",
+      "Afro-Asiatic"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Semitic languages are a branch of the larger Afro-Asiatic language family."
+  },
+  {
+    "id": "ak-la-133",
+    "question": "What is an 'orthography'?",
+    "answers": [
+      "The conventional spelling system of a language",
+      "The study of word origins",
+      "A type of ancient writing material",
+      "The rules for sentence structure"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Orthography includes rules for spelling, hyphenation, capitalization, and punctuation."
+  },
+  {
+    "id": "ak-la-134",
+    "question": "What is the term for a word or phrase that is characteristic of a specific language or region and cannot be understood from the literal meaning of its words?",
+    "answers": [
+      "Idiom",
+      "Proverb",
+      "Metaphor",
+      "Simile"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "For example, 'to kick the bucket' (to die) is an English idiom."
+  },
+  {
+    "id": "ak-la-135",
+    "question": "Which writing system is used for Russian, Bulgarian, and Serbian?",
+    "answers": [
+      "Cyrillic alphabet",
+      "Latin alphabet",
+      "Greek alphabet",
+      "Arabic script"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "The Cyrillic alphabet was developed in the 9th century and is named after Saint Cyril."
+  },
+  {
+    "id": "ak-la-136",
+    "question": "What is the grammatical voice where the subject performs the action?",
+    "answers": [
+      "Active voice",
+      "Passive voice",
+      "Middle voice",
+      "Causative voice"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "In active voice, the subject is the doer of the action (e.g., 'The dog chased the ball')."
+  },
+  {
+    "id": "ak-la-137",
+    "question": "Which term describes a language that has no known living relatives or larger language family?",
+    "answers": [
+      "Language isolate",
+      "Extinct language",
+      "Creole",
+      "Pidgin"
+    ],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Basque, spoken in the Pyrenees region, is a well-known example of a language isolate."
   }
 ]

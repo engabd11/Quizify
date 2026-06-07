@@ -42,7 +42,8 @@ async def async_setup_entry(
     manager = hass.data[DOMAIN][entry.entry_id]
     leaderboard = QuizifyLeaderboardSensor(manager, entry)
     current_song = QuizifyCurrentSongSensor(manager, entry)
-    async_add_entities([leaderboard, current_song])
+    history = QuizifyHistorySensor(manager, entry)
+    async_add_entities([leaderboard, current_song, history])
 
 
 class _QuizifyEntityBase(SensorEntity):
@@ -238,6 +239,55 @@ class QuizifyLeaderboardSensor(_QuizifyEntityBase):
             "join_code": session.join_code,
             "state": "ended",
         }
+
+
+class QuizifyHistorySensor(_QuizifyEntityBase):
+    """Tracks cumulative game history: games played and high score.
+
+    Persists across HA restarts by surviving as long as the integration
+    entry is loaded. State is the total games played; attributes carry
+    the all-time high score and the session that set it.
+    """
+
+    _attr_translation_key = "history"
+    _attr_icon = "mdi:chart-bar"
+    _attr_has_entity_name = True
+
+    def __init__(self, manager, entry: ConfigEntry) -> None:
+        super().__init__(manager, entry)
+        self._attr_unique_id = f"{entry.entry_id}_history"
+        self._attr_name = "Quizify history"
+        self._games_played = 0
+        self._high_score = 0
+        self._high_score_player = ""
+        self._high_score_session = ""
+
+    @property
+    def native_value(self) -> str:
+        return str(self._games_played)
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any]:
+        return {
+            "games_played": self._games_played,
+            "high_score": self._high_score,
+            "high_score_player": self._high_score_player,
+            "high_score_session": self._high_score_session,
+        }
+
+    def _on_session_ended(self, session: GameSession) -> None:
+        self._games_played += 1
+        for player in session.players.values():
+            if player.score > self._high_score:
+                self._high_score = player.score
+                self._high_score_player = player.name
+                self._high_score_session = session.session_id[:8]
+
+    def _on_session_attached(self, session: GameSession) -> None:
+        pass
+
+    def _handle_game_event(self, event: dict[str, Any]) -> None:
+        pass
 
 
 class QuizifyCurrentSongSensor(_QuizifyEntityBase):

@@ -152,8 +152,9 @@ QuizifyManager = _mgr_mod.QuizifyManager
 
 
 def _mgr() -> QuizifyManager:
+    import tempfile
     from homeassistant.core import HomeAssistant
-    return QuizifyManager(HomeAssistant())
+    return QuizifyManager(HomeAssistant(tempfile.mkdtemp()))
 
 
 def test_player_token_roundtrip():

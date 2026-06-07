@@ -147,6 +147,12 @@ class QuestionBank:
         if category == "random":
             for cat_questions in self._questions[mode].values():
                 pool.extend(cat_questions)
+        elif "|" in category:
+            # Mixed: pipe-separated category list like "science|history|geography"
+            for cat in category.split("|"):
+                cat = cat.strip()
+                if cat and cat in self._questions[mode]:
+                    pool.extend(self._questions[mode][cat])
         else:
             pool = list(self._questions[mode].get(category, []))
 

@@ -82,6 +82,7 @@ CATEGORY_TECHNOLOGY: Final = "technology"
 CATEGORY_MYTHOLOGY: Final = "mythology"
 CATEGORY_ANIMALS: Final = "animals"
 CATEGORY_RANDOM: Final = "random"
+CATEGORY_MIXED_FORMAT: Final = "mixed"  # pipe-separated categories like "science|history"
 
 # Adults-mode categories (12 categories, 84 questions each = 1008 total)
 CATEGORIES_ADULTS: Final = [

@@ -2,23 +2,24 @@ name: Validate
 
 on:
   push:
-    branches: [main]
   pull_request:
-    branches: [main]
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   hassfest:
+    name: Hassfest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: home-assistant/actions/hassfest@master
 
-  pytest:
+  hacs:
+    name: HACS
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: HACS validation
+        uses: hacs/action@main
         with:
-          python-version: "3.11"
-      - run: pip install pytest pytest-homeassistant-custom-component
-      - run: pytest --asyncio-mode=auto --ignore=custom_components
+          category: integration

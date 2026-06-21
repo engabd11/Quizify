@@ -1,2 +1,25 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+npm-debug.log*
+.npm/
+
+# Frontend build artefacts — DO commit dist/ if you want users to be
+# able to install via HACS without running npm install. If you would
+# rather force a build step, uncomment the next line.
+# custom_components/quizify/frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store

@@ -3,9 +3,8 @@
 > **Multiplayer trivia quiz for Home Assistant** — scan a QR code, answer questions, see who's smartest in the room. Inspired by [Beatify](https://github.com/mholzi/beatify).
 
 [![Home Assistant 2024.1+](https://img.shields.io/badge/Home%20Assistant-2024.1%2B-41BDF5?style=flat-square&logo=homeassistant&logoColor=white)](https://www.home-assistant.io/)
-[![Version 1.1.2](https://img.shields.io/badge/Version-1.1.2-ff5cf0?style=flat-square)](#)
+[![Version 1.1.0](https://img.shields.io/badge/Version-1.1.2-ff5cf0?style=flat-square)](#)
 [![License MIT](https://img.shields.io/badge/License-MIT-5cf0d4?style=flat-square)](LICENSE)
-[![Validate](https://github.com/engabd11/Quizify/actions/workflows/validate.yml/badge.svg)](https://github.com/engabd11/Quizify/actions)
 
 ---
 
@@ -17,13 +16,11 @@ Quizify turns Home Assistant into a multiplayer trivia game show. Guests scan a 
 
 - **🎯 Two modes** — Adults and Kids, each with age-appropriate questions
 - **📚 12 adults categories + 4 kids categories** with over 1,100 seed questions
-- **🔀 Category mixing** — Pipe-separated categories (`science|history|geography`) for mixed-topic rounds
 - **⚡ Real-time multiplayer** — WebSocket-driven, instant updates for every player
 - **📱 QR-code join** — No accounts, no app install, just scan and play
-- **🎵 Optional background music** — Works with Music Assistant or any `media_player` entity
+- **🎵 Music Assistant integration** — Background music while you play (optional)
 - **🔥 Streak scoring** — Speed bonus + streak multipliers create real drama
 - **🏆 Live scoreboard** — Watch the leaderboard shift after every question
-- **📊 History sensor** — `sensor.quizify_history` tracks games played, high scores, and top players for your dashboards
 - **🌐 Fully local** — Runs entirely inside Home Assistant. No Google Fonts,
   no CDN, no telemetry. Nothing leaves your network.
 - **🔐 Guest auth done properly** — Players are anonymous by design; HMAC-signed
@@ -35,7 +32,7 @@ Quizify turns Home Assistant into a multiplayer trivia game show. Guests scan a 
 ## Install via HACS
 
 1. Open HACS → ⋮ Menu → **Custom Repositories**
-2. URL: `https://github.com/engabd11/Quizify`
+2. URL: `https://github.com/YOUR_GITHUB/quizify`
 3. Category: **Integration**
 4. Install **Quizify**, then restart Home Assistant
 5. Go to **Settings → Devices & Services → Add Integration → Quizify**
@@ -45,7 +42,7 @@ Quizify turns Home Assistant into a multiplayer trivia game show. Guests scan a 
 
 ```bash
 cd /config/custom_components
-git clone https://github.com/engabd11/Quizify.git quizify
+git clone https://github.com/YOUR_GITHUB/quizify.git quizify
 # Restart Home Assistant
 ```
 

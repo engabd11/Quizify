@@ -56,6 +56,19 @@ _NO_CACHE_HEADERS = {
     "X-Content-Type-Options": "nosniff",
     "Referrer-Policy": "same-origin",
     "X-Frame-Options": "SAMEORIGIN",
+    # CSP: scripts from same origin only (the quizify.js module);
+    # unsafe-inline for styles because the JS bundle injects a <style>
+    # tag dynamically (no nonce available at build time); WebSocket and
+    # fetch connections to same origin (ws:/wss: covers the player socket);
+    # images from same origin + data-URIs (for QR code display).
+    "Content-Security-Policy": (
+        "default-src 'self'; "
+        "script-src 'self'; "
+        "style-src 'self' 'unsafe-inline'; "
+        "img-src 'self' data: blob:; "
+        "connect-src 'self' ws: wss:; "
+        "frame-ancestors 'self'"
+    ),
 }
 
 _html_cache: dict[str, str] = {}
@@ -351,7 +364,7 @@ class QuizifyPlayerWSHandler:
                 msg_times.append(now)
                 msg_times[:] = [t for t in msg_times
                                  if now - t <= self.RATE_LIMIT_WINDOW]
-                if len(msg_times) > self.RATE_LIMIT_BURST:
+                if len(msg_times) >= self.RATE_LIMIT_BURST:
                     await _ws_send(ws, {"event": "error", "code": "rate_limited",
                                         "message": "Slow down"})
                     continue

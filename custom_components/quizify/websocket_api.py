@@ -25,6 +25,7 @@ from homeassistant.core import HomeAssistant, callback
 
 from .const import (
     CATEGORIES,
+    CATEGORIES_BY_MODE,
     DIFFICULTIES,
     MODES,
     WS_TYPE_ADMIN_SUBSCRIBE,
@@ -169,6 +170,19 @@ async def ws_game_create(
     mgr = _manager(hass)
     if mgr is None:
         connection.send_error(msg["id"], "not_ready", "Quizify is not initialised")
+        return
+    # Cross-validate: category must exist for the requested mode, or be "random".
+    # The voluptuous schema only validates against the adults list, so a kids game
+    # with an adults-only category (e.g. "sport") would produce an empty question
+    # pool and an immediate game-over with reason "no_questions".
+    cat = msg["category"]
+    mode = msg["mode"]
+    if cat != "random" and cat not in CATEGORIES_BY_MODE.get(mode, []):
+        connection.send_error(
+            msg["id"],
+            "invalid_category",
+            f"Category '{cat}' is not available for mode '{mode}'",
+        )
         return
     settings = GameSettings(
         mode=msg["mode"],

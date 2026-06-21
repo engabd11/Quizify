@@ -284,7 +284,7 @@ class GameSession:
             if n > MAX_PLAYERS_PER_SESSION + 2:
                 # Defensive: should be unreachable thanks to the cap, but
                 # never let this loop forever.
-                final_name = f"{base_name} {player_id[:4]}"
+                final_name = f"{base_name} {player_id[:4]}"[:MAX_PLAYER_NAME_LENGTH]
                 break
         player = Player(player_id=player_id, name=final_name)
         # Late joiners inherit the average score so they aren't out of contention.
@@ -708,6 +708,7 @@ class GameSession:
                 "correct": question["correct"],
                 "explanation": question.get("explanation"),
                 "players": [p.to_dict() for p in self._ranked_players()],
+                "answer_distribution": self._answer_distribution(self.current_index),
             },
         )
         # Pause-aware sleep — accumulate sleeps in small chunks and pause
@@ -833,12 +834,6 @@ class GameSession:
         }
 
         # Speedster — lowest average response time among players who answered.
-        speedster = best(
-            "total_elapsed",
-            accept=lambda v: v is not None,
-            prefer_low=True,
-        )
-        # We want average, not total — recompute properly.
         avg_candidates = [
             (p.total_elapsed / p.answered_count, p)
             for p in ranked if p.answered_count > 0
@@ -1100,6 +1095,21 @@ class GameSession:
             key=lambda p: (-p.score, p.name.lower()),
         )
 
+    def _answer_distribution(self, question_index: int) -> dict[int, int]:
+        """Count how many players chose each answer option for the given question.
+
+        Returns a mapping of answer_index -> player_count. Only players who
+        actually submitted an answer are counted. Used in the reveal event so
+        the admin panel and player screens can show a choice breakdown ("3 of 5
+        players got it right, 2 chose option B").
+        """
+        dist: dict[int, int] = {}
+        for p in self.players.values():
+            if question_index in p.answers:
+                a = p.answers[question_index]["answer"]
+                dist[a] = dist.get(a, 0) + 1
+        return dist
+
     async def submit_answer(self, player_id: str, answer_index: int) -> None:
         """Record a player's answer for the current question."""
         async with self._answer_lock:
@@ -1232,9 +1242,13 @@ class GameSession:
                 ),
             }
             if effective_state in (STATE_REVEAL, STATE_ENDED):
-                # During reveal/end, correct answer and explanation go to everyone
+                # During reveal/end, correct answer, explanation, and choice
+                # breakdown go to everyone.
                 current_question["correct"] = q["correct"]
                 current_question["explanation"] = q.get("explanation")
+                current_question["answer_distribution"] = self._answer_distribution(
+                    self.current_index
+                )
             elif include_correct:
                 # Admin-only: also show correct during question phase
                 current_question["correct"] = q["correct"]

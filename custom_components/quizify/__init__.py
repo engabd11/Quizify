@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import logging
 
+import homeassistant.helpers.config_validation as cv
 from homeassistant.components import frontend
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
@@ -31,6 +32,12 @@ from .websocket_api import async_register_commands
 _LOGGER = logging.getLogger(__name__)
 
 PLATFORMS: list[Platform] = [Platform.SENSOR]
+
+# Hassfest requires CONFIG_SCHEMA on any integration that defines async_setup.
+# Quizify is config-flow-only; this schema accepts (and ignores) any YAML
+# under the "quizify:" key so the integration still loads if someone adds a
+# stray entry to configuration.yaml.
+CONFIG_SCHEMA = cv.empty_config_schema(DOMAIN)
 
 
 async def async_setup(hass: HomeAssistant, config: dict) -> bool:

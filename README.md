@@ -1,4 +1,4 @@
-# Quizify
+# Quizify (Experimental)
 
 > **Multiplayer trivia quiz for Home Assistant** — scan a QR code, answer questions, see who's smartest in the room. Inspired by [Beatify](https://github.com/mholzi/beatify).
 

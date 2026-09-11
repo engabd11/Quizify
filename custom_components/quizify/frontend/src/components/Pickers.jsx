@@ -5,6 +5,7 @@ import {
   CATEGORY_LABELS,
   CATEGORY_ICONS,
   DIFFICULTY_LABELS,
+  categoryLabel,
 } from "../utils/helpers";
 
 export function ModePicker({ value, onChange }) {
@@ -34,9 +35,9 @@ export function ModePicker({ value, onChange }) {
 }
 
 export function CategoryPicker({ value, onChange, available }) {
-  // available is [{ id, count }] for current mode
+  // available is [{ id, count, pack }] for current mode
   const items = [
-    { id: "random", count: available.reduce((s, c) => s + c.count, 0) },
+    { id: "random", count: available.reduce((s, c) => s + c.count, 0), pack: "builtin" },
     ...available,
   ];
   return (
@@ -50,15 +51,18 @@ export function CategoryPicker({ value, onChange, available }) {
             className={`qz-category-tile ${value === c.id ? "qz-active" : ""}`}
             onClick={() => onChange(c.id)}
             disabled={c.count === 0}
-            title={CATEGORY_LABELS[c.id] || c.id}
+            title={categoryLabel(c.id)}
           >
             <div className="qz-category-tile-emoji">
-              {CATEGORY_ICONS[c.id] || "❓"}
+              {CATEGORY_ICONS[c.id] || (c.pack === "custom" ? "📦" : "❓")}
             </div>
             <div className="qz-category-tile-title">
-              {CATEGORY_LABELS[c.id] || c.id}
+              {categoryLabel(c.id)}
             </div>
             <div className="qz-category-tile-count">{c.count} Qs</div>
+            {c.pack === "custom" && (
+              <div className="qz-category-pack-badge">pack</div>
+            )}
           </button>
         ))}
       </div>

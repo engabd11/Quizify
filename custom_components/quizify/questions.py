@@ -13,6 +13,24 @@ Questions live in `questions/<mode>/<category>.json`. Each file is a list of:
 Keep IDs stable so that contributors can update wording without losing
 history. The first answer in `answers` is the correct one only if
 `correct: 0` — shuffle is applied per-game so order doesn't leak.
+
+## Custom question packs
+
+Users can drop additional JSON files into `<config_dir>/quizify_packs/`
+using the same directory structure:
+
+    quizify_packs/
+    ├── adults/
+    │   ├── movies.json
+    │   └── music.json
+    └── kids/
+        └── dinosaurs.json
+
+These are loaded alongside the built-in questions and merged into the
+same category lists. A custom pack can either add a new category or
+extend an existing one (e.g. more `general_knowledge` questions). The
+`categories()` method includes a `pack` field so the frontend can
+distinguish built-in from custom categories.
 """
 from __future__ import annotations
 
@@ -40,12 +58,32 @@ class QuestionBankError(Exception):
 
 
 class QuestionBank:
-    """In-memory question bank loaded from JSON files."""
+    """In-memory question bank loaded from JSON files.
 
-    def __init__(self, base_path: Path) -> None:
+    Built-in questions are loaded from the ``questions/`` directory inside
+    the integration. Optional custom packs are loaded from
+    ``custom_packs_path`` if provided — typically ``<config>/quizify_packs/``.
+
+    Custom packs can introduce new categories or extend existing ones.
+    Both built-in and custom questions share the same ``_questions`` dict;
+    the ``categories()`` method annotates each category with its source
+    (``"builtin"`` or ``"custom"``) so the frontend can label them.
+    """
+
+    def __init__(
+        self,
+        base_path: Path,
+        custom_packs_path: Path | None = None,
+    ) -> None:
         self._base_path = base_path
+        self._custom_packs_path = custom_packs_path
         # {mode: {category: [questions]}}
         self._questions: dict[str, dict[str, list[dict[str, Any]]]] = {
+            mode: {} for mode in MODES
+        }
+        # Track which categories came from custom packs.
+        # {mode: {category: "builtin" | "custom"}}
+        self._category_sources: dict[str, dict[str, str]] = {
             mode: {} for mode in MODES
         }
         self._loaded = False
@@ -58,6 +96,8 @@ class QuestionBank:
         self._loaded = True
 
     def _load(self) -> None:
+        """Load built-in questions, then merge custom packs on top."""
+        # --- built-in questions ---
         for mode in MODES:
             mode_dir = self._base_path / mode
             if not mode_dir.is_dir():
@@ -68,6 +108,7 @@ class QuestionBank:
                 if not path.exists():
                     _LOGGER.warning("Question file missing: %s", path)
                     self._questions[mode][category] = []
+                    self._category_sources[mode][category] = "builtin"
                     continue
                 try:
                     with path.open("r", encoding="utf-8") as fh:
@@ -75,8 +116,74 @@ class QuestionBank:
                 except (OSError, json.JSONDecodeError) as err:
                     _LOGGER.error("Failed to parse %s: %s", path, err)
                     self._questions[mode][category] = []
+                    self._category_sources[mode][category] = "builtin"
                     continue
                 self._questions[mode][category] = self._validate(data, path)
+                self._category_sources[mode][category] = "builtin"
+
+        # --- custom question packs ---
+        if self._custom_packs_path and self._custom_packs_path.is_dir():
+            self._load_custom_packs()
+
+    def _load_custom_packs(self) -> None:
+        """Load custom question packs from the user's config directory.
+
+        Expected structure:
+            quizify_packs/
+            ├── adults/
+            │   ├── movies.json
+            │   └── general_knowledge.json  (extends built-in)
+            └── kids/
+                └── dinosaurs.json
+
+        Custom categories (ones not in the built-in list) are added as
+        new entries. Custom files that share a name with a built-in
+        category *extend* that category — their questions are appended
+        to the existing pool, with duplicate IDs filtered out.
+        """
+        assert self._custom_packs_path is not None  # guarded by caller
+        custom_root = self._custom_packs_path
+        for mode in MODES:
+            mode_dir = custom_root / mode
+            if not mode_dir.is_dir():
+                continue
+            for json_path in sorted(mode_dir.glob("*.json")):
+                category = json_path.stem
+                try:
+                    with json_path.open("r", encoding="utf-8") as fh:
+                        data = json.load(fh)
+                except (OSError, json.JSONDecodeError) as err:
+                    _LOGGER.error(
+                        "Failed to parse custom pack %s: %s", json_path, err
+                    )
+                    continue
+
+                validated = self._validate(data, json_path)
+                if not validated:
+                    continue
+
+                existing = self._questions[mode].get(category, [])
+                # Filter out questions whose ID already exists (prevents
+                # duplicates when a custom pack extends a built-in category).
+                existing_ids = {q["id"] for q in existing}
+                merged = list(existing)
+                added = 0
+                for q in validated:
+                    if q["id"] not in existing_ids:
+                        merged.append(q)
+                        existing_ids.add(q["id"])
+                        added += 1
+
+                self._questions[mode][category] = merged
+                self._category_sources[mode][category] = "custom"
+                _LOGGER.info(
+                    "Loaded custom pack %s: %d questions (added %d new, "
+                    "merged with %d existing)",
+                    json_path,
+                    len(validated),
+                    added,
+                    len(existing),
+                )
 
     @staticmethod
     def _validate(data: Any, path: Path) -> list[dict[str, Any]]:
@@ -116,13 +223,41 @@ class QuestionBank:
         return valid
 
     def categories(self, mode: str) -> list[dict[str, Any]]:
-        """Return categories available for a mode with counts."""
+        """Return categories available for a mode with counts and source.
+
+        Each entry is::
+
+            {"id": "science", "count": 84, "pack": "builtin"}
+
+        The ``pack`` field is ``"builtin"`` for built-in categories and
+        ``"custom"`` for categories loaded from custom question packs.
+        """
         if mode not in self._questions:
             return []
-        return [
-            {"id": cat, "count": len(self._questions[mode].get(cat, []))}
-            for cat in CATEGORIES_BY_MODE.get(mode, [])
-        ]
+        result: list[dict[str, Any]] = []
+        # Preserve built-in category order, then append custom categories
+        # in alphabetical order so the UI is stable.
+        builtin_cats = CATEGORIES_BY_MODE.get(mode, [])
+        seen = set()
+        for cat in builtin_cats:
+            if cat in self._questions[mode]:
+                result.append({
+                    "id": cat,
+                    "count": len(self._questions[mode][cat]),
+                    "pack": self._category_sources[mode].get(cat, "builtin"),
+                })
+                seen.add(cat)
+        # Append custom-only categories (not in the built-in list).
+        custom_cats = sorted(
+            c for c in self._questions[mode] if c not in seen
+        )
+        for cat in custom_cats:
+            result.append({
+                "id": cat,
+                "count": len(self._questions[mode][cat]),
+                "pack": self._category_sources[mode].get(cat, "custom"),
+            })
+        return result
 
     def pick(
         self,

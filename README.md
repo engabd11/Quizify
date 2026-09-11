@@ -28,6 +28,7 @@ Quizify turns Home Assistant into a multiplayer trivia game show. Guests scan a 
 - **🔐 Guest auth done properly** — Players are anonymous by design; HMAC-signed
   resume tokens keep their identity across reloads without an HA account
 - **📝 Community-friendly question banks** — Plain JSON files. PR a new question pack in minutes.
+- **📦 Custom question packs** — Drop themed JSON packs into `/config/quizify_packs/` without touching the integration. New categories appear automatically in the admin UI.
 
 ---
 
@@ -99,6 +100,48 @@ Late joiners inherit the average score so they aren't out of contention.
 If you have [Music Assistant](https://music-assistant.io/) installed, Quizify will list its players first in the speaker dropdown. Provide a playlist URI (Spotify, Apple Music, YouTube Music, Tidal) and Quizify will play it as background music during the game.
 
 Without Music Assistant, Quizify falls back to standard `media_player.play_media` — works with most cast-style speakers but URI compatibility varies.
+
+---
+
+## Custom question packs
+
+Quizify loads additional questions from `<config>/quizify_packs/` at startup. The directory structure mirrors the built-in questions:
+
+```
+quizify_packs/
+├── adults/
+│   ├── movies.json
+│   ├── music.json
+│   └── general_knowledge.json  ← extends the built-in category
+└── kids/
+    └── dinosaurs.json
+```
+
+Each file is the same JSON format as the built-in questions (see [Contributing](#contributing-questions) for the spec). Two modes of operation:
+
+- **New category**: A file with a name that doesn't match any built-in category (e.g. `movies.json`) adds a new category tile in the admin UI, automatically labelled and playable.
+- **Extend existing**: A file with the same name as a built-in category (e.g. `general_knowledge.json`) merges its questions into the existing pool. Duplicate IDs are filtered out.
+
+Custom categories show a small `pack` badge in the admin UI so you can tell them apart from built-ins. "Random Mix" includes custom categories automatically.
+
+### Example pack
+
+Create `/config/quizify_packs/adults/movies.json`:
+
+```json
+[
+  {
+    "id": "movies-001",
+    "question": "Who directed Pulp Fiction?",
+    "answers": ["Tarantino", "Scorsese", "Coppola", "Spielberg"],
+    "correct": 0,
+    "difficulty": "medium",
+    "explanation": "Released in 1994, it became Tarantino's breakout film."
+  }
+]
+```
+
+Restart Home Assistant after adding packs. That's it — "Movies" appears as a category in the admin panel.
 
 ---
 

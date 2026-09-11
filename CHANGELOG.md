@@ -5,7 +5,50 @@ All notable changes to Quizify will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
-## [1.2.0] — Public release polish
+## [1.3.0] — Custom question packs
+
+Users can now drop themed question packs into `<config>/quizify_packs/`
+without modifying the integration. This enables community-built packs
+(movies, music, pop culture, etc.) to be installed and played without
+waiting for upstream merges.
+
+### Added
+
+- **Custom question pack support** — The `QuestionBank` now accepts a
+  `custom_packs_path` parameter. The manager wires this to
+  `<config_dir>/quizify_packs/`. Files placed there using the same
+  `<mode>/<category>.json` structure are loaded alongside built-in
+  questions at startup.
+- **Two merge modes**: a custom file with a new category name (e.g.
+  `movies.json`) creates a new category in the admin UI. A file with
+  the same name as a built-in category extends it — questions are
+  appended with duplicate-ID filtering.
+- **`pack` metadata in categories API** — the `quizify/categories/list`
+  response now includes a `pack` field (`"builtin"` or `"custom"`) for
+  each category, so the frontend can distinguish them.
+- **Frontend: `categoryLabel()` helper** — humanises unknown category
+  IDs (e.g. `pop_culture` → "Pop Culture") so custom packs show
+  readable names without the frontend needing to know about them
+  in advance.
+- **Frontend: `pack` badge** — custom categories show a small "pack"
+  badge in the category picker.
+- **8 new tests** covering: new category creation, built-in extension,
+  duplicate-ID filtering, invalid JSON handling, missing custom path,
+  nonexistent path, question picking from custom categories, and
+  random-mode inclusion of custom questions.
+
+### Changed
+
+- **WebSocket schema**: the category field in `quizify/game/create`
+  now accepts any string instead of being validated against the
+  hardcoded built-in category list. Cross-validation is done against
+  the bank's actual loaded categories, so custom categories pass.
+- **Manager**: defensively reads `hass.config.config_dir` via
+  `getattr` so the test stub (which doesn't have it) doesn't crash.
+
+### Tests
+
+All 63 tests pass (55 existing + 8 new). Ruff clean.
 
 No gameplay changes — this release polishes the repository for public
 consumption and community contribution.

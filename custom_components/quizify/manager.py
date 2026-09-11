@@ -42,7 +42,15 @@ class QuizifyManager:
         # in-memory game state doesn't either.
         self._token_secret = secrets.token_bytes(32)
         questions_path = Path(__file__).parent / "questions"
-        self.bank = QuestionBank(questions_path)
+        # Custom question packs live in <config_dir>/quizify_packs/ and are
+        # loaded alongside the built-in questions. Users can drop themed
+        # packs (movies, music, etc.) as JSON files without modifying the
+        # integration itself.
+        config_dir = getattr(hass.config, "config_dir", None)
+        custom_packs_path = (
+            Path(config_dir) / "quizify_packs" if config_dir else None
+        )
+        self.bank = QuestionBank(questions_path, custom_packs_path)
         # Callbacks invoked when sessions are created/removed. Used by the
         # sensor platform to wire entity state to live game state without
         # the game/manager modules needing to know about entities.

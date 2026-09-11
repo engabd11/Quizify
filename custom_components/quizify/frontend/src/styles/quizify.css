@@ -491,6 +491,24 @@ body:has(#quizify-root[data-view="player"]) {
   color: var(--qz-text-dim);
 }
 
+.qz-category-pack-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--qz-accent);
+  background: rgba(var(--qz-accent-rgb), 0.15);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.qz-category-tile {
+  position: relative;
+}
+
 /* ---------------- lobby (QR + players) ---------------- */
 
 .qz-lobby {

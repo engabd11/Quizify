@@ -24,8 +24,6 @@ from homeassistant.components import websocket_api
 from homeassistant.core import HomeAssistant, callback
 
 from .const import (
-    CATEGORIES,
-    CATEGORIES_BY_MODE,
     DIFFICULTIES,
     MODES,
     WS_TYPE_ADMIN_SUBSCRIBE,
@@ -143,7 +141,7 @@ def ws_list_conversation(
     {
         vol.Required("type"): WS_TYPE_GAME_CREATE,
         vol.Required("mode"): vol.In(MODES),
-        vol.Required("category"): vol.Any(vol.In(CATEGORIES), "random"),
+        vol.Required("category"): vol.Any(str, "random"),
         vol.Required("difficulty"): vol.In(DIFFICULTIES),
         vol.Optional("questions_per_round", default=10): vol.All(
             int, vol.Range(min=5, max=30)
@@ -172,18 +170,20 @@ async def ws_game_create(
         connection.send_error(msg["id"], "not_ready", "Quizify is not initialised")
         return
     # Cross-validate: category must exist for the requested mode, or be "random".
-    # The voluptuous schema only validates against the adults list, so a kids game
-    # with an adults-only category (e.g. "sport") would produce an empty question
-    # pool and an immediate game-over with reason "no_questions".
+    # We check against the bank's actual loaded categories (which includes
+    # custom question packs) rather than the hardcoded CATEGORIES_BY_MODE,
+    # so custom categories pass validation.
     cat = msg["category"]
     mode = msg["mode"]
-    if cat != "random" and cat not in CATEGORIES_BY_MODE.get(mode, []):
-        connection.send_error(
-            msg["id"],
-            "invalid_category",
-            f"Category '{cat}' is not available for mode '{mode}'",
-        )
-        return
+    if cat != "random":
+        valid_cats = {c["id"] for c in mgr.bank.categories(mode)}
+        if cat not in valid_cats:
+            connection.send_error(
+                msg["id"],
+                "invalid_category",
+                f"Category '{cat}' is not available for mode '{mode}'",
+            )
+            return
     settings = GameSettings(
         mode=msg["mode"],
         category=msg["category"],

@@ -21,7 +21,7 @@ Quizify runs entirely inside Home Assistant with no cloud dependencies:
 - **Rate limiting** on QR generation, WebSocket connections, and message frequency
 - **CSP headers** on the player page prevent script injection
 - **Origin checking** on the player WebSocket blocks cross-site connections
-- **No telemetry, no analytics, no external resources** — nothing leaves your network
+- **No telemetry, no analytics, no external resources** - nothing leaves your network
 
 ## Scope
 

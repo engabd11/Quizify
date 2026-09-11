@@ -10,7 +10,7 @@
 Home Assistant
 └── Quizify Integration
     ├── Question Bank (JSON loader, validates & shuffles)
-    ├── Game State Machine (lobby → question → reveal → scoreboard → end)
+    ├── Game State Machine (lobby > question > reveal > scoreboard > end)
     │   └── async lock around state transitions
     ├── Manager (sessions, music control, speaker discovery, player tokens)
     ├── Admin WebSocket API (rides HA's authenticated socket)
@@ -23,9 +23,9 @@ Home Assistant
 
 1. Host creates a game from the HA sidebar panel
 2. QR code is generated and displayed
-3. Players scan QR → land on `/quizify/play?code=XXXX`
+3. Players scan QR > land on `/quizify/play?code=XXXX`
 4. Players enter a name and join via unauthenticated WebSocket
-5. Host starts the game — questions appear in real-time on all devices
+5. Host starts the game - questions appear in real-time on all devices
 6. Players tap answers; speed + streaks earn bonus points
 7. Finale screen shows winner, highlights, and stats
 8. Host can rematch with same settings

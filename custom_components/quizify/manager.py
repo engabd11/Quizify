@@ -20,6 +20,10 @@ from .questions import QuestionBank
 
 _LOGGER = logging.getLogger(__name__)
 
+# Music volume levels for ducking during reveals.
+_DUCK_VOLUME = 0.15
+_NORMAL_VOLUME = 0.4
+
 
 class TooManySessionsError(Exception):
     """Raised when ``create_session`` is called past ``MAX_CONCURRENT_SESSIONS``."""
@@ -351,7 +355,7 @@ class QuizifyManager:
         """Lower (or restore) the music volume for emphasis on reveals."""
         if not session.settings.music_player:
             return
-        target_volume = 0.15 if ducked else 0.4
+        target_volume = _DUCK_VOLUME if ducked else _NORMAL_VOLUME
         try:
             await self.hass.services.async_call(
                 "media_player",

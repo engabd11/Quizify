@@ -107,8 +107,9 @@ CATEGORIES_KIDS: Final = [
     CATEGORY_HISTORY,
 ]
 
-# Backwards-compatibility: the union of all categories
-CATEGORIES: Final = CATEGORIES_ADULTS
+# Backwards-compatibility: all valid category identifiers across all modes.
+ALL_CATEGORIES: Final = sorted(set(CATEGORIES_ADULTS + CATEGORIES_KIDS))
+CATEGORIES: Final = ALL_CATEGORIES  # kept for backwards compat
 
 # Categories available per mode
 CATEGORIES_BY_MODE: Final = {

@@ -12,7 +12,9 @@ from .const import DOMAIN
 try:
     from homeassistant.config_entries import ConfigFlowResult
 except ImportError:
-    from homeassistant.data_entry_flow import FlowResult as ConfigFlowResult  # type: ignore[assignment]
+    from homeassistant.data_entry_flow import (
+        FlowResult as ConfigFlowResult,  # type: ignore[assignment]
+    )
 
 
 class QuizifyConfigFlow(ConfigFlow, domain=DOMAIN):

@@ -5,6 +5,46 @@ All notable changes to Quizify will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] — Public release polish
+
+No gameplay changes — this release polishes the repository for public
+consumption and community contribution.
+
+### Changed
+
+- **README rewritten** — removed "Experimental" tag, fixed all placeholder
+  URLs, added CI and HACS badges, updated roadmap to reflect features that
+  shipped in 1.1 (AI announcer, double-or-nothing lifeline).
+- **CONTRIBUTING.md** — category tree updated to reflect all 12 adults
+  categories and 4 kids categories, with full category code reference.
+- **HACS validation** — removed `ignore: brands` now that the brands PR
+  is merged; Quizify is a validated HACS default repository.
+- **ruff.toml** — explicit lint configuration so contributors get
+  consistent results locally without guessing which rules CI enforces.
+
+### Added
+
+- **Issue templates** — bug report and feature request templates with
+  structured fields for HA version, Quizify version, and reproduction steps.
+- **Pull request template** — checklist for style, tests, changelog, and
+  docs.
+- **SECURITY.md** — responsible disclosure instructions and a summary of
+  the security model for auditors.
+
+### Fixed
+
+- **CATEGORIES constant** — the backwards-compat alias was only the adults
+  list, not the full union. Now includes all categories from both modes.
+- **Missing WS_TYPE_LIST_CONVERSATION constant** — the websocket API
+  imported it but const.py didn't define it. Added.
+- **Removed stale temp file** (`quizify.css.tmp`) left over from a
+  development session.
+
+### Tests
+
+All 55 existing tests pass. No new tests needed — this release is
+documentation and configuration only.
+
 ## [1.1.2] — Fix two service-call errors surfaced by real-world logs
 
 Bugfixes for two non-fatal but noisy errors found in production HA logs.

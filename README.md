@@ -1,10 +1,12 @@
-# Quizify (Experimental)
+# Quizify
 
 > **Multiplayer trivia quiz for Home Assistant** — scan a QR code, answer questions, see who's smartest in the room. Inspired by [Beatify](https://github.com/mholzi/beatify).
 
 [![Home Assistant 2024.1+](https://img.shields.io/badge/Home%20Assistant-2024.1%2B-41BDF5?style=flat-square&logo=homeassistant&logoColor=white)](https://www.home-assistant.io/)
-[![Version 1.1.0](https://img.shields.io/badge/Version-1.1.2-ff5cf0?style=flat-square)](#)
+[![Version 1.2.0](https://img.shields.io/badge/Version-1.2.0-ff5cf0?style=flat-square)](#)
 [![License MIT](https://img.shields.io/badge/License-MIT-5cf0d4?style=flat-square)](LICENSE)
+[![CI](https://github.com/engabd11/Quizify/actions/workflows/validate.yml/badge.svg)](https://github.com/engabd11/Quizify/actions/workflows/validate.yml)
+[![hacs](https://img.shields.io/badge/HACS-Default-41BDF5?style=flat-square)](https://github.com/hacs/default)
 
 ---
 
@@ -15,7 +17,7 @@ Quizify turns Home Assistant into a multiplayer trivia game show. Guests scan a 
 ### Highlights
 
 - **🎯 Two modes** — Adults and Kids, each with age-appropriate questions
-- **📚 12 adults categories + 4 kids categories** with over 1,100 seed questions
+- **📚 12 adults categories + 4 kids categories** with 1,108+ questions across 16 categories
 - **⚡ Real-time multiplayer** — WebSocket-driven, instant updates for every player
 - **📱 QR-code join** — No accounts, no app install, just scan and play
 - **🎵 Music Assistant integration** — Background music while you play (optional)
@@ -32,7 +34,7 @@ Quizify turns Home Assistant into a multiplayer trivia game show. Guests scan a 
 ## Install via HACS
 
 1. Open HACS → ⋮ Menu → **Custom Repositories**
-2. URL: `https://github.com/YOUR_GITHUB/quizify`
+2. URL: `https://github.com/engabd11/Quizify`
 3. Category: **Integration**
 4. Install **Quizify**, then restart Home Assistant
 5. Go to **Settings → Devices & Services → Add Integration → Quizify**
@@ -42,7 +44,7 @@ Quizify turns Home Assistant into a multiplayer trivia game show. Guests scan a 
 
 ```bash
 cd /config/custom_components
-git clone https://github.com/YOUR_GITHUB/quizify.git quizify
+git clone https://github.com/engabd11/Quizify.git quizify
 # Restart Home Assistant
 ```
 
@@ -129,6 +131,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
 ---
 
+## Screenshots
+
+*Screenshots coming soon. See [docs/README.md](docs/README.md) for planned content.*
+
+---
+
 ## Architecture
 
 ```
@@ -146,7 +154,7 @@ Home Assistant
 
 - Single HA port — no extra services
 - Local-first: no cloud, no telemetry, no analytics, no web fonts
-- 1,008 adults questions (12 categories × 84) + 100 kids questions
+- 1,108+ questions (12 adults categories × 84 + 4 kids categories × ~25)
 
 ---
 
@@ -154,11 +162,11 @@ Home Assistant
 
 Things that don't exist yet:
 
-- **AI-generated infinite mode** (hooked up to a local LLM like Ollama)
-- **Power-ups** (steal, double-or-nothing)
 - **Multi-language UI** — structure is ready, only English shipped
 - **Per-player avatars & customisation**
 - **Persistent leaderboards across sessions**
+- **Team mode**
+- **Picture/video questions**
 
 If you'd like to help on any of these, open an issue first to discuss the approach.
 
@@ -198,4 +206,4 @@ lets the server recognise them on reconnect.
 
 [MIT](LICENSE) — fork it, ship it, party with it.
 
-Made with affection for the Home Assistant community.
+Made with care for the Home Assistant community. ❤️

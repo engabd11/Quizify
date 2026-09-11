@@ -1,0 +1,22 @@
+target-version = "py312"
+line-length = 100
+
+[lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+]
+ignore = [
+    "E501",   # line too long (we use 100 but don't want to fail on comments)
+    "SIM105", # try/except/pass is intentional for broad exception suppression
+    "SIM118", # .keys() is used for clarity in some contexts
+    "UP041",  # asyncio.TimeoutError is used for Python 3.11+ compat clarity
+]
+
+[lint.isort]
+known-first-party = ["custom_components"]

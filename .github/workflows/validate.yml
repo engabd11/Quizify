@@ -24,3 +24,4 @@ jobs:
         uses: hacs/action@main
         with:
           category: integration
+          ignore: brands  # brands PR pending merge in hacs/brands repo

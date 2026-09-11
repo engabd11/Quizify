@@ -48,9 +48,9 @@ from .const import (
     STATE_PAUSED,
     STATE_QUESTION,
     STATE_REVEAL,
-    STREAK_MULTIPLIER_10,
     STREAK_MULTIPLIER_3,
     STREAK_MULTIPLIER_5,
+    STREAK_MULTIPLIER_10,
 )
 from .questions import QuestionBank
 

@@ -11,15 +11,23 @@ Quizify lives or dies on the quality of its question banks. Adding more question
 ```
 custom_components/quizify/questions/
 ├── adults/
+│   ├── animals.json
+│   ├── art.json
+│   ├── food_and_drink.json
 │   ├── general_knowledge.json
-│   ├── science.json
 │   ├── geography.json
-│   └── history.json
+│   ├── history.json
+│   ├── language.json
+│   ├── literature.json
+│   ├── mythology.json
+│   ├── science.json
+│   ├── sport.json
+│   └── technology.json
 └── kids/
     ├── general_knowledge.json
-    ├── science.json
     ├── geography.json
-    └── history.json
+    ├── history.json
+    └── science.json
 ```
 
 ### Format
@@ -42,6 +50,14 @@ custom_components/quizify/questions/
    - `sc` = Science
    - `ge` = Geography
    - `hi` = History
+   - `sp` = Sport
+   - `fd` = Food & Drink
+   - `li` = Literature
+   - `la` = Language
+   - `ar` = Art
+   - `tc` = Technology
+   - `my` = Mythology
+   - `an` = Animals
    Then a sequential number. Don't reuse numbers within a file.
 2. **`correct` is always `0`** in the source file. The first answer is the correct one. The runtime shuffles answer order before display.
 3. **2–6 answers.** Most questions work best with 4.
@@ -88,8 +104,8 @@ To add a new category (e.g. Music, Movies & TV, Sports):
 For bug fixes or new features:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB/quizify.git
-cd quizify
+git clone https://github.com/engabd11/Quizify.git
+cd Quizify
 
 # Backend lint check
 python -m ruff check custom_components/quizify

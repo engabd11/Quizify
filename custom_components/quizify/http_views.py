@@ -71,6 +71,10 @@ _NO_CACHE_HEADERS = {
     ),
 }
 
+# Module-level HTML cache. Keyed by absolute file path, so a HA restart
+# that changes the integration path (version upgrade, dev overlay) gets
+# a fresh key and a fresh read. The cache survives in-process config
+# reloads, which is the intent — the player page is static per version.
 _html_cache: dict[str, str] = {}
 
 

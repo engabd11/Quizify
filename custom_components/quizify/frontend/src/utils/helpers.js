@@ -30,6 +30,23 @@ export const CATEGORY_LABELS = {
   random: "Random Mix",
 };
 
+// Humanise a raw category id that doesn't have a built-in label.
+// e.g. "pop_culture" -> "Pop Culture", "movies_and_tv" -> "Movies & TV"
+export function humaniseCategoryId(id) {
+  return id
+    .replace(/_/g, " ")
+    .replace(/\band\b/gi, "&")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+// Get a label for a category, using the built-in label if available,
+// otherwise humanising the id. This lets custom question packs show
+// up with readable names without the frontend needing to know about
+// them in advance.
+export function categoryLabel(id) {
+  return CATEGORY_LABELS[id] || humaniseCategoryId(id);
+}
+
 // Emoji icons used by category tiles in the lobby.
 export const CATEGORY_ICONS = {
   general_knowledge: "🧠",

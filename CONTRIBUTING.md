@@ -60,7 +60,7 @@ custom_components/quizify/questions/
    - `an` = Animals
    Then a sequential number. Don't reuse numbers within a file.
 2. **`correct` is always `0`** in the source file. The first answer is the correct one. The runtime shuffles answer order before display.
-3. **2–6 answers.** Most questions work best with 4.
+3. **2-6 answers.** Most questions work best with 4.
 4. **`difficulty`** must be `easy`, `medium`, or `hard`.
 5. **`explanation`** is shown on the reveal. Keep it punchy and informative.
 
@@ -68,7 +68,7 @@ custom_components/quizify/questions/
 
 For the `kids/` folder, please follow these extra guidelines:
 
-- Use simple vocabulary suitable for a 6–10 year old
+- Use simple vocabulary suitable for a 6-10 year old
 - Avoid topics involving violence, scary themes, or anything inappropriate for young children
 - Pick topics that delight kids: animals, dinosaurs, space, fairy tales, colours, music
 - Don't make distractor answers cruel or mocking
@@ -76,7 +76,7 @@ For the `kids/` folder, please follow these extra guidelines:
 ### Quality bar
 
 Before submitting:
-- Read your question out loud — does it make sense?
+- Read your question out loud - does it make sense?
 - Are the wrong answers plausible? (Don't make obvious throwaways.)
 - Did you check the answer is actually correct? Cite a source in the PR description if it's something niche.
 
@@ -118,7 +118,7 @@ npm run build
 
 When opening a PR:
 
-- Keep changes focused — one feature or fix per PR
+- Keep changes focused - one feature or fix per PR
 - Match the existing code style (we use `ruff` for Python, `prettier` for JS where applicable)
 - Update `CHANGELOG.md` with a short entry
 - If your change is user-facing, update the `README.md`
@@ -127,10 +127,10 @@ When opening a PR:
 
 Open an issue with:
 
-- HA version (`Settings → About`)
+- HA version (`Settings > About`)
 - Quizify version (`hacs.json`)
 - A short reproduction (what you did, what you expected, what happened)
-- Anything from `Settings → System → Logs` mentioning `quizify`
+- Anything from `Settings > System > Logs` mentioning `quizify`
 
 ## Code of conduct
 

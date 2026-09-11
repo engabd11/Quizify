@@ -5,7 +5,7 @@ All notable changes to Quizify will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/),
 and this project uses [Semantic Versioning](https://semver.org/).
 
-## [1.3.0] — Custom question packs
+## [1.3.0] - Custom question packs
 
 Users can now drop themed question packs into `<config>/quizify_packs/`
 without modifying the integration. This enables community-built packs
@@ -14,23 +14,23 @@ waiting for upstream merges.
 
 ### Added
 
-- **Custom question pack support** — The `QuestionBank` now accepts a
+- **Custom question pack support** - The `QuestionBank` now accepts a
   `custom_packs_path` parameter. The manager wires this to
   `<config_dir>/quizify_packs/`. Files placed there using the same
   `<mode>/<category>.json` structure are loaded alongside built-in
   questions at startup.
 - **Two merge modes**: a custom file with a new category name (e.g.
   `movies.json`) creates a new category in the admin UI. A file with
-  the same name as a built-in category extends it — questions are
+  the same name as a built-in category extends it - questions are
   appended with duplicate-ID filtering.
-- **`pack` metadata in categories API** — the `quizify/categories/list`
+- **`pack` metadata in categories API** - the `quizify/categories/list`
   response now includes a `pack` field (`"builtin"` or `"custom"`) for
   each category, so the frontend can distinguish them.
-- **Frontend: `categoryLabel()` helper** — humanises unknown category
-  IDs (e.g. `pop_culture` → "Pop Culture") so custom packs show
+- **Frontend: `categoryLabel()` helper** - humanises unknown category
+  IDs (e.g. `pop_culture` > "Pop Culture") so custom packs show
   readable names without the frontend needing to know about them
   in advance.
-- **Frontend: `pack` badge** — custom categories show a small "pack"
+- **Frontend: `pack` badge** - custom categories show a small "pack"
   badge in the category picker.
 - **8 new tests** covering: new category creation, built-in extension,
   duplicate-ID filtering, invalid JSON handling, missing custom path,
@@ -50,64 +50,64 @@ waiting for upstream merges.
 
 All 63 tests pass (55 existing + 8 new). Ruff clean.
 
-No gameplay changes — this release polishes the repository for public
+No gameplay changes - this release polishes the repository for public
 consumption and community contribution.
 
 ### Changed
 
-- **README rewritten** — removed "Experimental" tag, fixed all placeholder
+- **README rewritten** - removed "Experimental" tag, fixed all placeholder
   URLs, added CI and HACS badges, updated roadmap to reflect features that
   shipped in 1.1 (AI announcer, double-or-nothing lifeline).
-- **CONTRIBUTING.md** — category tree updated to reflect all 12 adults
+- **CONTRIBUTING.md** - category tree updated to reflect all 12 adults
   categories and 4 kids categories, with full category code reference.
-- **HACS validation** — removed `ignore: brands` now that the brands PR
+- **HACS validation** - removed `ignore: brands` now that the brands PR
   is merged; Quizify is a validated HACS default repository.
-- **ruff.toml** — explicit lint configuration so contributors get
+- **ruff.toml** - explicit lint configuration so contributors get
   consistent results locally without guessing which rules CI enforces.
 
 ### Added
 
-- **Issue templates** — bug report and feature request templates with
+- **Issue templates** - bug report and feature request templates with
   structured fields for HA version, Quizify version, and reproduction steps.
-- **Pull request template** — checklist for style, tests, changelog, and
+- **Pull request template** - checklist for style, tests, changelog, and
   docs.
-- **SECURITY.md** — responsible disclosure instructions and a summary of
+- **SECURITY.md** - responsible disclosure instructions and a summary of
   the security model for auditors.
 
 ### Fixed
 
-- **CATEGORIES constant** — the backwards-compat alias was only the adults
+- **CATEGORIES constant** - the backwards-compat alias was only the adults
   list, not the full union. Now includes all categories from both modes.
-- **Missing WS_TYPE_LIST_CONVERSATION constant** — the websocket API
+- **Missing WS_TYPE_LIST_CONVERSATION constant** - the websocket API
   imported it but const.py didn't define it. Added.
 - **Removed stale temp file** (`quizify.css.tmp`) left over from a
   development session.
 
 ### Tests
 
-All 55 existing tests pass. No new tests needed — this release is
+All 55 existing tests pass. No new tests needed - this release is
 documentation and configuration only.
 
-## [1.1.2] — Fix two service-call errors surfaced by real-world logs
+## [1.1.2] - Fix two service-call errors surfaced by real-world logs
 
 Bugfixes for two non-fatal but noisy errors found in production HA logs.
 Neither broke gameplay (both fell back), but both spammed the error log
 and one meant the spoken intro was silently skipped.
 
-### Fixed — `tts.speak` rejected when no speaker is selected
+### Fixed - `tts.speak` rejected when no speaker is selected
 
 `tts.speak` requires a `media_player_entity_id` target. The code only
 added it conditionally (`if music_player:`), so when a TTS engine was
 configured but the speaker field was empty, the service call went out
 without a target and HA rejected it with `required key not provided
-@ data['media_player_entity_id']` — meaning the intro announcement was
+@ data['media_player_entity_id']` - meaning the intro announcement was
 never spoken at all.
 
 Fix: if there's no speaker selected, `_announce()` now skips cleanly
 (TTS has nowhere to play anyway) instead of firing an invalid call.
 When a speaker *is* set, `media_player_entity_id` is always included.
 
-### Fixed — `music_assistant.play_media` rejected without a media_id
+### Fixed - `music_assistant.play_media` rejected without a media_id
 
 When Music Assistant was installed but the admin started a game without
 choosing a music URI, the code called `music_assistant.play_media` with
@@ -120,9 +120,9 @@ error.
 Fix: the `music_assistant.play_media` service is now only used when a
 URI is actually present. With no URI, we skip straight to the generic
 `media_player` path (shuffle + resume whatever's queued), which is what
-was effectively happening anyway — just without the error.
+was effectively happening anyway - just without the error.
 
-### Note — Ollama `model not found` is a configuration issue, not a bug
+### Note - Ollama `model not found` is a configuration issue, not a bug
 
 The logs also showed `model 'gemma3:4b' not found (status code: 404)`
 from the Ollama agent. That's the agent's configured model not being
@@ -130,7 +130,7 @@ present on the Ollama server, so every AI generation fails and Quizify
 falls back to the built-in announcements (as designed). To use the AI
 announcer, pull the model on your Ollama host (`ollama pull gemma3:4b`)
 or point the conversation agent at a model you already have. Quizify
-needs no change for this — the fallback is working correctly.
+needs no change for this - the fallback is working correctly.
 
 ### Tests
 
@@ -140,11 +140,11 @@ speaker is set; `music_assistant.play_media` is not called without a
 URI (generic path used instead); and it *is* used with the correct
 `media_id` when a URI is present. **Full suite: 55 tests, all passing.**
 
-## [1.1.1] — Fix announcement-screen freeze and harden AI fallback
+## [1.1.1] - Fix announcement-screen freeze and harden AI fallback
 
 A bugfix release addressing a stall introduced in 1.1.0.
 
-### Fixed — Long freeze on the "Get ready" screen after the intro
+### Fixed - Long freeze on the "Get ready" screen after the intro
 
 After the intro announcement finished and the background music started,
 the player screens stayed stuck on the announcing screen for up to ~35
@@ -155,19 +155,19 @@ returns once playback finishes) but **also still ran the old
 `_wait_for_announcement_to_finish()` polling afterward**. That polling
 watches the configured `media_player` and waits for it to leave the
 `playing` state. Because the background music plays on that *same*
-speaker — and starts right before the announcement — the poller saw the
+speaker - and starts right before the announcement - the poller saw the
 music as `playing` and waited for it to stop, which only happens at the
 end of the game. So it span until its hard cap (`ANNOUNCEMENT_MAX_WAIT`,
 35s) before giving up and starting the questions.
 
 Fix: the post-TTS polling is removed from the start path entirely. The
-`blocking=True` TTS call is the sole, correct gate — it already returns
+`blocking=True` TTS call is the sole, correct gate - it already returns
 only after the announcement has played, and unlike polling it can't
 confuse the announcement with the background music. The
 `_wait_for_announcement_to_finish()` helper is retained but no longer
 called from the start flow.
 
-### Fixed — AI announcement could delay the pre-roll and errors were noisy
+### Fixed - AI announcement could delay the pre-roll and errors were noisy
 
 Two related improvements to the optional AI announcer:
 
@@ -195,12 +195,12 @@ fallback on a `HomeAssistantError`, and prompt-bounded fallback on a hung
 agent (verifies it returns well within the timeout rather than hanging).
 **Full suite: 51 tests, all passing.**
 
-## [1.1.0] — TTS timing fix, pronunciation cleanup, optional AI announcer
+## [1.1.0] - TTS timing fix, pronunciation cleanup, optional AI announcer
 
 This release polishes the announcer experience based on real-world play
 on local TTS engines like Piper. Two fixes and one optional new feature.
 
-### Fixed — Questions could appear before the intro announcement finished
+### Fixed - Questions could appear before the intro announcement finished
 
 The previous implementation called `tts.speak` with `blocking=False` and
 then polled the speaker's `media_player.state` waiting for it to leave
@@ -214,16 +214,16 @@ before the room had heard "Get ready".
 Fix: `_announce()` now calls `tts.speak` with `blocking=True`. Home
 Assistant returns from the service call only after the audio has
 actually finished playing on the configured `media_player_entity_id`.
-That's the cleanest possible gate — no polling, no race. The existing
+That's the cleanest possible gate - no polling, no race. The existing
 `_wait_for_announcement_to_finish()` polling stays as a belt-and-braces
 fallback for the few TTS providers that ignore the blocking flag.
 
-### Fixed — Soap-opera personality read stage directions aloud
+### Fixed - Soap-opera personality read stage directions aloud
 
 The static templates for the `soap` personality contained `*gasps
 dramatically*`, `*dramatic sting*`, `*swelling music*`, `*long pause*`
 and similar prose-only stage directions. Local TTS engines like Piper
-have no model for these — they read them out literally as "asterisk
+have no model for these - they read them out literally as "asterisk
 gasps dramatically asterisk", which is both unfunny and breaks the
 character. The same applied to the `...` ellipses scattered through
 the soap and parent personalities: Piper holds them for an unnaturally
@@ -231,29 +231,29 @@ long pause that confuses listeners.
 
 Two fixes layered together:
 
-1. **Static templates rewritten** — every `*stage direction*` removed
+1. **Static templates rewritten** - every `*stage direction*` removed
    and every `...` rewritten as a normal sentence break. The soap
    personality still sounds dramatic; it just reads cleanly.
-2. **New `_sanitize_for_tts()` helper** — automatically applied to
+2. **New `_sanitize_for_tts()` helper** - automatically applied to
    every message inside `_announce()`. Strips anything inside
    `*asterisks*`, collapses `...` or `…` to a single period, and tidies
    up the leftover whitespace. This catches anything that slips into
    future templates or comes back from the LLM, so the cleanup is
    defence-in-depth, not just a one-time content fix.
-3. **ALL CAPS is preserved** — it's intentional for the hype and sports
+3. **ALL CAPS is preserved** - it's intentional for the hype and sports
    personalities, and Piper pronounces capitalised words normally.
 
-### Added — Optional AI announcer via HA's conversation integration
+### Added - Optional AI announcer via HA's conversation integration
 
 If the admin picks a conversation agent (Ollama, OpenAI Conversation,
-Google Generative AI, Anthropic, custom — anything that registers a
+Google Generative AI, Anthropic, custom - anything that registers a
 `conversation.*` entity in HA), the start and end announcements are
 generated fresh by the LLM instead of using the static templates.
 Picks up the user's selected personality and includes the player names,
 question count, and final score in the prompt, so the output is always
 contextually relevant.
 
-The integration uses HA's standard `conversation.process` service —
+The integration uses HA's standard `conversation.process` service -
 there's no Ollama-specific dependency, no API key handling, nothing
 that breaks if the user later swaps providers. Whatever conversation
 agent is configured in HA, Quizify can use.
@@ -296,17 +296,17 @@ static-template purity, the fallback path when no agent is configured
 quotes), the modern HA conversation-response shape, and graceful
 handling of malformed responses. **Full suite: 47 tests, all passing.**
 
-## [1.0.0] — Production hardening, security review, polish
+## [1.0.0] - Production hardening, security review, polish
 
-First stable release. The gameplay surface is unchanged from 0.3.6 — this
+First stable release. The gameplay surface is unchanged from 0.3.6 - this
 release is dedicated to security review, resource limits, and small
 quality-of-life additions so Quizify is safe to deploy on an HA instance
 that might be reachable beyond the local network (reverse proxy, VPN,
 Cloudflare Tunnel, etc.).
 
-### Security — Origin check on the player WebSocket
+### Security - Origin check on the player WebSocket
 
-The player socket is intentionally unauthenticated — guests scan a QR
+The player socket is intentionally unauthenticated - guests scan a QR
 code and join without an HA account. That made it trivially reachable
 from any third-party website that knew the HA URL. The player socket now
 runs a default-strict same-origin check on the WS handshake: connections
@@ -316,7 +316,7 @@ a connection to `homeassistant.local:8123/api/quizify/player_ws`. The
 behaviour is toggleable via `PLAYER_WS_STRICT_ORIGIN` in `const.py` for
 the rare setups where the Host header is mangled by a proxy.
 
-### Security — Player name sanitization
+### Security - Player name sanitization
 
 Player names previously went through a soft `strip()[:20]` only, so they
 could carry through control characters (newlines, NULs) and zero-width
@@ -325,14 +325,14 @@ glyphs. Two real problems with this:
 - The TTS announcement strings interpolate names raw; control chars
   produced odd pronunciation and could split announcements across lines.
 - Two players could appear "identical" in the scoreboard by having one
-  use a zero-width joiner between letters — the dedup check compared
+  use a zero-width joiner between letters - the dedup check compared
   raw strings, so `Alice` and `A‌l‌i‌c‌e` both passed.
 
 `add_player` now runs every name through `_sanitize_player_name()` which
 strips ASCII control characters, the seven common zero-width / BOM
 glyphs, collapses internal whitespace, and re-applies the length cap.
 
-### Security — Resource and rate limits
+### Security - Resource and rate limits
 
 A handful of unbounded-resource paths now have explicit caps:
 
@@ -353,30 +353,30 @@ A handful of unbounded-resource paths now have explicit caps:
   send a join or resume within 30 seconds, it's closed. Heartbeats alone
   let an idle bot hold sockets open indefinitely; this closes that gap.
 
-### Security — Defensive HTTP headers on the player page
+### Security - Defensive HTTP headers on the player page
 
 `Cache-Control: no-store` was already set. v1.0 adds
 `X-Content-Type-Options: nosniff`, `Referrer-Policy: same-origin`, and
 `X-Frame-Options: SAMEORIGIN` on the player HTML response. Belt-and-
 braces for instances reachable beyond the local network.
 
-### Fixed — Reveal lifeline could burn on a connection blip
+### Fixed - Reveal lifeline could burn on a connection blip
 
 `peek_answer_used` was set to `True` *before* the `peek_result` was sent.
 If the send failed (browser refresh, disconnect at the wrong moment),
 the player lost their one-per-game reveal lifeline silently. The flag
 is now only set after `ws.send_json` confirms delivery.
 
-### Fixed — Join-code collision storm could clobber another game's code
+### Fixed - Join-code collision storm could clobber another game's code
 
 `create_session` previously fell through to "use whatever we got" after
 8 collision retries, which would overwrite another active session's
-join code in `_join_index` — orphaning it from its session. With 32^6
+join code in `_join_index` - orphaning it from its session. With 32^6
 ≈ 1 billion codes this is vanishingly unlikely in practice, but the
 loop now raises `TooManySessionsError` rather than silently corrupting
 state. Retries bumped from 8 to 16 for good measure.
 
-### Fixed — Rematch could kill the current game on a failed create
+### Fixed - Rematch could kill the current game on a failed create
 
 `quizify/game/rematch` called `end_session` on the current game before
 checking whether `create_session` for the new one succeeded. If the new
@@ -384,7 +384,7 @@ session creation failed (e.g. now: hit the concurrent cap), the admin
 was left with no game at all. The order is now reversed: create the
 new session first, only end the old one once the new one exists.
 
-### Added — Click-to-copy join code and link
+### Added - Click-to-copy join code and link
 
 The admin's QR card now has the join code and the join URL as buttons:
 tap either to copy to clipboard, with a "✓ Copied!" confirmation that
@@ -399,9 +399,9 @@ dedup spoofing, name length cap enforcement, `SessionFullError` at
 the player cap, and `TooManySessionsError` at the session cap.
 **Full suite: 34 tests, all passing.**
 
-## [0.3.6] — Reveal lifeline once-per-game, leaderboard & current-song sensors
+## [0.3.6] - Reveal lifeline once-per-game, leaderboard & current-song sensors
 
-### Fixed — Reveal lifeline could be used every question
+### Fixed - Reveal lifeline could be used every question
 
 The reveal lifeline was meant to be a once-per-game peek, but every
 `question` event reset the lifeline state on the player client, so any
@@ -416,28 +416,28 @@ reset the flag to `false`. Fixed two ways:
   sent down on `joined`/`resumed` so a page refresh can't grant a second
   peek either.
 
-### Added — Sensor entities for the leaderboard and current song
+### Added - Sensor entities for the leaderboard and current song
 
 The integration now creates two sensor entities so you can put live game
 state on a Lovelace dashboard or feed it into automations:
 
-- `sensor.quizify_leaderboard` — state is the leading player's name
+- `sensor.quizify_leaderboard` - state is the leading player's name
   (or the previous game's winner between games); attributes include the
   ranked player list with scores, streaks, and best streaks, the
   current question index, total questions, and join code.
-- `sensor.quizify_current_song` — state is the title of the track
+- `sensor.quizify_current_song` - state is the title of the track
   playing on the active game's `music_player`; attributes include
   artist, album, source media_player entity, duration, and entity_picture
-  (album art). Updates immediately when the speaker's metadata changes —
+  (album art). Updates immediately when the speaker's metadata changes -
   not just on quiz events.
 
 Both sensors are wired through a new `subscribe_sessions()` hook on the
 manager so the entities track session create/end events without the
 game/manager modules needing to know about entities.
 
-## [0.3.5] — Announcement gating, real lifelines, pause, smarter music, finale stats
+## [0.3.5] - Announcement gating, real lifelines, pause, smarter music, finale stats
 
-### Fixed — players saw Q1 before the host's intro finished
+### Fixed - players saw Q1 before the host's intro finished
 
 `start()` previously kicked off the round loop a microsecond after firing the
 TTS announcement, so every phone in the room jumped to the first question
@@ -447,7 +447,7 @@ while the speaker was still introducing the game. There is now a dedicated
 advancing to the first question. Both the admin panel and the player page
 render a "Get ready…" screen during this window.
 
-### Fixed — the "Double or −1000" lifeline didn't actually change scores
+### Fixed - the "Double or −1000" lifeline didn't actually change scores
 
 The double-points bet was purely cosmetic in the player UI; the server never
 heard about it, so the score went up or down by the same amount whether you
@@ -458,7 +458,7 @@ socket, the server marks the player as armed for the current question, and
 arm is one-shot per question, and the server emits `lifeline_result` so the
 client only flips the UI on after confirmation.
 
-### Added — pause / resume for the whole room
+### Added - pause / resume for the whole room
 
 Any player (or the admin) can tap a pause button to freeze the game for
 everyone. The new `paused` game state stops the question countdown via an
@@ -468,7 +468,7 @@ display. Background music is paused on the configured speaker and resumed
 on lift. New admin WS commands `quizify/game/pause` and `quizify/game/resume`
 and new player message types `pause` / `resume_game` drive it.
 
-### Changed — smarter Music Assistant integration
+### Changed - smarter Music Assistant integration
 
 `play_music` now uses Music Assistant's `radio_mode: true` whenever the
 integration is loaded. With a playlist URI, the playlist is shuffled and
@@ -477,7 +477,7 @@ extended via MA radio. Without a URI, the call goes through without a
 `media_player` speakers get `shuffle_set + media_play` as a no-URI
 fallback.
 
-### Added — finale stats, badges, and highlights
+### Added - finale stats, badges, and highlights
 
 The end-of-game screen now leads with a "Game highlights" grid:
 
@@ -507,9 +507,9 @@ standings.
 - 5 new unit tests for lifeline scoring, pause round-tripping, and
   highlight computation (28 total, up from 23).
 
-## [0.3.1] — Fix 500 on QR-code scan
+## [0.3.1] - Fix 500 on QR-code scan
 
-### Fixed — guest players got a 500 Internal Server Error right after scanning
+### Fixed - guest players got a 500 Internal Server Error right after scanning
 
 Scanning the QR code took players to `/quizify/join/ABCDEF`, where Home
 Assistant's HTTP layer returned a 500 instead of rendering the player page.
@@ -518,7 +518,7 @@ static asset mount tripped a known rough edge in HA 2025.x's view router.
 
 The fix adopts the same approach the
 [beatify](https://github.com/mholzi/beatify) integration uses to serve its
-guest player page — and which has been working reliably in production for
+guest player page - and which has been working reliably in production for
 months. Concretely:
 
 * The canonical guest landing page is now `/quizify/play?code=ABCDEF`. The
@@ -534,25 +534,25 @@ months. Concretely:
 * The HTML renderer is wrapped in a try/except so a future template bug
   surfaces as a clear error, not a generic 500 from aiohttp.
 
-## [0.3.0] — Auth, security, and UI overhaul
+## [0.3.0] - Auth, security, and UI overhaul
 
-### Fixed — the 401 Unauthorised on the dashboard
+### Fixed - the 401 Unauthorised on the dashboard
 
 The admin panel used an **iframe panel** pointing at `/quizify/admin`, an
 HTTP view that required auth. Home Assistant's iframe panels don't forward
-auth credentials into the iframe — HA's bearer token lives in the parent
-JS, not in cookies — so the iframe load returned 401 and the dashboard
+auth credentials into the iframe - HA's bearer token lives in the parent
+JS, not in cookies - so the iframe load returned 401 and the dashboard
 never appeared. The fix replaces the iframe panel with a proper **custom
 panel**: the bundle is dynamically imported inside HA's authenticated frame
 and gets the `hass` object as an element property, eliminating the second
 auth handshake entirely.
 
-### Fixed — guest players can finally play
+### Fixed - guest players can finally play
 
 The previous releases honestly didn't work for guests. All `quizify/player/*`
 WebSocket commands rode HA's built-in `websocket_api`, which mandates
 authentication; anonymous QR-code joiners had no way to satisfy it. The
-README's workaround was to enable Trusted Networks on the guest Wi-Fi —
+README's workaround was to enable Trusted Networks on the guest Wi-Fi -
 fragile and far from "no apps, no accounts".
 
 This release introduces a dedicated unauthenticated WebSocket at
@@ -566,12 +566,12 @@ HMAC-signed with a per-process secret and expire after 6 hours.
 - **HMAC-signed resume tokens** so a player who reloads, disconnects, or
   drops onto cellular for thirty seconds keeps the same identity
 - **Auto-reconnect** for guest players with exponential backoff
-- **Async lock around game state transitions and answer submissions** —
+- **Async lock around game state transitions and answer submissions** -
   prevents late answers from being recorded against the wrong question
   index under load
 - **Per-connection rate limiting** on the player socket (20 messages in any
   5-second window) and a 16 KB message-size cap
-- **Self-hosted system-font stack** — no more Google Fonts fetch, nothing
+- **Self-hosted system-font stack** - no more Google Fonts fetch, nothing
   leaves the network
 - **`prefers-reduced-motion` support** across all animations
 - **Visible focus rings** on every interactive element for keyboard users
@@ -588,7 +588,7 @@ HMAC-signed with a per-process secret and expire after 6 hours.
   session and starts a fresh one; players rescan the QR.
 - **Admin frontend** speaks to HA via the panel's `hass.callWS()` and
   `hass.connection.subscribeMessage()` rather than opening a second
-  WebSocket — half the round-trips on every command
+  WebSocket - half the round-trips on every command
 - **Cancel awaits the round task** so a session that's being torn down
   doesn't leak a pending coroutine
 - **Speaker dropdown** sorts deterministically (Music Assistant first,
@@ -601,13 +601,13 @@ HMAC-signed with a per-process secret and expire after 6 hours.
 
 ### Removed
 
-- `quizify/player/*` WebSocket commands — replaced by the dedicated
+- `quizify/player/*` WebSocket commands - replaced by the dedicated
   player socket
 - `STORAGE_VERSION` / `STORAGE_KEY` dead constants
 - `WS_TYPE_GAME_NEXT` / `WS_TYPE_GAME_REVEAL` unused constants
 - The Google Fonts `<link>` tag from the player landing page
 
-## [0.2.0] — Expanded adults question bank
+## [0.2.0] - Expanded adults question bank
 
 ### Added
 
@@ -636,7 +636,7 @@ HMAC-signed with a per-process secret and expire after 6 hours.
 - New question IDs use the convention `ak-<cat>-NNN` (adults) where `<cat>` is the
   two-letter category code: `sp`, `fd`, `li`, `la`, `ar`, `tc`, `my`, `an`
 
-## [0.1.0] — Initial Release
+## [0.1.0] - Initial Release
 
 ### Added
 
@@ -645,11 +645,11 @@ HMAC-signed with a per-process secret and expire after 6 hours.
 - **Four categories**: General Knowledge, Science, Geography, History
 - **200 seed questions** (25 per category × 4 categories × 2 modes)
 - **Sidebar panel** at `/quizify` with the admin UI
-- **QR-code join flow** at `/quizify/join/<code>` — no app, no account
+- **QR-code join flow** at `/quizify/join/<code>` - no app, no account
 - **Scoring with speed bonus and streak multipliers** (×1.25 / ×1.5 / ×2.0)
 - **Late-joiner average-score logic** so guests aren't penalised for joining mid-game
 - **Music Assistant integration** for optional background music during play
 - **Generic `media_player` fallback** for hosts without Music Assistant
-- **React frontend** built with esbuild (zero-config) — bundled to a single 169 KB file
+- **React frontend** built with esbuild (zero-config) - bundled to a single 169 KB file
 - **HACS-compatible** (single config entry, MIT license, GitHub Actions for hassfest validation)
 - **JSON-format question banks** for easy community PRs
